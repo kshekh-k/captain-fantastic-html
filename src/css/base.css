@@ -1,0 +1,201 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import url('./fonts.css');
+@import "tailwindcss";
+
+  @theme {
+
+    /* App Colors */
+    --color-brand: #D3004C;
+    --color-brand-light: #f5206d;
+    --color-brand-secondary: #169FDB;
+    --color-brand-tertiary: #ED5DAE;
+    --color-warning: #FCD100;
+    --color-success: #4EB946;
+    --color-border: #707070;
+    --color-purple: #D19DE5;
+    --color-orange: #FF6101;
+    --color-pink: #ED0F8F;
+
+    /* App Fonts */
+    --font-sans:"Lato", "sans-serif";
+    --font-lato:"Lato", "sans-serif";
+    --font-noyh:"Noyh A", "sans-serif";
+    --font-helvetica:"Helvetica Neue", "sans-serif";
+
+    /* Font Size */
+    --text-10xl: 12rem; 
+    --text-11xl: 16rem; 
+    --text-12xl: 20rem; 
+    --text-13xl: 24rem; 
+    --text-14xl: 28rem; 
+    --text-16xl: 32rem; 
+    --text-20xl: 36rem; 
+    --text-24xl: 40rem; 
+
+    /* App Shadow */
+    --shadow-1: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+    --shadow-2: 0px 12px 16px 0px rgba(0, 0, 0, 0.35);
+
+    --breakpoint-xs: 30rem;
+
+    --bg-comic-rays:url('../assets/images/comic-rays.png');  
+    --bg-usp:url('../assets/images/full-block-bg.png');
+    --bg-pirate-party:url('../assets/images/party-card-red-bg.png');    
+    --bg-extra-party-pirate : url('../assets/images/party-extra-pirates.png');   
+    --bg-white-box : url('../assets/images/bg-white.png');  
+    --bg-school: url('../assets/images/school_bg.png');
+    --bg-coorporate: url('../assets/images/coorporate_bg.png');
+    --bg-party-upgrade: url('../assets/images/party_bg.png');
+
+  }
+
+
+  @layer utilities {
+    .container {
+      @apply px-5 max-w-[1450px] mx-auto;
+       
+    }
+    .text-shadow {
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    }
+    .text-shadow-md {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    .text-shadow-lg {
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    }
+    .text-shadow-party-text {
+      text-shadow: -6px 2px 0 rgb(0 0 0 / 0.85);
+    }
+
+    .text-shadow-1 {
+      text-shadow: 2px 10px 0 rgba(0, 0, 0, 0.95);
+    }
+
+    .text-shadow-none {
+      text-shadow: none;
+    }
+   
+  }
+
+body{
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 11px;
+}
+
+.usp-bg{
+    background-image: url('../assets/images/full-block-bg.png');
+}
+
+.bg-pirate-party{
+    background-image: url('../assets/images/party-card-red-bg.png');
+  }
+.bg-extra-party-pirate{
+    background-image: url('../assets/images/party-extra-pirates.png');
+  }
+.bg-white-box{
+    background-image: url('../assets/images/bg-white.png');
+  }
+
+.award-bg{
+    background-image: url('../assets/images/award_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.school-bg{
+    background-image: url('../assets/images/school_bg.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.party-upgrade-bg{
+    background-image: url('../assets/images/party_bg.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.coorporate-bg{
+    background-image: url('../assets/images/coorporate_bg.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text-bg {
+    background-image: url('../assets/images/award_bg.png');
+   }
+
+@media (max-width: 1024px) {
+    .school-bg{
+        background-size: cover;
+    }
+    .party-upgrade-bg{
+        background-size: cover;
+    }
+    .coorporate-bg{
+        background-size: cover;
+    }
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-bottom: 20px solid white;
+  }
+
+  .nav-panel{
+    transition: opacity 0.2s ease-out;
+  }
+
+  .panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+/* animations */
+
+/* rotate 360 infinite animation */
+
+
+.rotate-360{
+    animation: rotate360 50s infinite linear;
+}
+
+@keyframes rotate360 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* Pulse effect infinite */
+
+.pulse{
+    animation: pulse 2s infinite linear;
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

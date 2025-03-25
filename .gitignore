@@ -1,0 +1,20 @@
+*.zip  
+node_modules
+# Directories
+/node_modules
+
+/vendor
+
+# Files
+.env
+.env.backup
+/.phpunit.cache
+.antlers.json
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+# Add ZIP and RAR files to be ignored
+*.zip
+*.rar
