@@ -15,8 +15,9 @@
     --color-success: #4EB946;
     --color-border: #707070;
     --color-purple: #D19DE5;
-    --color-orange: #FF6101;
+    --color-orange: #FF6101; 
     --color-pink: #ED0F8F;
+    --color-naviblue: #1A114A;
 
     /* App Fonts */
     --font-sans:"Lato", "sans-serif";
@@ -41,13 +42,22 @@
     --breakpoint-xs: 30rem;
 
     --bg-comic-rays:url('../assets/images/comic-rays.png');  
+    --bg-comic-rays-2:url('../assets/images/comic-rays-2.png');  
     --bg-usp:url('../assets/images/full-block-bg.png');
     --bg-pirate-party:url('../assets/images/party-card-red-bg.png');    
+    --bg-science-party:url('../assets/images/party-card-green-bg.png');    
+    --bg-princes-party:url('../assets/images/party-card-pink-light-bg.png');    
+    --bg-unthemed-party:url('../assets/images/party-card-orange-bg.png');    
+    --bg-unthemed-party-2:url('../assets/images/party-card-orange-bg-2.png');    
     --bg-extra-party-pirate : url('../assets/images/party-extra-pirates.png');   
+    --bg-extra-party-science : url('../assets/images/party-extra-science.png');   
+    --bg-extra-party-princess : url('../assets/images/party-extra-princess.png');   
+    --bg-extra-party-unthemed : url('../assets/images/party-extra-unthemed.png');   
     --bg-white-box : url('../assets/images/bg-white.png');  
     --bg-school: url('../assets/images/school_bg.png');
     --bg-coorporate: url('../assets/images/coorporate_bg.png');
     --bg-party-upgrade: url('../assets/images/party_bg.png');
+    --bg-disco-laser: url('../assets/images/disco-laser-background.png');
 
   }
 
