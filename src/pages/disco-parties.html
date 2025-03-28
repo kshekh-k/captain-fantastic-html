@@ -808,8 +808,28 @@
         </section>
 
 
-        <section class="bg-(image:--bg-disco-laser)">
+        <section class="bg-(image:--bg-disco-laser) bg-cover bg-no-repeat bg-center min-h-190 py-10 xl:py-20">
+            <div class="container">
+              <h2 class="md:text-7xl sm:text-5xl text-4xl text-pink font-noyh uppercase text-center tracking-wide">
+                WANT TO GLOW-UP YOUR DISCO?
+              </h2>
+              <p class="font-noyh text-xl xl:text-2xl text-white text-center pt-2 max-w-xl mx-auto">
+                Take your party to the next level with our UV Glow Disco – the ultimate upgrade for an unforgettable celebration!
+              </p>
 
+
+              <div class="flex flex-col md:grid grid-cols-2 gap-5 xl:gap-10 pt-10" x-data="glowUpList()">
+                <template x-for="(item, index) in glowUp" :key="item.id">
+                <div class="border p-5 xl:p-10 flex flex-col gap-5 bg-pink text-white" :class="item.active ? 'border-brand-secondary' : 'border-gray-500'">
+                  <h3 class="text-2xl xl:text-3xl font-noyh text-white text-left leading-none" x-text="item.title"></h3>
+                  <p class="text-xl text-white text-left" x-text="item.content"></p>
+                </div>
+              </template>
+              </div>
+              <p class="font-noyh text-xl xl:text-2xl text-white text-center pt-10 uppercase">
+                Get ready to glow big and make your disco one to remember!
+              </p>
+            </div>
         </section>
 
         <section
@@ -2002,6 +2022,41 @@
               title: "Dance Floor:",
               description:
                 "Bring the party vibes to life with a dance floor perfect for showcasing everyone’s best moves!",
+            },
+          ],
+        };
+      }
+
+      function glowUpList() {
+        return {
+          glowUp: [
+            {
+              id: 1,
+              active: true,
+              title: "What You’ll Get:",
+              content:
+                "2 UV Glow Canons that shine Ultra Violet light across the space, creating an excitingly cool glow effect that will wow your guests!",
+            },
+            {
+              id: 2,
+              active: false,
+              title: "What It Will Look Like:",
+              content:
+                "Please note, this is not traditional face painting with intricate designs. Instead, we focus on fun, vibrant UV patterns that glow brilliantly under the lights – perfect for keeping the party energy high!",
+            },
+            {
+              id: 3,
+              active: false,
+              title: "What We Need From You:",
+              content:
+                "Lighting: The hall doesn’t need to be pitch black, but the darker you can make the space, the cooler the UV glow effect will be. Please note, it is the client’s responsibility to ensure the space is dark enough.",
+            },
+            {
+              id: 4,
+              active: false,
+              title: "Exciting Add-Ons:",
+              content:
+                "Why not add our UV Paint Package? Your entertainer will transform the kids into glowing party stars with: Big colourful dots on faces Bright streaks through the hair using hair mascara wands Stripes, stars or hearts on hands and arms for children who prefer smaller designs or are under 3 years old",
             },
           ],
         };
