@@ -1996,6 +1996,13 @@
       }
     }
   }
+  .hover\:bg-warning {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-warning);
+      }
+    }
+  }
   .hover\:bg-white {
     &:hover {
       @media (hover: hover) {
@@ -2049,6 +2056,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-success);
+      }
+    }
+  }
+  .hover\:text-warning {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-warning);
       }
     }
   }

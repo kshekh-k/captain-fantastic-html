@@ -11,7 +11,6 @@ Alpine.start()
 
 
 
-
 async function loadComponent(elementId, filePath) {
     try {
         const response = await fetch(filePath);
@@ -25,6 +24,9 @@ async function loadComponent(elementId, filePath) {
 // Load Header and Footer on Page Load
 document.addEventListener("DOMContentLoaded", () => {
     loadComponent("header", "header.html");
+    loadComponent("header-toddler", "header-toddler.html");
     loadComponent("subscription-form-wrap", "subscription-form.html");
     loadComponent("footer", "footer.html");
 });
+
+ 
