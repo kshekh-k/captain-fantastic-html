@@ -7,7 +7,7 @@ const Categories = [
       {
         id: 1,
         title: "EXPLORE PIRATE PACKAGE ",
-        image: "../assets/images/pirate.png",
+        image: "./assets/images/pirate.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color:'brand',
@@ -18,7 +18,7 @@ const Categories = [
       {
         id: 2,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/princess.png",
+        image: "./assets/images/princess.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "brand-tertiary",
@@ -29,7 +29,7 @@ const Categories = [
       {
         id: 3,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/super_hero.png",
+        image: "./assets/images/super_hero.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "brand-secondary",
@@ -40,7 +40,7 @@ const Categories = [
       {
         id: 4,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/pirate.png",
+        image: "./assets/images/pirate.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "success",
@@ -51,7 +51,7 @@ const Categories = [
       {
         id: 5,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/fire.png",
+        image: "./assets/images/fire.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "success",
@@ -69,7 +69,7 @@ const Categories = [
       {
         id: 1,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/pirate.png",
+        image: "./assets/images/pirate.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "brand",
@@ -80,7 +80,7 @@ const Categories = [
       {
         id: 2,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/princess.png",
+        image: "./assets/images/princess.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "brand-tertiary",
@@ -91,7 +91,7 @@ const Categories = [
       {
         id: 3,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/super_hero.png",
+        image: "./assets/images/super_hero.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "brand-secondary",
@@ -102,7 +102,7 @@ const Categories = [
       {
         id: 4,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/pirate.png",
+        image: "./assets/images/pirate.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "success",
@@ -113,7 +113,7 @@ const Categories = [
       {
         id: 5,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/fire.png",
+        image: "./assets/images/fire.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "brand-light",
@@ -131,7 +131,7 @@ const Categories = [
       {
         id: 1,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/pirate.png",
+        image: "./assets/images/pirate.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "brand",
@@ -142,7 +142,7 @@ const Categories = [
       {
         id: 2,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/princess.png",
+        image: "./assets/images/princess.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "brand-tertiary",
@@ -153,7 +153,7 @@ const Categories = [
       {
         id: 3,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/super_hero.png",
+        image: "./assets/images/super_hero.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "brand-secondary",
@@ -164,7 +164,7 @@ const Categories = [
       {
         id: 4,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/pirate.png",
+        image: "./assets/images/pirate.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "success",
@@ -175,7 +175,7 @@ const Categories = [
       {
         id: 5,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/fire.png",
+        image: "./assets/images/fire.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
           color: "brand-light",
@@ -193,7 +193,7 @@ const Categories = [
       {
         id: 1,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/pirate.png",
+        image: "./assets/images/pirate.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "brand", 
@@ -204,7 +204,7 @@ const Categories = [
       {
         id: 2,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/princess.png",
+        image: "./assets/images/princess.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "brand-tertiary", 
@@ -215,7 +215,7 @@ const Categories = [
       {
         id: 3,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/super_hero.png",
+        image: "./assets/images/super_hero.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "brand-secondary",
@@ -226,7 +226,7 @@ const Categories = [
       {
         id: 4,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/pirate.png",
+        image: "./assets/images/pirate.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "success",
@@ -237,7 +237,7 @@ const Categories = [
       {
         id: 5,
         title: "EXPLORE PIRATE PACKAGE",
-        image: "../assets/images/fire.png",
+        image: "./assets/images/fire.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
         color: "brand-light",

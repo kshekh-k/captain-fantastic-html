@@ -1,8 +1,8 @@
 const logo = '../assets/icons/logo.svg'
-const logoIcon = '../assets/images/captain-fantastic-icon.svg'
-const logoUrl = '/src/pages/'
+const logoIcon = './assets/images/captain-fantastic-icon.svg'
+const logoUrl = '/'
 const booking ='prices and booking'
-const bookingUrl ='/src/pages/' 
+const bookingUrl ='/' 
 const phone =  '0800 208 8899'
 const phoneIcon =  '../assets/icons/phone.svg'
 const desktopMenuTop = {
@@ -30,7 +30,7 @@ const desktopMenu = {
     booking:booking,
     bookingUrl:bookingUrl ,
     menus:[
-    { text: 'Schools & Nurseries', url: '/src/pages/' },
+    { text: 'Schools & Nurseries', url: '/' },
     { text: 'Coorporate & Events', url: '/' },
     { text: 'Party Upgrades & Extras', url: '/' },    
 ]
@@ -41,7 +41,7 @@ const megaMenusList =  [
         title: 'EARLY YEARS',
         age: '1-5 years',
         items: [
-            { text: 'Toddler Parties', url: '/src/pages/toddler-parties.html' },
+            { text: 'Toddler Parties', url: '/toddler-parties.html' },
             { text: 'Petter Rabbit', url: '/' },
             { text: 'All Pre School Parties', url: '/' }
         ]
@@ -50,10 +50,10 @@ const megaMenusList =  [
         title: 'Superhero Parties',
         age: '4-8 years',
         items: [
-            { text: 'Princess Parties', url: '/src/pages/princess-parties.html' },
-            { text: 'Pirate Parties', url: '/src/pages/pirate-parties.html' },
-            { text: 'Unthemed Parties', url: '/src/pages/unthemed-parties.html' },
-            { text: 'Science Parties', url: '/src/pages/science-parties.html' },
+            { text: 'Princess Parties', url: '/princess-parties.html' },
+            { text: 'Pirate Parties', url: '/pirate-parties.html' },
+            { text: 'Unthemed Parties', url: '/unthemed-parties.html' },
+            { text: 'Science Parties', url: '/science-parties.html' },
             { text: 'All Magic & Science Parties', url: '/' }
         ]
     },
@@ -61,7 +61,7 @@ const megaMenusList =  [
         title: 'Disco & Game Parties',
         age: '5-11 years',
         items: [
-            { text: 'Disco Parties', url: '/src/pages/disco-parties.html' },
+            { text: 'Disco Parties', url: '/disco-parties.html' },
             { text: 'Spy Parties', url: '/' },
             { text: 'Challenge Parties', url: '/' },
             { text: 'All Disco & Game Parties', url: '/' }

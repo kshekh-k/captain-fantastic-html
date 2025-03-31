@@ -41,26 +41,26 @@
 
     --breakpoint-xs: 30rem;
 
-    --bg-comic-rays:url('../assets/images/comic-rays.png');  
-    --bg-comic-rays-2:url('../assets/images/comic-rays-2.png');  
-    --bg-usp:url('../assets/images/full-block-bg.png');
-    --bg-pirate-party:url('../assets/images/party-card-red-bg.png');    
-    --bg-science-party:url('../assets/images/party-card-green-bg.png');    
-    --bg-princes-party:url('../assets/images/party-card-pink-light-bg.png');    
-    --bg-unthemed-party:url('../assets/images/party-card-orange-bg.png');    
-    --bg-unthemed-party-2:url('../assets/images/party-card-orange-bg-2.png');    
-    --bg-extra-party-pirate : url('../assets/images/party-extra-pirates.png');   
-    --bg-extra-party-science : url('../assets/images/party-extra-science.png');   
-    --bg-extra-party-princess : url('../assets/images/party-extra-princess.png');   
-    --bg-extra-party-unthemed : url('../assets/images/party-extra-unthemed.png');   
-    --bg-white-box : url('../assets/images/bg-white.png');  
-    --bg-school: url('../assets/images/school_bg.png');
-    --bg-coorporate: url('../assets/images/coorporate_bg.png');
-    --bg-party-upgrade: url('../assets/images/party_bg.png');
-    --bg-disco-laser: url('../assets/images/disco-laser-background.png');
-    --bg-toddler-heading: url('../assets/images/toddler-party-heading-bg.svg');
+    --bg-comic-rays:url('./assets/images/comic-rays.png');  
+    --bg-comic-rays-2:url('./assets/images/comic-rays-2.png');  
+    --bg-usp:url('./assets/images/full-block-bg.png');
+    --bg-pirate-party:url('./assets/images/party-card-red-bg.png');    
+    --bg-science-party:url('./assets/images/party-card-green-bg.png');    
+    --bg-princes-party:url('./assets/images/party-card-pink-light-bg.png');    
+    --bg-unthemed-party:url('./assets/images/party-card-orange-bg.png');    
+    --bg-unthemed-party-2:url('./assets/images/party-card-orange-bg-2.png');    
+    --bg-extra-party-pirate : url('./assets/images/party-extra-pirates.png');   
+    --bg-extra-party-science : url('./assets/images/party-extra-science.png');   
+    --bg-extra-party-princess : url('./assets/images/party-extra-princess.png');   
+    --bg-extra-party-unthemed : url('./assets/images/party-extra-unthemed.png');   
+    --bg-white-box : url('./assets/images/bg-white.png');  
+    --bg-school: url('./assets/images/school_bg.png');
+    --bg-coorporate: url('./assets/images/coorporate_bg.png');
+    --bg-party-upgrade: url('./assets/images/party_bg.png');
+    --bg-disco-laser: url('./assets/images/disco-laser-background.png');
+    --bg-toddler-heading: url('./assets/images/toddler-party-heading-bg.svg');
     --bg-image-1-1: 100% 100%;
-    --bg-film-school: url('../assets/images/hero-film-school.png');
+    --bg-film-school: url('./assets/images/hero-film-school.png');
   }
 
 
@@ -99,21 +99,21 @@ body{
 }
 
 .usp-bg{
-    background-image: url('../assets/images/full-block-bg.png');
+    background-image: url('./assets/images/full-block-bg.png');
 }
 
 .bg-pirate-party{
-    background-image: url('../assets/images/party-card-red-bg.png');
+    background-image: url('./assets/images/party-card-red-bg.png');
   }
 .bg-extra-party-pirate{
-    background-image: url('../assets/images/party-extra-pirates.png');
+    background-image: url('./assets/images/party-extra-pirates.png');
   }
 .bg-white-box{
-    background-image: url('../assets/images/bg-white.png');
+    background-image: url('./assets/images/bg-white.png');
   }
 
 .award-bg{
-    background-image: url('../assets/images/award_bg.png');
+    background-image: url('./assets/images/award_bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,7 +121,7 @@ body{
 }
 
 .school-bg{
-    background-image: url('../assets/images/school_bg.png');
+    background-image: url('./assets/images/school_bg.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,21 +129,21 @@ body{
 }
 
 .party-upgrade-bg{
-    background-image: url('../assets/images/party_bg.png');
+    background-image: url('./assets/images/party_bg.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .coorporate-bg{
-    background-image: url('../assets/images/coorporate_bg.png');
+    background-image: url('./assets/images/coorporate_bg.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .text-bg {
-    background-image: url('../assets/images/award_bg.png');
+    background-image: url('./assets/images/award_bg.png');
    }
 
 @media (max-width: 1024px) {
