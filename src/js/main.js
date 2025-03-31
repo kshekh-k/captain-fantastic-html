@@ -25,6 +25,8 @@ async function loadComponent(elementId, filePath) {
 document.addEventListener("DOMContentLoaded", () => {
     loadComponent("header", "header.html");
     loadComponent("header-toddler", "header-toddler.html");
+    loadComponent("header-disco", "header-disco.html");
+    loadComponent("header-film-school", "header-film-school.html");
     loadComponent("subscription-form-wrap", "subscription-form.html");
     loadComponent("footer", "footer.html");
 });

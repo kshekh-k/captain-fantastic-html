@@ -1,3 +1,10 @@
+const logo = '../assets/icons/logo.svg'
+const logoIcon = '../assets/images/captain-fantastic-icon.svg'
+const logoUrl = '/src/pages/'
+const booking ='prices and booking'
+const bookingUrl ='/src/pages/' 
+const phone =  '0800 208 8899'
+const phoneIcon =  '../assets/icons/phone.svg'
 const desktopMenuTop = {
     rating: '5/5 (2,083 Reviews)',
     ratingIcon: '../assets/icons/star_rating.svg',
@@ -13,17 +20,17 @@ const desktopMenuTop = {
         { icon: '../assets/icons/insta.svg', alt: 'instagram', url: '/' },
         { icon: '../assets/icons/youtube.svg', alt: 'youtube', url: '/' }
     ],
-    phone: '0800 208 8899',
-    phoneIcon: '../assets/icons/phone.svg'
+    phone: phone,
+    phoneIcon: phoneIcon
 }
 
 const desktopMenu = {
-    logo: '../assets/icons/logo.svg',
-    logoUrl:'/',        
-    booking:'prices and booking',
-    bookingUrl:'/' ,
+    logo: logo,
+    logoUrl:logoUrl,        
+    booking:booking,
+    bookingUrl:bookingUrl ,
     menus:[
-    { text: 'Schools & Nurseries', url: '/' },
+    { text: 'Schools & Nurseries', url: '/src/pages/' },
     { text: 'Coorporate & Events', url: '/' },
     { text: 'Party Upgrades & Extras', url: '/' },    
 ]
@@ -34,7 +41,7 @@ const megaMenusList =  [
         title: 'EARLY YEARS',
         age: '1-5 years',
         items: [
-            { text: 'Toddler Parties', url: '/' },
+            { text: 'Toddler Parties', url: '/src/pages/toddler-parties.html' },
             { text: 'Petter Rabbit', url: '/' },
             { text: 'All Pre School Parties', url: '/' }
         ]
@@ -43,10 +50,10 @@ const megaMenusList =  [
         title: 'Superhero Parties',
         age: '4-8 years',
         items: [
-            { text: 'Princess Parties', url: '/' },
-            { text: 'Pirate Parties', url: '/' },
-            { text: 'Unthemed Parties', url: '/' },
-            { text: 'Science Parties', url: '/' },
+            { text: 'Princess Parties', url: '/src/pages/princess-parties.html' },
+            { text: 'Pirate Parties', url: '/src/pages/pirate-parties.html' },
+            { text: 'Unthemed Parties', url: '/src/pages/unthemed-parties.html' },
+            { text: 'Science Parties', url: '/src/pages/science-parties.html' },
             { text: 'All Magic & Science Parties', url: '/' }
         ]
     },
@@ -54,7 +61,7 @@ const megaMenusList =  [
         title: 'Disco & Game Parties',
         age: '5-11 years',
         items: [
-            { text: 'Disco Parties', url: '/' },
+            { text: 'Disco Parties', url: '/src/pages/disco-parties.html' },
             { text: 'Spy Parties', url: '/' },
             { text: 'Challenge Parties', url: '/' },
             { text: 'All Disco & Game Parties', url: '/' }
@@ -86,11 +93,11 @@ const megaMenusList =  [
 ]
 
 const menusMobile =  {
-    logoIcon:'../assets/images/captain-fantastic-icon.svg',
-    logoUrl:'/',
-    booking:'prices and booking',
-    bookingUrl:'/' ,
-    phoneNum:'0800 208 8899',
+    logoIcon: logoIcon,
+    logoUrl: logoUrl,
+    booking: booking,
+    bookingUrl: bookingUrl ,
+    phoneNum:phone,
     menus:[
         { text: 'Schools & Nurseries', url: '/' },
         { text: 'Corporate/Events', url: '/' },
