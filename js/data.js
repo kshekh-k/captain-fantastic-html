@@ -1,14 +1,14 @@
-const logo = '../assets/icons/logo.svg'
+const logo = './assets/icons/logo.svg'
 const logoIcon = './assets/images/captain-fantastic-icon.svg'
 const logoUrl = '/'
 const booking ='prices and booking'
 const bookingUrl ='/' 
 const phone =  '0800 208 8899'
-const phoneIcon =  '../assets/icons/phone.svg'
+const phoneIcon =  './assets/icons/phone.svg'
 const desktopMenuTop = {
     rating: '5/5 (2,083 Reviews)',
-    ratingIcon: '../assets/icons/star_rating.svg',
-    googleIcon: '../assets/icons/google.svg',
+    ratingIcon: './assets/icons/star_rating.svg',
+    googleIcon: './assets/icons/google.svg',
     links: [
         { text: 'About Us', url: '/' },
         { text: 'Join Our Team', url: '/' },
@@ -16,9 +16,9 @@ const desktopMenuTop = {
         { text: 'Latest News', url: '/' }
     ],
     socialLinks: [
-        { icon: '../assets/icons/fb.svg', alt: 'facebook', url: '/' },
-        { icon: '../assets/icons/insta.svg', alt: 'instagram', url: '/' },
-        { icon: '../assets/icons/youtube.svg', alt: 'youtube', url: '/' }
+        { icon: './assets/icons/fb.svg', alt: 'facebook', url: '/' },
+        { icon: './assets/icons/insta.svg', alt: 'instagram', url: '/' },
+        { icon: './assets/icons/youtube.svg', alt: 'youtube', url: '/' }
     ],
     phone: phone,
     phoneIcon: phoneIcon
