@@ -59,8 +59,11 @@
     --bg-party-upgrade: url('../assets/images/party_bg.png');
     --bg-disco-laser: url('../assets/images/disco-laser-background.png');
     --bg-toddler-heading: url('../assets/images/toddler-party-heading-bg.svg');
+    --bg-focus-rays: url('../assets/images/bg-focus-rays.png');
     --bg-image-1-1: 100% 100%;
     --bg-film-school: url('../assets/images/hero-film-school.png');
+    --bg-highlight: url('../assets/images/bg-highlight.png');
+    --bg-highlight-size: 100% 90%;
   }
 
 

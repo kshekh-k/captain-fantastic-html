@@ -10,7 +10,7 @@ const desktopMenuTop = {
     ratingIcon: './assets/icons/star_rating.svg',
     googleIcon: './assets/icons/google.svg',
     links: [
-        { text: 'About Us', url: '/' },
+        { text: 'About Us', url: '/about-us.html' },
         { text: 'Join Our Team', url: '/' },
         { text: 'Areas Covered', url: '/' },
         { text: 'Latest News', url: '/' }
@@ -97,12 +97,12 @@ const menusMobile =  {
     logoUrl: logoUrl,
     booking: booking,
     bookingUrl: bookingUrl ,
-    phoneNum:phone,
+    phoneNum:phone,   
     menus:[
         { text: 'Schools & Nurseries', url: '/' },
         { text: 'Corporate/Events', url: '/' },
         { text: 'Party UPGRADES & Extras', url: '/' },    
-        { text: 'about us', url: '/' },    
+        { text: 'about us', url: '/about-us.html' },    
         { text: 'areas covered', url: '/' },    
         { text: 'latest news', url: '/' },    
     ],
@@ -110,6 +110,22 @@ const menusMobile =  {
 }
 
 
+// footer
+const footer ={
+logo: logo,
+logoUrl:logoUrl,        
+booking:booking,
+bookingUrl:bookingUrl ,
+phoneNum:phone,
+contactus:'/',
+megaMenuFooter: megaMenusList,
+policies:[
+        { text: 'Privacy Policy', url: '/' },
+        { text: 'Cookies Policy', url: '/' },    
+        { text: 'Registered address details', url: '/' },     
+    ],
+}
+ 
 
 function partyStickyListComponent() {
     return {
@@ -208,24 +224,29 @@ function partyStickyListComponent() {
     };
   }
 
-
-  
-async function loadComponent(elementId, filePath) {
-  try {
-      const response = await fetch(filePath);
-      const content = await response.text();
-      document.getElementById(elementId).innerHTML = content;
-  } catch (error) {
-      console.error(`Error loading ${filePath}:`, error);
-  }
-}
-
-// Load Header and Footer on Page Load
-document.addEventListener("DOMContentLoaded", () => {
-  loadComponent("header", "header.html");
-  loadComponent("header-toddler", "header-toddler.html");
-  loadComponent("header-disco", "header-disco.html");
-  loadComponent("header-film-school", "header-film-school.html");
-  loadComponent("subscription-form-wrap", "subscription-form.html");
-  loadComponent("footer", "footer.html");
-});
+  const whychoosecf = [
+    {
+      thumb:'./assets/images/whychoosecf-thumb-1.png',
+      thumbBorder:'border-warning',
+      title:'Entertain, Engage, Educate',
+      description:'We believe that learning should be fun! Through engaging performances and interactive games, we capture children’s attention while teaching valuable life skills, inspiring confidence, and sparking creativity.'
+    },
+    {
+      thumb:'./assets/images/whychoosecf-thumb-2.png',
+      thumbBorder:'border-brand-secondary',
+      title:'Spreading Joy & Happiness',
+      description:'We love making people happy! We bring positive energy and excitement to every event, ensuring unforgettable experiences for kids, parents, schools and corporate events..'
+    },
+    {
+      thumb:'./assets/images/whychoosecf-thumb-3.png',
+      thumbBorder:'border-success',
+      title:'Creative & Unique Experiences',
+      description:'Our events are filled with imaginative characters, interactive stories, and exciting games that make every party truly one-of-a-kind.'
+    },
+    {
+      thumb:'./assets/images/whychoosecf-thumb-4.png',
+      thumbBorder:'border-orange',
+      title:'Stress-Free Event Planning',
+      description:'Planning a children’s event should be fun, not stressful. From booking to the big day, we handle every detail, so you can relax and enjoy the magic.'
+    },
+  ]
