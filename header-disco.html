@@ -59,7 +59,7 @@
                     <li
                         class="group trigger relative py-4 xl:py-8 pr-2 2xl:pr-5 text-sm lg:text-base 2xl:text-lg tracking-wide after:absolute after:w-1 after:h-4 after:bg-white after:right-0 after:top-1/2 after:-translate-y-1/2">
                         <button @click="megaMenu = !megaMenu" @click.away="megaMenu = false"
-                            class="text-white hover:text-brand-secondary ease-in-out duration-200 cursor-pointer">
+                            class="text-white hover:text-brand-secondary ease-in-out duration-200 cursor-pointer uppercase">
                             Parties
                         </button>
                         <!-- child hidden -->
@@ -75,7 +75,7 @@
 
                         <li
                             class="relative py-4 xl:py-8 pr-2 2xl:pr-5 text-sm lg:text-base 2xl:text-lg tracking-wide after:absolute after:w-1 after:h-4 after:bg-white after:right-0 after:top-1/2 after:-translate-y-1/2">
-                            <a :href="menu.url" class="text-white hover:text-brand-secondary ease-in-out duration-200"
+                            <a :href="menu.url" class="text-white hover:text-brand-secondary ease-in-out duration-200 uppercase"
                                 x-text="menu.text">
 
                             </a>

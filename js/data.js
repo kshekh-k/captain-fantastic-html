@@ -31,7 +31,7 @@ const desktopMenu = {
     bookingUrl:bookingUrl ,
     menus:[
     { text: 'Schools & Nurseries', url: '/' },
-    { text: 'Coorporate & Events', url: '/' },
+    { text: 'Corporate & Events', url: '/' },
     { text: 'Party Upgrades & Extras', url: '/' },    
 ]
 }

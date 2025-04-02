@@ -54,7 +54,7 @@ const Categories = [
         image: "./assets/images/fire.png",
         description:
           "Set sail with Pirate Polly or Pirate Pete for an interactive pirate adventure! Join pirate training, solve magical treasure map puzzles, and enjoy thrilling tricks and games.",
-        color: "success",
+        color: "brand-light",
         borderColor: "border-brand-light",
         bgColor: "bg-brand-light",
         textColor: "text-brand-light",
@@ -276,7 +276,7 @@ const radomRotaion = () => {
 
  let slidenumber = 0;
 const alternateRotation = () => { 
-  const values = [5, -5, 0];
+  const values = [3, -3, 0];
   const value = values[slidenumber];
   slidenumber = (slidenumber + 1) % values.length; // Move to the next value cyclically
   return value;
@@ -290,7 +290,7 @@ const renderPackages = () => {
               <div
                 class="min-h-[470px] p-6 rounded-3xl border ${
                   package.borderColor
-                } flex flex-col relative bg-white" style="transform:rotate(${alternateRotation()}deg)"
+                } flex flex-col relative bg-white lg:rotate-(--alternateRotation)" style="--alternateRotation:${alternateRotation()}deg"
               >
                 <img
                   src="${package.image}"
