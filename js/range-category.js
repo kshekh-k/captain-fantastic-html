@@ -315,7 +315,7 @@ const renderPackages = () => {
                   </div>
                 </div>
 
-                <div class="py-10 flex-1">
+                <div class="lg:py-10 py-5 flex-1">
                   <p class="text-lg font-noyh">
                     ${package.description}
                   </p>

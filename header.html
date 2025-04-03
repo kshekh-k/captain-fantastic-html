@@ -75,7 +75,7 @@
                   <template x-for="(menu, index) in menus" :key="index">
 
                       <li
-                          class="relative py-4 xl:py-8 pr-2 2xl:pr-5 text-sm lg:text-base 2xl:text-lg tracking-wide after:absolute after:w-1 after:h-4 after:bg-white after:right-0 after:top-1/2 after:-translate-y-1/2">
+                          class="relative py-4 xl:py-8 pr-2 2xl:pr-5 text-sm lg:text-base 2xl:text-lg tracking-wide after:absolute after:w-1 after:h-4 after:bg-white after:right-0 after:top-1/2 after:-translate-y-1/2 last-of-type:after:hidden">
                           <a :href="menu.url" class="text-white hover:text-warning transition-all ease-in-out duration-300 uppercase"
                               x-text="menu.text">
 

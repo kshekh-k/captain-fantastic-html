@@ -32,7 +32,7 @@ const desktopMenu = {
     menus:[
     { text: 'Schools & Nurseries', url: '/' },
     { text: 'Corporate & Events', url: '/' },
-    { text: 'Party Upgrades & Extras', url: '/' },    
+    { text: 'Upgrades & Extras', url: '/' },    
 ]
 }
 
@@ -127,6 +127,10 @@ policies:[
 }
  
 
+ 
+
+
+
 function partyStickyListComponent() {
     return {
       partySticky: [
@@ -193,6 +197,8 @@ function partyStickyListComponent() {
     };
   }
 
+
+
   function extraPartyList() {
     return {
       extraPartyfeatures: [
@@ -224,6 +230,39 @@ function partyStickyListComponent() {
     };
   }
 
+  
+ const upgradeParties = [
+        {
+          id: 1,
+          title: "Early Years Parties",
+          age: "(1-5 yrs)",
+          thumb:'./assets/images/more-party-thumb-1.png',
+          description:
+            "Got a tiny tot? Why not choose our Toddler Party (1-3 yrs) for playful fun, or our Peter Rabbit Party (3-5 yrs) for an enchanting storybook experience.",
+            link:'/'
+        },
+        {
+          id: 2,
+          title: "magic & science",
+          age: "(4-8 yrs)",
+          thumb:'./assets/images/more-party-thumb-2.png',
+          description:
+            "Not into Pirates? Try our Science, Superhero, Princess, or Unthemed parties for unforgettable party magic!",
+             link:'/'
+        },
+        {
+          id: 3,
+          title: "disco parties",
+          age: "(5-11 yrs)",
+          thumb:'./assets/images/more-party-thumb-3.png',
+          description:
+            "Love music or action-packed fun? Our Disco Party (5-11 years) with the optional UV upgrade, or thrilling Spy (7-11 years) and Challenge (8-11 years) parties are sure to entertain!",
+             link:'/'
+        },
+         
+      ]
+   
+
   const whychoosecf = [
     {
       thumb:'./assets/images/whychoosecf-thumb-1.png',
@@ -250,3 +289,107 @@ function partyStickyListComponent() {
       description:'Planning a children’s event should be fun, not stressful. From booking to the big day, we handle every detail, so you can relax and enjoy the magic.'
     },
   ]
+
+
+  // Galleries
+  // Pirates
+  function pirateGallery() {
+    return {
+      gallery: [
+         './assets/images/gallery-thumb-pirate-party-1.png',
+         './assets/images/gallery-thumb-pirate-party-2.png',
+         './assets/images/gallery-thumb-pirate-party-3.png',
+         './assets/images/gallery-thumb-pirate-party-4.png',
+      ],
+    };
+  }
+  // Princess
+  function princessGallery() {
+    return {
+      gallery: [
+         './assets/images/gallery-thumb-princess-party-1.png',
+         './assets/images/gallery-thumb-princess-party-2.png',
+         './assets/images/gallery-thumb-princess-party-3.png',
+         './assets/images/gallery-thumb-princess-party-4.png',
+      ],
+    };
+  }
+  // Science
+  function scienceGallery() {
+    return {
+      gallery: [
+         './assets/images/gallery-thumb-science-party-1.png',
+         './assets/images/gallery-thumb-science-party-2.png',
+         './assets/images/gallery-thumb-science-party-3.png',
+         './assets/images/gallery-thumb-science-party-4.png',
+      ],
+    };
+  }
+  // Toddler
+  function toddlerGallery() {
+    return {
+      gallery: [
+         './assets/images/gallery-thumb-toddler-party-1.png',
+         './assets/images/gallery-thumb-toddler-party-2.png',
+         './assets/images/gallery-thumb-toddler-party-3.png',
+         './assets/images/gallery-thumb-toddler-party-4.png',
+      ],
+    };
+  }
+  // Unthemed
+  function unthemedGallery() {
+    return {
+      gallery: [
+         './assets/images/gallery-thumb-unthemed-party-1.png',
+         './assets/images/gallery-thumb-unthemed-party-2.png',
+         './assets/images/gallery-thumb-unthemed-party-3.png',
+         './assets/images/gallery-thumb-unthemed-party-4.png',
+      ],
+    };
+  }
+  // Disco
+  function discoGallery() {
+    return {
+      gallery: [
+         './assets/images/gallery-thumb-disco-party-1.png',
+         './assets/images/gallery-thumb-disco-party-2.png',
+         './assets/images/gallery-thumb-disco-party-3.png',
+         './assets/images/gallery-thumb-disco-party-4.png',
+      ],
+    };
+  }
+  // Pick a Party
+  function pickpartyGallery() {
+    return {
+      gallery: [
+         './assets/images/gallery-thumb-pick-a-party-party-1.png',
+         './assets/images/gallery-thumb-pick-a-party-party-2.png',
+         './assets/images/gallery-thumb-pick-a-party-party-3.png',
+         './assets/images/gallery-thumb-pick-a-party-party-4.png',
+      ],
+    };
+  }
+  // About us
+  function aboutusGallery() {
+    return {
+      gallery: [
+         './assets/images/gallery-thumb-aboutus-1.png',
+         './assets/images/gallery-thumb-aboutus-2.png',
+         './assets/images/gallery-thumb-aboutus-3.png',
+         './assets/images/gallery-thumb-aboutus-4.png',
+      ],
+    };
+  }
+   
+  // Film School
+  function filmschoolGallery() {
+    return {
+      gallery: [
+         './assets/images/gallery-thumb-film-school-1.png',
+         './assets/images/gallery-thumb-film-school-2.png',
+         './assets/images/gallery-thumb-film-school-3.png',
+         './assets/images/gallery-thumb-film-school-4.png',
+      ],
+    };
+  }
+   

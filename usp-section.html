@@ -1,0 +1,81 @@
+<div class="relative bg-cover bg-no-repeat bg-center bg-(image:--bg-usp)">
+    <div class="absolute inset-0 flex flex-col">
+      <img src="./assets/images/spark_blue.svg" alt="" class="absolute size-32 top-0 left-20 -translate-y-1/2">
+      <img src="./assets/images/spark_yellow.svg" alt="" class="absolute size-40 bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+      
+      <img
+        src="./assets/images/dots-tr-1.svg"
+        alt
+        class="ml-auto mb-auto opacity-10 xl:opacity-100"
+      />
+      <img
+        src="./assets/images/dots-bl-1.svg"
+        alt
+        class="mr-auto mt-auto opacity-10 xl:opacity-100"
+      />
+    </div>
+    <div class="relative py-16">
+      <div class="container">
+        <h2
+          class="md:text-7xl sm:text-5xl text-4xl text-white font-noyh uppercase text-center tracking-wider"
+        >
+          What We Need From You…
+        </h2>
+        <div
+          class="py-10 md:grid md:grid-cols-2 flex flex-col gap-5 xl:gap-10 relative"
+          x-data="partyUSPList()"
+        >
+          
+          <img src="./assets/images/spark_red.svg" alt="" class="absolute size-28 top-10 right-0 translate-x-1/2 -translate-y-1/2">
+          <template x-for="(item, index) in partyUSP" :key="item.id">
+            <div
+              class="bg-black/30 p-5 xl:p-10 flex flex-col sm:flex-row items-start gap-5 xl:gap-10"
+            >
+              <div
+                class="xl:size-28 size-24 bg-warning flex justify-center items-center rounded-full shrink-0"
+              >
+                <template x-if="item.id === 1">
+                  <img
+                    src="./assets/images/icon-stop-watch.svg"
+                    alt
+                    class="size-16 xl:size-20"
+                  />
+                </template>
+                <template x-if="item.id === 2">
+                  <img
+                    src="./assets/images/icon-parking.svg"
+                    alt
+                    class="size-16 xl:size-20"
+                  />
+                </template>
+                <template x-if="item.id === 3">
+                  <img
+                    src="./assets/images/icon-baloon.svg"
+                    alt
+                    class="size-16 xl:size-20"
+                  />
+                </template>
+                <template x-if="item.id === 4">
+                  <img
+                    src="./assets/images/icon-fort.svg"
+                    alt
+                    class="size-16 xl:size-20"
+                  />
+                </template>
+              </div>
+              <div class="flex-1 flex flex-col gap-2">
+                <h3
+                  x-text="item.title"
+                  class="text-2xl xl:text-3xl font-noyh text-white text-left leading-none"
+                ></h3>
+                <p
+                  x-text="item.content"
+                  class="text-xl text-white text-left"
+                ></p>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,18 @@
+<div class="relative pb-10 2xl:py-20">
+    <h2 class="sr-only">Gallery</h2>
+    <div class="flex gap-5 xl:gap-10 -mx-10 xl:-mx-40">
+        <template x-for="(item, index) in gallery" :key="index">
+            <div class="relative"
+                :class="index == 0 ? ' 2xl:translate-y-10' : index == 2 ? ' 2xl:translate-y-10' : ''">
+                <div class="rounded-md xl:rounded-3xl overflow-hidden">
+                    <img :src="item" :alt="item" class="object-cover" />
+                    <template x-if="index == 0">
+                        <img src="./assets/images/spark_blue.svg" alt
+                            class="absolute size-20 bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                    </template>
+                </div>
+            </div>
+        </template>
+
+    </div>
+</div>

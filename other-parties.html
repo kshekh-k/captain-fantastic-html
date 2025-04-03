@@ -1,0 +1,62 @@
+<div class="relative py-10 min-h-150">
+    <div class="container">
+        <h2
+            class="md:text-7xl sm:text-5xl text-4xl text-brand font-noyh uppercase text-center tracking-wide max-w-2xl mx-auto">
+            you might also be interested in these party types
+        </h2>
+        <div
+            class="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 gap-5 xl:gap-10"
+            x-data="upgradeParties">
+            <template x-for="(item, index) in upgradeParties">
+                <div class="pt-20 lg:pb-10"
+                    :class="index == 0 ? 'lg:rotate-5' : index == 1 ? '' : 'lg:rotate-3' ">
+                    <div
+                        class="min-h-100 p-6 rounded-3xl border flex flex-col relative bg-white"
+                        :class="index == 0 ? 'border-purple' : index == 1 ? 'border-brand' : 'border-orange' ">
+                        <div
+                            class="relative before:absolute before:size-full before:-left-0.5 before:-top-0.5 before:-skew-x-1 before:-skew-y-1 before:scale-[1.03]"
+                            :class="index == 0 ? 'before:bg-purple' : index == 1 ? 'before:bg-brand' : 'before:bg-orange'">
+                            <img
+                                :src="item.thumb"
+                                alt="pirate"
+                                class="w-full h-72 object-cover relative" />
+                        </div>
+                        <div
+                            class="rounded-full border absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                            :class="index == 0 ? 'border-purple' : index == 1 ? 'border-brand' : 'border-orange' ">
+                            <div
+                                class="size-32 font-noyh border-10 border-white uppercase leading-none text-white rounded-full flex flex-col items-center justify-center text-center p-2"
+                                :class="index == 0 ? 'bg-purple' : index == 1 ? 'bg-brand' : 'bg-orange' ">
+                                <h4 class="text-lg leading-none line-clamp-3"
+                                    x-text="item.title"></h4>
+                                <p class="text-sm" x-text="item.age"></p>
+                            </div>
+                        </div>
+                        <div class="py-5 flex-1">
+                            <p class="text-lg font-semibold"
+                                x-text="item.description"></p>
+                        </div>
+                        <a
+                            :href="item.link"
+                            class="flex items-center ease-in-out duration-200 gap-2 text-white hover:opacity-80 py-3 px-5 rounded-full border "
+                            :class="index == 0 ? 'bg-purple border-purple' : index == 1 ? 'bg-brand border-brand' : 'bg-orange border-orange' ">
+                            <span
+                                class="flex-1 font-noyh text-base leading-none truncate max-w-[calc(100%-30px)]">
+                                EXPLORE ALL EARLY YEAR PARTIES
+                            </span>
+                            <svg
+                                viewBox="0 0 25.874 16.8096"
+                                fill="currentColor"
+                                class="size-5">
+                                <path
+                                    id="Path 132"
+                                    d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </template>
+
+        </div>
+    </div>
+</div>
