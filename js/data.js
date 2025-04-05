@@ -1,7 +1,7 @@
 const logo = './assets/icons/logo.svg'
 const logoIcon = './assets/images/captain-fantastic-icon.svg'
 const logoUrl = '/'
-const booking ='prices and booking'
+const booking ='Prices & Booking'
 const bookingUrl ='/' 
 const phone =  '0800 208 8899'
 const phoneIcon =  './assets/icons/phone.svg'
@@ -362,10 +362,10 @@ function partyStickyListComponent() {
   function pickpartyGallery() {
     return {
       gallery: [
-         './assets/images/gallery-thumb-pick-a-party-party-1.png',
-         './assets/images/gallery-thumb-pick-a-party-party-2.png',
-         './assets/images/gallery-thumb-pick-a-party-party-3.png',
-         './assets/images/gallery-thumb-pick-a-party-party-4.png',
+         './assets/images/gallery-thumb-pick-a-party-1.png',
+         './assets/images/gallery-thumb-pick-a-party-2.png',
+         './assets/images/gallery-thumb-pick-a-party-3.png',
+         './assets/images/gallery-thumb-pick-a-party-4.png',
       ],
     };
   }

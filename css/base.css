@@ -38,6 +38,8 @@
     /* App Shadow */
     --shadow-1: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
     --shadow-2: 0px 12px 16px 0px rgba(0, 0, 0, 0.35);
+    --shadow-3: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+
 
     --breakpoint-xs: 30rem;
 
@@ -65,8 +67,40 @@
     --bg-highlight: url('../assets/images/bg-highlight.png');
     --bg-highlight-size: 100% 90%;
     --my-rotattion-me:-5deg;
+    --booking-button:180.00deg, rgb(237, 15, 143),rgb(229, 1, 81);
+    --booking-button-reverse:180.00deg, rgb(229, 1, 81),rgb(237, 15, 143);
+
+
+
+    --animate-move-rtl: movertl 2s ease-in-out infinite;
+    @keyframes movertl {
+      
+      0%{
+        left:105%;
+      }    
+      
+      100% {
+        left:-105%;
+      }
+    }
+
+    --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
   }
 
+
+
+
+    
+  }
+ 
 
   @layer utilities {
     .container {
@@ -88,6 +122,9 @@
 
     .text-shadow-1 {
       text-shadow: 2px 10px 0 rgba(0, 0, 0, 0.95);
+    }
+    .text-shadow-2 {
+      text-shadow: 0 2px 0 rgba(0, 0, 0, 0.55);
     }
 
     .text-shadow-none {

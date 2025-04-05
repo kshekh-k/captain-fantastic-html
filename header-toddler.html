@@ -34,12 +34,13 @@
             </div>
         </div>
     </div>
-</div>
-<!-- Main Header -->
-<div class="relative lg:static">
+  </div>
+  <!-- Main Header -->
+  <div class="relative lg:static">
     <!-- Desktop menu -->
     <div class="container" x-data="{ megaMenu: false }">
-        <div class="md:flex hidden items-center relative"  x-data="desktopMenu">             
+        <div class="md:flex hidden items-start relative"  x-data="desktopMenu">
+             
                 <a :href="logoUrl"
                     class="xl:pl-6 pl-4 h-20 xl:h-28 lg:flex hidden justify-center items-center z-10 relative">
                     <!-- w-64 h-28 -->
@@ -48,16 +49,16 @@
                             d="M256 0L0 0L0 99L235 99C246.598 99 256 89.5981 256 78L256 21C256 9.40186 265.402 0 277 0L256 0Z"
                             clip-rule="evenodd" fill-opacity="1.000000" fill-rule="evenodd" />
                     </svg>
-
+  
                     <img :src="logo" alt="captain-fantastic" class="w-40 xl:w-52 object-contain relative" />
                 </a>
           
-            <div class="flex xl:items-center items-center xl:gap-8 lg:gap-4 flex-1 px-3 xl:px-6 md:flex-row flex-col">
+            <div class="flex items-stretch xl:gap-8 lg:gap-4 flex-1 px-3 xl:px-6 md:flex-row flex-col">
                 <ul
-                    class="flex items-center justify-center  font-noyh flex-1 gap-2 2xl:gap-5 w-full relative uppercase">
+                    class="flex items-center justify-center lg:translate-y-5 font-noyh flex-1 gap-2 2xl:gap-5 w-full relative uppercase">
                     <!--  -->
                     <li
-                        class="group trigger relative py-4 xl:py-8 pr-2 2xl:pr-5 text-sm lg:text-base 2xl:text-lg tracking-wide after:absolute after:w-1 after:h-4 after:bg-brand after:right-0 after:top-1/2 after:-translate-y-1/2">
+                        class="group trigger relative py-4 pr-2 2xl:pr-5 text-sm lg:text-base 2xl:text-lg tracking-wide after:absolute after:w-1 after:h-4 after:bg-brand after:right-0 after:top-1/2 after:-translate-y-1/2">
                         <button @click="megaMenu = !megaMenu" @click.away="megaMenu = false"
                             class="text-brand hover:text-brand-secondary ease-in-out duration-200 cursor-pointer uppercase">
                             Parties
@@ -72,30 +73,31 @@
                             x-transition:leave-end="opacity-0 scale-95 translate-y-5"></span>
                     </li>
                     <template x-for="(menu, index) in menus" :key="index">
-
+  
                         <li
-                            class="relative py-4 xl:py-8 pr-2 2xl:pr-5 text-sm lg:text-base 2xl:text-lg tracking-wide after:absolute after:w-1 after:h-4 after:bg-brand after:right-0 after:top-1/2 after:-translate-y-1/2 last-of-type:after:hidden">
-                            <a :href="menu.url" class="text-brand hover:text-brand-secondary ease-in-out duration-200 uppercase"
+                            class="relative py-4 pr-2 2xl:pr-5 text-sm lg:text-base 2xl:text-lg tracking-wide after:absolute after:w-1 after:h-4 after:bg-brand after:right-0 after:top-1/2 after:-translate-y-1/2 last-of-type:after:hidden">
+                            <a :href="menu.url" class="text-brand hover:text-brand-secondary transition-all ease-in-out duration-300 uppercase"
                                 x-text="menu.text">
-
+  
                             </a>
                         </li>
                     </template>
-
+  
                 </ul>
-                 
+                 <div class="flex items-stretch -mt-2 relative before:absolute before:-left-2.5 before:-top-px before:size-0 before:border-b-10 before:border-l-10 before:border-gray-400 before:border-l-transparent after:absolute after:-right-2.5 after:-top-px after:size-0 after:border-b-10 after:border-r-10 after:border-gray-400 after:border-r-transparent">
                     <a :href="bookingUrl"
-                        class="flex items-center gap-1 bg-white p-2 xl:px-4 rounded-full border border-brand text-brand ease-in-out duration-200 hover:border-white hover:bg-brand hover:text-white uppercase">
-                        <span class="font-noyh text-lg xl:text-2xl hidden xl:inline-block" x-text="booking"> </span>
-                        <svg viewBox="0 0 25.874 16.8096" fill="currentColor" class="size-5">
+                        class="flex items-center gap-1 bg-linear-(--booking-button) hover:bg-linear-(--booking-button-reverse) shadow-3 p-3 xl:px-6 rounded-b-md border-4 border-white border-t-0 text-white transition-all ease-in-out duration-300 uppercase relative overflow-hidden before:absolute before:inset-y-0 before:w-10 before:-skew-10 before:bg-white/20 before:blur-xs before:animate-move-rtl before:translate-x-full">
+                        <span class="font-noyh text-lg xl:text-2xl hidden xl:inline-block text-shadow-2 relative" x-text="booking"> </span>
+                        <svg viewBox="0 0 25.874 16.8096" fill="currentColor" class="size-5 xl:hidden relative">
                             <path id="Path 132"
                                 d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z" />
                         </svg>
                     </a>
+                  </div>
            
             </div>
             <!-- desktop mega menu //  child hidden -->
-            <div class="bg-white absolute xl:top-[88px] lg:top-16 top-12 left-0 right-0 z-30 shadow-1" x-show="megaMenu"
+            <div class="bg-white absolute xl:top-17 lg:top-16 top-12 left-0 right-0 z-30 shadow-1" x-show="megaMenu"
                 x-transition:enter="transition transform duration-300 ease-out"
                 x-transition:enter-start="opacity-0 scale-95 translate-y-5"
                 x-transition:enter-end="opacity-100 scale-100 translate-y-0"
@@ -150,11 +152,10 @@
                 <img :src="logoIcon" alt="captain-fantastic"
                     class="xs:size-14 size-10 object-contain xs:rounded-2xl rounded-lg overflow-hidden" />
             </a>
-            <a :href="bookingUrl" class="flex items-center gap-2 bg-white border-2 border-brand rounded-full xs:px-4 px-2 py-2">
-                <span class="uppercase font-bold sm:text-base xs:text-xs text-[10px] font-lato text-brand text-center" x-text="booking">
-                
-                </span>
-            </a>
+            <a :href="bookingUrl"
+            class="flex items-center gap-1 bg-linear-(--booking-button) hover:bg-linear-(--booking-button-reverse) shadow-3 py-1 px-3 sm:px-6 rounded-md border-2 border-white text-white transition-all ease-in-out duration-300 uppercase relative overflow-hidden before:absolute before:inset-y-0 before:w-10 before:-skew-10 before:bg-white/20 before:blur-xs before:animate-move-rtl before:translate-x-full">
+            <span class="font-noyh text-lg inline-block text-shadow-2 relative" x-text="booking"></span>               
+        </a>
             <div class="flex items-center gap-3 xs:text-xs text-[10px] text-white text-center">
                 <a :href="'tel:'+phoneNum" class="flex flex-col xs:gap-3 gap-1 pr-3 border-r border-white">
                     <svg viewBox="0 0 24 24" fill="currentColor" class="size-6">
@@ -163,7 +164,7 @@
                         </path>
                     </svg>
                 </a>
-
+  
                 <button class="flex flex-col xs:gap-3 gap-1" @click="mobileMenu = !mobileMenu">
                     <svg viewBox="0 0 448 512" fill="currentColor" class="size-6"
                         :class="mobileMenu ? 'hidden' : 'block'">
@@ -191,7 +192,7 @@
                         <span class="text-black font-noyh text-2xl uppercase flex-1 text-left">
                             Parties
                         </span>
-
+  
                         <svg viewBox="0 0 35 35" fill="currentColor" class="size-5 text-brand"
                             :class="mobileSubMenu ? 'hidden' : 'block'">
                             <path id="Union"
@@ -211,7 +212,7 @@
                         x-transition:leave-start="opacity-100 scale-100 translate-y-0"
                         x-transition:leave-end="opacity-0 scale-95 translate-y-5"  x-data="{ mobileSubMenuLevel2: null }">
                             <template x-for="(item, index) in megaMenuMobile" :key="index">
-
+  
                                 <div class>
                                     <button
                                         @click="mobileSubMenuLevel2 === index ? mobileSubMenuLevel2 = null : mobileSubMenuLevel2 = index"
@@ -269,8 +270,8 @@
                                         </a>
                                     </div>
                                 </div>
-
-
+  
+  
                             </template>
                         
                        
@@ -293,4 +294,4 @@
         </div>
         <div class="w-full h-px bg-white mt-2 xs:px-6 px-3"></div>
     </div>
-</div>
+  </div>
