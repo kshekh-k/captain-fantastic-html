@@ -1,297 +1,474 @@
 <div x-data="desktopMenuTop">
-    <!-- Top Bar -->
-    <div class="bg-white">
-        <div class="container">
-            <div class="md:flex hidden items-center justify-between py-4 flex-wrap">
-                <div class="flex items-center gap-4">
-                    <img :src="ratingIcon" class="h-4 object-contain" alt />
-                    <p class="font-lato text-xs underline text-brand" x-text="rating"></p>
-                    <img :src="googleIcon" class="w-14" alt />
-                </div>
-                <div class="flex items-center gap-2 xl:gap-5 uppercase">
-                    <template x-for="link in links" :key="link.text">
-                        <a :href="link.url"
-                            class="text-brand-secondary font-lato font-semibold relative ease-in-out duration-200 hover:text-brand underline text-xs">
-                            <span x-text="link.text"></span>
-                        </a>
-                    </template>
-                </div>
-                <div class="flex justify-between gap-5 w-full lg:w-auto">
-                    <div class="flex items-center gap-1.5">
-                        <template x-for="social in socialLinks" :key="social.alt">
-                            <a :href="social.url">
-                                <img :src="social.icon" :alt="social.alt" class="xl:w-6 w-3 object-contain" />
-                            </a>
-                        </template>
-                    </div>
-                    <a :href="'tel:'+phone">
-                        <div class="flex items-center gap-2">
-                            <img :src="phoneIcon" class="xl:w-5 w-3 object-contain rotate-12" alt />
-                            <p class="font-noyh text-base xl:text-3xl text-brand" x-text="'T: ' + phone"></p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+  <!-- Top Bar -->
+  <div class="bg-white">
+    <div class="container">
+      <div class="md:flex hidden items-center justify-between py-4 flex-wrap">
+        <div class="flex items-center gap-4">
+          <img :src="ratingIcon" class="h-4 object-contain" alt />
+          <p class="font-lato text-xs underline text-brand" x-text="rating"></p>
+          <img :src="googleIcon" class="w-14" alt />
         </div>
-    </div>
-  </div>
-  <!-- Main Header -->
-  <div class="relative lg:static">
-    <!-- Desktop menu -->
-    <div class="container" x-data="{ megaMenu: false }">
-        <div class="md:flex hidden items-start relative"  x-data="desktopMenu">
-             
-                <a :href="logoUrl"
-                    class="xl:pl-6 pl-4 h-20 xl:h-28 lg:flex hidden justify-center items-center z-10 relative">
-                    <!-- w-64 h-28 -->
-                    <svg viewBox="0 0 277 99" fill="#ffffff" class="absolute h-full -ml-2">
-                        <path id="Union"
-                            d="M256 0L0 0L0 99L235 99C246.598 99 256 89.5981 256 78L256 21C256 9.40186 265.402 0 277 0L256 0Z"
-                            clip-rule="evenodd" fill-opacity="1.000000" fill-rule="evenodd" />
-                    </svg>
-  
-                    <img :src="logo" alt="captain-fantastic" class="w-40 xl:w-52 object-contain relative" />
-                </a>
-          
-            <div class="flex items-stretch xl:gap-8 lg:gap-4 flex-1 px-3 xl:px-6 md:flex-row flex-col">
-                <ul
-                    class="flex items-center justify-center lg:translate-y-5 font-noyh flex-1 gap-2 2xl:gap-5 w-full relative uppercase">
-                    <!--  -->
-                    <li
-                        class="group trigger relative py-4 pr-2 2xl:pr-5 text-sm lg:text-base 2xl:text-lg tracking-wide after:absolute after:w-1 after:h-4 after:bg-white after:right-0 after:top-1/2 after:-translate-y-1/2">
-                        <button @click="megaMenu = !megaMenu" @click.away="megaMenu = false"
-                            class="text-white hover:text-brand-secondary ease-in-out duration-200 cursor-pointer uppercase">
-                            Parties
-                        </button>
-                        <!-- child hidden -->
-                        <span class="absolute -bottom-3 xl:bottom-0 left-1/2 -translate-x-1/2 rotate-45 size-5 bg-white"
-                            x-show="megaMenu" x-transition:enter="transition transform duration-300 ease-out"
-                            x-transition:enter-start="opacity-0 scale-95 translate-y-5"
-                            x-transition:enter-end="opacity-100 scale-100 translate-y-0"
-                            x-transition:leave="transition transform duration-200 ease-in"
-                            x-transition:leave-start="opacity-100 scale-100 translate-y-0"
-                            x-transition:leave-end="opacity-0 scale-95 translate-y-5"></span>
-                    </li>
-                    <template x-for="(menu, index) in menus" :key="index">
-  
-                        <li
-                            class="relative py-4 pr-2 2xl:pr-5 text-sm lg:text-base 2xl:text-lg tracking-wide after:absolute after:w-1 after:h-4 after:bg-white after:right-0 after:top-1/2 after:-translate-y-1/2 last-of-type:after:hidden">
-                            <a :href="menu.url" class="text-white hover:text-brand-secondary transition-all ease-in-out duration-300 uppercase"
-                                x-text="menu.text">
-  
-                            </a>
-                        </li>
-                    </template>
-  
-                </ul>
-                 <div class="flex items-stretch -mt-2 relative before:absolute before:-left-2.5 before:-top-px before:size-0 before:border-b-10 before:border-l-10 before:border-gray-400 before:border-l-transparent after:absolute after:-right-2.5 after:-top-px after:size-0 after:border-b-10 after:border-r-10 after:border-gray-400 after:border-r-transparent">
-                    <a :href="bookingUrl"
-                        class="flex items-center gap-1 bg-linear-(--booking-button) hover:bg-linear-(--booking-button-reverse) shadow-3 p-3 xl:px-6 rounded-b-md border-4 border-white border-t-0 text-white transition-all ease-in-out duration-300 uppercase relative overflow-hidden before:absolute before:inset-y-0 before:w-10 before:-skew-10 before:bg-white/20 before:blur-xs before:animate-move-rtl before:translate-x-full">
-                        <span class="font-noyh text-lg xl:text-2xl hidden xl:inline-block text-shadow-2 relative" x-text="booking"></span>
-                        <svg viewBox="0 0 25.874 16.8096" fill="currentColor" class="size-5 xl:hidden relative">
-                            <path id="Path 132"
-                                d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z" />
-                        </svg>
-                    </a>
-                  </div>
-           
-            </div>
-            <!-- desktop mega menu //  child hidden -->
-            <div class="bg-white absolute xl:top-17 lg:top-16 top-12 left-0 right-0 z-30 shadow-1" x-show="megaMenu"
-                x-transition:enter="transition transform duration-300 ease-out"
-                x-transition:enter-start="opacity-0 scale-95 translate-y-5"
-                x-transition:enter-end="opacity-100 scale-100 translate-y-0"
-                x-transition:leave="transition transform duration-200 ease-in"
-                x-transition:leave-start="opacity-100 scale-100 translate-y-0"
-                x-transition:leave-end="opacity-0 scale-95 translate-y-5">
-                <div class="xl:py-10 py-5 flex flex-col gap-10 w-fit mx-auto">
-                    <div class="flex justify-center divide-x divide-brand/50" x-data="megaMenusList">
-                        <template x-for="(menu, index) in megaMenusList" :key="index">
-                            <div class="flex flex-col xs:px-4">
-                                <h2 class="text-base font-noyh text-white py-1 px-2 bg-brand-secondary rounded-md uppercase"
-                                    x-text="menu.title"></h2>
-                                <div class="mt-4 flex flex-col flex-1 gap-3 font-semibold">
-                                    <h3 class="text-xs text-brand uppercase font-lato font-bold" x-show="menu.age"><span
-                                            x-text="menu.age"></span></h3>
-                                    <template x-for="item in menu.items" :key="item.text">
-                                        <a :href="item.url"
-                                            class="text-xs text-black/80 ease-in-out duration-200 hover:text-brand-secondary"
-                                            x-text="item.text"></a>
-                                    </template>
-                                </div>
-                            </div>
-                        </template>
-                    </div>
-                    <div class="bg-brand-secondary/15 rounded-xl flex justify-between gap-4 items-center p-6">
-                        <h3 class="flex-1 text-base font-bold text-brand">
-                            WANT HELP CHOOSING? LET US HELP YOU FIND THE PERFECT PARTY
-                        </h3>
-                        <form
-                            class="flex rounded-lg border-2 gap-0.5 bg-brand border-brand overflow-hidden items-stretch xs:flex-row flex-col">
-                            <input type="age" name="age" id="age"
-                                class="flex-1 w-56 outline-none px-3 py-2 text-lg bg-white rounded-l-md"
-                                placeholder="Enter your child age" />
-                            <button role="button" type="submit"
-                                class="flex items-center xs:justify-start justify-center gap-2 text-white bg-brand hover:bg-white/20 rounded-r xs:w-fit py-2 px-4 cursor-pointer ease-in-out duration-200">
-                                <span class="uppercase text-base font-bold"> Search </span>
-                                <svg viewBox="0 0 22.7461 22.7273" fill="currentColor" class="size-4">
-                                    <path id="Path 133"
-                                        d="M19.78 1.7C16.86 -0.63 12.61 -0.56 9.79 1.84C6.45 4.67 6.09 9.57 8.74 12.82L6.71 14.85L6.13 14.26L0.47 19.9C-0.17 20.54 -0.17 21.6 0.47 22.24C1.12 22.88 2.18 22.88 2.82 22.24L8.47 16.59L7.89 16L9.89 14C13 16.5 17.55 16.32 20.43 13.45C23.72 10.16 23.49 4.68 19.78 1.7ZM19.26 12.27C16.83 14.71 12.88 14.71 10.46 12.27C8.05 9.84 8.03 5.89 10.46 3.47C12.9 1.04 16.84 1.04 19.26 3.47C21.68 5.91 21.7 9.86 19.26 12.27Z" />
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Mobile -->
-    <div class="md:hidden bg-brand-secondary md:rounded-t-xl md:mt-3 py-3" x-data="menusMobile">
-        <div class="flex gap-2 items-center justify-between relative xs:px-6 px-3" x-data="{ mobileMenu: false }">
-            <a :href="logoUrl">
-                <img :src="logoIcon" alt="captain-fantastic"
-                    class="xs:size-14 size-10 object-contain xs:rounded-2xl rounded-lg overflow-hidden" />
+        <div class="flex items-center gap-2 xl:gap-5 uppercase">
+          <template x-for="link in links" :key="link.text">
+            <a
+              :href="link.url"
+              class="text-brand-secondary font-lato font-semibold relative ease-in-out duration-200 hover:text-brand underline text-xs"
+            >
+              <span x-text="link.text"></span>
             </a>
-            <a :href="bookingUrl"
-            class="flex items-center gap-1 bg-linear-(--booking-button) hover:bg-linear-(--booking-button-reverse) shadow-3 py-1 px-3 sm:px-6 rounded-md border-2 border-white text-white transition-all ease-in-out duration-300 uppercase relative overflow-hidden before:absolute before:inset-y-0 before:w-10 before:-skew-10 before:bg-white/20 before:blur-xs before:animate-move-rtl before:translate-x-full">
-            <span class="font-noyh text-lg inline-block text-shadow-2 relative" x-text="booking"></span>               
-        </a>
-            <div class="flex items-center gap-3 xs:text-xs text-[10px] text-white text-center">
-                <a :href="'tel:'+phoneNum" class="flex flex-col xs:gap-3 gap-1 pr-3 border-r border-white">
-                    <svg viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                        <path
-                            d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z">
-                        </path>
-                    </svg>
-                </a>
-  
-                <button class="flex flex-col xs:gap-3 gap-1" @click="mobileMenu = !mobileMenu">
-                    <svg viewBox="0 0 448 512" fill="currentColor" class="size-6"
-                        :class="mobileMenu ? 'hidden' : 'block'">
-                        <path
-                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
-                    </svg>
-                    <svg viewBox="0 0 384 512" fill="currentColor" class="size-6"
-                        :class="!mobileMenu ? 'hidden' : 'block'">
-                        <path
-                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
-                    </svg>
-                </button>
-            </div>
-            <div class="flex-col gap-2 mt-2 absolute inset-x-0 top-full z-50 bg-white max-h-[calc(100vh-70px)] overflow-auto"
-                x-show="mobileMenu" x-transition:enter="transition transform duration-300 ease-out"
-                x-transition:enter-start="opacity-0 scale-95 translate-y-5"
-                x-transition:enter-end="opacity-100 scale-100 translate-y-0"
-                x-transition:leave="transition transform duration-200 ease-in"
-                x-transition:leave-start="opacity-100 scale-100 translate-y-0"
-                x-transition:leave-end="opacity-0 scale-95 translate-y-5">
-                <div x-data="{ mobileSubMenu: false }">
-                    <button
-                        class="flex w-full items-center justify-between gap-2 py-4 xs:px-6 px-3 border-b border-brand-secondary"
-                        @click="mobileSubMenu = !mobileSubMenu">
-                        <span class="text-black font-noyh text-2xl uppercase flex-1 text-left">
-                            Parties
-                        </span>
-  
-                        <svg viewBox="0 0 35 35" fill="currentColor" class="size-5 text-brand"
-                            :class="mobileSubMenu ? 'hidden' : 'block'">
-                            <path id="Union"
-                                d="M19.5 15.5L19.5 0L15.5 0L15.5 15.5L0 15.5L0 19.5L15.5 19.5L15.5 35L19.5 35L19.5 19.5L35 19.5L35 15.5L19.5 15.5Z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        <svg viewBox="0 0 35 4" fill="currentColor" class="size-5 text-brand"
-                            :class="mobileSubMenu ? 'block' : 'hidden'">
-                            <path id="Line 14 (Border)" d="M35 4L0 4L0 0L35 0L35 4Z"></path>
-                        </svg>
-                    </button>
-                    <div class="overflow-hidden" x-show="mobileSubMenu"
-                        x-transition:enter="transition transform duration-300 ease-out"
-                        x-transition:enter-start="opacity-0 scale-95 translate-y-5"
-                        x-transition:enter-end="opacity-100 scale-100 translate-y-0"
-                        x-transition:leave="transition transform duration-200 ease-in"
-                        x-transition:leave-start="opacity-100 scale-100 translate-y-0"
-                        x-transition:leave-end="opacity-0 scale-95 translate-y-5"  x-data="{ mobileSubMenuLevel2: null }">
-                            <template x-for="(item, index) in megaMenuMobile" :key="index">
-  
-                                <div class>
-                                    <button
-                                        @click="mobileSubMenuLevel2 === index ? mobileSubMenuLevel2 = null : mobileSubMenuLevel2 = index"
-                                        class="flex w-full text-white items-center justify-between gap-2 py-4 xs:px-6 px-3 border-b-2 border-white bg-brand-secondary">
-                                        <span class="text-left font-noyh text-2xl uppercase flex-1" x-text="item.title">
-                                            
-                                        </span>
-                                        <svg viewBox="0 0 35 35" fill="currentColor" class="size-5"
-                                            :class="mobileSubMenuLevel2 === index ? 'hidden' : 'block'">
-                                            <path id="Union"
-                                                d="M19.5 15.5L19.5 0L15.5 0L15.5 15.5L0 15.5L0 19.5L15.5 19.5L15.5 35L19.5 35L19.5 19.5L35 19.5L35 15.5L19.5 15.5Z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <svg viewBox="0 0 35 4" fill="currentColor" class="size-5"
-                                            :class="mobileSubMenuLevel2 !== index ? 'hidden' : 'block'">
-                                            <path id="Line 14 (Border)" d="M35 4L0 4L0 0L35 0L35 4Z"></path>
-                                        </svg>
-                                    </button>
-                                    <div class="overflow-hidden" x-show="mobileSubMenuLevel2 === index" x-collapse>
-                                        <template x-for="(subitem, i) in item.items" :key="i">
-                                        <a :href="subitem.url"
-                                            class="flex items-center justify-between gap-2 py-4 xs:px-6 px-3 border-b border-brand-secondary">
-                                            <span class="text-black text-left font-noyh text-2xl uppercase flex-1" x-text="subitem.text">
-                                                
-                                            </span>
-                                            <svg viewBox="0 0 25.874 16.8096" fill="currentColor" class="size-4 text-brand">
-                                                <path id="Path 132"
-                                                    d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                        </template>
-                                        <a href="/"
-                                            class="flex items-center justify-between gap-2 py-4 xs:px-6 px-3 border-b border-brand-secondary">
-                                            <span class="text-black text-left font-noyh text-2xl uppercase flex-1">
-                                                peter rabbit
-                                            </span>
-                                            <svg viewBox="0 0 25.874 16.8096" fill="currentColor" class="size-4 text-brand">
-                                                <path id="Path 132"
-                                                    d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z">
-                                                </path>
-                                            </svg>
-                                        </a>
-        
-                                        <a href="/"
-                                            class="flex items-center justify-between gap-2 py-4 xs:px-6 px-3 border-b border-brand-secondary">
-                                            <span class="text-black text-left font-noyh text-2xl uppercase flex-1">
-                                                ALL PRE SCHOOL PARTIES
-                                            </span>
-                                            <svg viewBox="0 0 25.874 16.8096" fill="currentColor" class="size-4 text-brand">
-                                                <path id="Path 132"
-                                                    d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-  
-  
-                            </template>
-                        
-                       
-                     
-                    </div>
-                </div>
-                <template x-for="(menu, index) in menus" :key="index">
-                    <a :href="menu.url" class="flex items-center justify-between gap-2 py-4 xs:px-6 px-3 border-b border-brand-secondary"
-                                >
-                                <span class="text-black font-noyh text-2xl uppercase flex-1 text-left" x-text="menu.text"></span>
-                                <svg viewBox="0 0 25.874 16.8096" fill="currentColor" class="size-4 text-brand">
-                                    <path id="Path 132"
-                                        d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z">
-                                    </path>
-                                </svg>
-                            </a>
-                </template>                
-                
-            </div>
+          </template>
         </div>
-        <div class="w-full h-px bg-white mt-2 xs:px-6 px-3"></div>
+        <div class="flex justify-between gap-5 w-full lg:w-auto">
+          <div class="flex items-center gap-1.5">
+            <template x-for="social in socialLinks" :key="social.alt">
+              <a :href="social.url">
+                <img
+                  :src="social.icon"
+                  :alt="social.alt"
+                  class="xl:w-6 w-3 object-contain"
+                />
+              </a>
+            </template>
+          </div>
+          <a :href="'tel:'+phone">
+            <div class="flex items-center gap-2">
+              <img
+                :src="phoneIcon"
+                class="xl:w-5 w-3 object-contain rotate-12"
+                alt
+              />
+              <p
+                class="font-noyh text-base xl:text-3xl text-brand"
+                x-text="'T: ' + phone"
+              ></p>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+<!-- Main Header -->
+<div class="relative lg:static">
+  <!-- Desktop menu -->
+  <div class="container" x-data="{ megaMenu: false }">
+    <div class="md:flex hidden items-start relative" x-data="desktopMenu">
+      <a
+        :href="logoUrl"
+        class="xl:pl-6 pl-4 h-20 xl:h-28 lg:flex hidden justify-center items-center z-10 relative"
+      >
+        <!-- w-64 h-28 -->
+        <svg viewBox="0 0 277 99" fill="#ffffff" class="absolute h-full -ml-2">
+          <path
+            id="Union"
+            d="M256 0L0 0L0 99L235 99C246.598 99 256 89.5981 256 78L256 21C256 9.40186 265.402 0 277 0L256 0Z"
+            clip-rule="evenodd"
+            fill-opacity="1.000000"
+            fill-rule="evenodd"
+          />
+        </svg>
+
+        <img
+          :src="logo"
+          alt="captain-fantastic"
+          class="w-40 xl:w-52 object-contain relative"
+        />
+      </a>
+
+      <div
+        class="flex items-stretch xl:gap-8 lg:gap-4 flex-1 px-3 xl:px-6 md:flex-row flex-col"
+      >
+        <ul
+          class="flex items-center justify-center lg:translate-y-5 font-noyh flex-1 gap-2 2xl:gap-5 w-full relative uppercase"
+        >
+          <!--  -->
+          <li
+            class="group trigger relative py-4 pr-2 2xl:pr-5 text-sm lg:text-base 2xl:text-lg tracking-wide"
+            @mouseover="megaMenu = true"
+          >
+            <button
+              @click.away="megaMenu = false"
+              class="text-white hover:text-brand-secondary ease-in-out duration-200 cursor-pointer uppercase"
+            >
+              Parties
+            </button>
+            <!-- child hidden -->
+            <span
+              class="absolute -bottom-3 xl:bottom-0 left-1/2 -translate-x-1/2 rotate-45 size-5 bg-white"
+              x-show="megaMenu"
+              x-transition:enter="transition transform duration-300 ease-out"
+              x-transition:enter-start="opacity-0 scale-95 translate-y-5"
+              x-transition:enter-end="opacity-100 scale-100 translate-y-0"
+              x-transition:leave="transition transform duration-200 ease-in"
+              x-transition:leave-start="opacity-100 scale-100 translate-y-0"
+              x-transition:leave-end="opacity-0 scale-95 translate-y-5"
+            ></span>
+          </li>
+          <template x-for="(menu, index) in menus" :key="index">
+            <li
+              class="relative py-4 pr-2 2xl:pr-5 text-sm lg:text-base 2xl:text-lg tracking-wide"
+            >
+              <a
+                :href="menu.url"
+                class="text-white hover:text-brand-secondary transition-all ease-in-out duration-300 uppercase"
+                x-text="menu.text"
+              >
+              </a>
+            </li>
+          </template>
+        </ul>
+        <div
+          class="flex items-stretch -mt-2 relative before:absolute before:-left-2.5 before:-top-px before:size-0 before:border-b-10 before:border-l-10 before:border-gray-400 before:border-l-transparent after:absolute after:-right-2.5 after:-top-px after:size-0 after:border-b-10 after:border-r-10 after:border-gray-400 after:border-r-transparent"
+        >
+          <a
+            :href="bookingUrl"
+            class="flex items-center gap-1 bg-linear-(--booking-button) hover:bg-linear-(--booking-button-reverse) shadow-3 p-3 xl:px-6 rounded-b-md border-4 border-white border-t-0 text-white transition-all ease-in-out duration-300 uppercase relative overflow-hidden before:absolute before:inset-y-0 before:w-10 before:-skew-10 before:bg-white/20 before:blur-xs before:animate-move-rtl before:translate-x-full"
+          >
+            <span
+              class="font-noyh text-lg xl:text-2xl hidden xl:inline-block text-shadow-2 relative"
+              x-text="booking"
+            ></span>
+            <svg
+              viewBox="0 0 25.874 16.8096"
+              fill="currentColor"
+              class="size-5 xl:hidden relative"
+            >
+              <path
+                id="Path 132"
+                d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- desktop mega menu //  child hidden -->
+      <div
+        class="bg-white absolute xl:top-17 lg:top-16 top-12 left-0 right-0 z-30 shadow-1"
+        x-show="megaMenu"
+        x-transition:enter="transition transform duration-300 ease-out"
+        x-transition:enter-start="opacity-0 scale-95 translate-y-5"
+        x-transition:enter-end="opacity-100 scale-100 translate-y-0"
+        x-transition:leave="transition transform duration-200 ease-in"
+        x-transition:leave-start="opacity-100 scale-100 translate-y-0"
+        x-transition:leave-end="opacity-0 scale-95 translate-y-5"
+      >
+        <div class="xl:py-10 py-5 flex flex-col gap-10 w-fit mx-auto">
+          <div
+            class="flex justify-center divide-x divide-brand/50"
+            x-data="megaMenusList"
+          >
+            <template x-for="(menu, index) in megaMenusList" :key="index">
+              <div class="flex flex-col xs:px-4">
+                <h2
+                  class="text-base font-noyh text-white py-1 px-2 bg-brand-secondary rounded-md uppercase"
+                  x-text="menu.title"
+                ></h2>
+                <div class="mt-4 flex flex-col flex-1 gap-3 font-semibold">
+                  <h3
+                    class="text-xs text-brand uppercase font-lato font-bold"
+                    x-show="menu.age"
+                  >
+                    <span x-text="menu.age"></span>
+                  </h3>
+                  <template x-for="item in menu.items" :key="item.text">
+                    <a
+                      :href="item.url"
+                      class="text-xs text-black/80 ease-in-out duration-200 hover:text-brand-secondary"
+                      x-text="item.text"
+                    ></a>
+                  </template>
+                </div>
+              </div>
+            </template>
+          </div>
+          <div
+            class="bg-brand-secondary/15 rounded-xl flex justify-between gap-4 items-center p-6"
+          >
+            <h3 class="flex-1 text-base font-bold text-brand">
+              WANT HELP CHOOSING? LET US HELP YOU FIND THE PERFECT PARTY
+            </h3>
+            <form
+              class="flex rounded-lg border-2 gap-0.5 bg-brand border-brand overflow-hidden items-stretch xs:flex-row flex-col"
+            >
+              <input
+                type="age"
+                name="age"
+                id="age"
+                class="flex-1 w-56 outline-none px-3 py-2 text-lg bg-white rounded-l-md"
+                placeholder="Enter your child age"
+              />
+              <button
+                role="button"
+                type="submit"
+                class="flex items-center xs:justify-start justify-center gap-2 text-white bg-brand hover:bg-white/20 rounded-r xs:w-fit py-2 px-4 cursor-pointer ease-in-out duration-200"
+              >
+                <span class="uppercase text-base font-bold"> Search </span>
+                <svg
+                  viewBox="0 0 22.7461 22.7273"
+                  fill="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    id="Path 133"
+                    d="M19.78 1.7C16.86 -0.63 12.61 -0.56 9.79 1.84C6.45 4.67 6.09 9.57 8.74 12.82L6.71 14.85L6.13 14.26L0.47 19.9C-0.17 20.54 -0.17 21.6 0.47 22.24C1.12 22.88 2.18 22.88 2.82 22.24L8.47 16.59L7.89 16L9.89 14C13 16.5 17.55 16.32 20.43 13.45C23.72 10.16 23.49 4.68 19.78 1.7ZM19.26 12.27C16.83 14.71 12.88 14.71 10.46 12.27C8.05 9.84 8.03 5.89 10.46 3.47C12.9 1.04 16.84 1.04 19.26 3.47C21.68 5.91 21.7 9.86 19.26 12.27Z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile -->
+  <div
+    class="md:hidden bg-brand-secondary md:rounded-t-xl md:mt-3 py-3"
+    x-data="menusMobile"
+  >
+    <div
+      class="flex gap-2 items-center justify-between relative xs:px-6 px-3"
+      x-data="{ mobileMenu: false }"
+    >
+      <a :href="logoUrl">
+        <img
+          :src="logoIcon"
+          alt="captain-fantastic"
+          class="xs:size-14 size-10 object-contain xs:rounded-2xl rounded-lg overflow-hidden"
+        />
+      </a>
+      <a
+        :href="bookingUrl"
+        class="flex items-center gap-1 bg-linear-(--booking-button) hover:bg-linear-(--booking-button-reverse) shadow-3 py-1 px-3 sm:px-6 rounded-md border-2 border-white text-white transition-all ease-in-out duration-300 uppercase relative overflow-hidden before:absolute before:inset-y-0 before:w-10 before:-skew-10 before:bg-white/20 before:blur-xs before:animate-move-rtl before:translate-x-full"
+      >
+        <span
+          class="font-noyh text-lg inline-block text-shadow-2 relative"
+          x-text="booking"
+        ></span>
+      </a>
+      <div
+        class="flex items-center gap-3 xs:text-xs text-[10px] text-white text-center"
+      >
+        <a
+          :href="'tel:'+phoneNum"
+          class="flex flex-col xs:gap-3 gap-1 pr-3 border-r border-white"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path
+              d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z"
+            ></path>
+          </svg>
+        </a>
+
+        <button
+          class="flex flex-col xs:gap-3 gap-1"
+          @click="mobileMenu = !mobileMenu"
+        >
+          <svg
+            viewBox="0 0 448 512"
+            fill="currentColor"
+            class="size-6"
+            :class="mobileMenu ? 'hidden' : 'block'"
+          >
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+          <svg
+            viewBox="0 0 384 512"
+            fill="currentColor"
+            class="size-6"
+            :class="!mobileMenu ? 'hidden' : 'block'"
+          >
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="flex-col gap-2 mt-2 absolute inset-x-0 top-full z-50 bg-white max-h-[calc(100vh-70px)] overflow-auto"
+        x-show="mobileMenu"
+        x-transition:enter="transition transform duration-300 ease-out"
+        x-transition:enter-start="opacity-0 scale-95 translate-y-5"
+        x-transition:enter-end="opacity-100 scale-100 translate-y-0"
+        x-transition:leave="transition transform duration-200 ease-in"
+        x-transition:leave-start="opacity-100 scale-100 translate-y-0"
+        x-transition:leave-end="opacity-0 scale-95 translate-y-5"
+      >
+        <div x-data="{ mobileSubMenu: false }">
+          <button
+            class="flex w-full items-center justify-between gap-2 py-4 xs:px-6 px-3 border-b border-brand-secondary"
+            @click="mobileSubMenu = !mobileSubMenu"
+          >
+            <span
+              class="text-black font-noyh text-2xl uppercase flex-1 text-left"
+            >
+              Parties
+            </span>
+
+            <svg
+              viewBox="0 0 35 35"
+              fill="currentColor"
+              class="size-5 text-brand"
+              :class="mobileSubMenu ? 'hidden' : 'block'"
+            >
+              <path
+                id="Union"
+                d="M19.5 15.5L19.5 0L15.5 0L15.5 15.5L0 15.5L0 19.5L15.5 19.5L15.5 35L19.5 35L19.5 19.5L35 19.5L35 15.5L19.5 15.5Z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <svg
+              viewBox="0 0 35 4"
+              fill="currentColor"
+              class="size-5 text-brand"
+              :class="mobileSubMenu ? 'block' : 'hidden'"
+            >
+              <path id="Line 14 (Border)" d="M35 4L0 4L0 0L35 0L35 4Z"></path>
+            </svg>
+          </button>
+          <div
+            class="overflow-hidden"
+            x-show="mobileSubMenu"
+            x-transition:enter="transition transform duration-300 ease-out"
+            x-transition:enter-start="opacity-0 scale-95 translate-y-5"
+            x-transition:enter-end="opacity-100 scale-100 translate-y-0"
+            x-transition:leave="transition transform duration-200 ease-in"
+            x-transition:leave-start="opacity-100 scale-100 translate-y-0"
+            x-transition:leave-end="opacity-0 scale-95 translate-y-5"
+            x-data="{ mobileSubMenuLevel2: null }"
+          >
+            <template x-for="(item, index) in megaMenuMobile" :key="index">
+              <div class>
+                <button
+                  @click="mobileSubMenuLevel2 === index ? mobileSubMenuLevel2 = null : mobileSubMenuLevel2 = index"
+                  class="flex w-full text-white items-center justify-between gap-2 py-4 xs:px-6 px-3 border-b-2 border-white bg-brand-secondary"
+                >
+                  <span
+                    class="text-left font-noyh text-2xl uppercase flex-1"
+                    x-text="item.title"
+                  >
+                  </span>
+                  <svg
+                    viewBox="0 0 35 35"
+                    fill="currentColor"
+                    class="size-5"
+                    :class="mobileSubMenuLevel2 === index ? 'hidden' : 'block'"
+                  >
+                    <path
+                      id="Union"
+                      d="M19.5 15.5L19.5 0L15.5 0L15.5 15.5L0 15.5L0 19.5L15.5 19.5L15.5 35L19.5 35L19.5 19.5L35 19.5L35 15.5L19.5 15.5Z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <svg
+                    viewBox="0 0 35 4"
+                    fill="currentColor"
+                    class="size-5"
+                    :class="mobileSubMenuLevel2 !== index ? 'hidden' : 'block'"
+                  >
+                    <path
+                      id="Line 14 (Border)"
+                      d="M35 4L0 4L0 0L35 0L35 4Z"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="overflow-hidden"
+                  x-show="mobileSubMenuLevel2 === index"
+                  x-collapse
+                >
+                  <template x-for="(subitem, i) in item.items" :key="i">
+                    <a
+                      :href="subitem.url"
+                      class="flex items-center justify-between gap-2 py-4 xs:px-6 px-3 border-b border-brand-secondary"
+                    >
+                      <span
+                        class="text-black text-left font-noyh text-2xl uppercase flex-1"
+                        x-text="subitem.text"
+                      >
+                      </span>
+                      <svg
+                        viewBox="0 0 25.874 16.8096"
+                        fill="currentColor"
+                        class="size-4 text-brand"
+                      >
+                        <path
+                          id="Path 132"
+                          d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </template>
+                  <a
+                    href="/"
+                    class="flex items-center justify-between gap-2 py-4 xs:px-6 px-3 border-b border-brand-secondary"
+                  >
+                    <span
+                      class="text-black text-left font-noyh text-2xl uppercase flex-1"
+                    >
+                      peter rabbit
+                    </span>
+                    <svg
+                      viewBox="0 0 25.874 16.8096"
+                      fill="currentColor"
+                      class="size-4 text-brand"
+                    >
+                      <path
+                        id="Path 132"
+                        d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z"
+                      ></path>
+                    </svg>
+                  </a>
+
+                  <a
+                    href="/"
+                    class="flex items-center justify-between gap-2 py-4 xs:px-6 px-3 border-b border-brand-secondary"
+                  >
+                    <span
+                      class="text-black text-left font-noyh text-2xl uppercase flex-1"
+                    >
+                      ALL PRE SCHOOL PARTIES
+                    </span>
+                    <svg
+                      viewBox="0 0 25.874 16.8096"
+                      fill="currentColor"
+                      class="size-4 text-brand"
+                    >
+                      <path
+                        id="Path 132"
+                        d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+        <template x-for="(menu, index) in menus" :key="index">
+          <a
+            :href="menu.url"
+            class="flex items-center justify-between gap-2 py-4 xs:px-6 px-3 border-b border-brand-secondary"
+          >
+            <span
+              class="text-black font-noyh text-2xl uppercase flex-1 text-left"
+              x-text="menu.text"
+            ></span>
+            <svg
+              viewBox="0 0 25.874 16.8096"
+              fill="currentColor"
+              class="size-4 text-brand"
+            >
+              <path
+                id="Path 132"
+                d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z"
+              ></path>
+            </svg>
+          </a>
+        </template>
+      </div>
+    </div>
+    <div class="w-full h-px bg-white mt-2 xs:px-6 px-3"></div>
+  </div>
+</div>

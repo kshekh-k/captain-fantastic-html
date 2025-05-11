@@ -3422,6 +3422,16 @@
       width: auto;
     }
   }
+  .lg\:max-w-2xl {
+    @media (width >= 64rem) {
+      max-width: var(--container-2xl);
+    }
+  }
+  .lg\:max-w-3xl {
+    @media (width >= 64rem) {
+      max-width: var(--container-3xl);
+    }
+  }
   .lg\:max-w-60 {
     @media (width >= 64rem) {
       max-width: calc(var(--spacing) * 60);
