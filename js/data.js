@@ -1,7 +1,7 @@
 const logo = './assets/icons/logo.svg'
 const logoIcon = './assets/images/captain-fantastic-icon.svg'
 const logoUrl = '/'
-const booking = 'Prices & Booking'
+const booking = 'Book Now'
 const bookingUrl = '/'
 const phone = '0800 208 8899'
 const phoneIcon = './assets/icons/phone.svg'
