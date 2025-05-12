@@ -51,7 +51,12 @@
 <!-- Main Header -->
 <div class="relative lg:static">
   <!-- Desktop menu -->
-  <div class="container" x-data="{ megaMenu: false }">
+
+  <div
+    class="container"
+    x-data="{ megaMenu: false }"
+    @mouseover.away="megaMenu = false"
+  >
     <div class="md:flex hidden items-start relative" x-data="desktopMenu">
       <a
         :href="logoUrl"
@@ -85,7 +90,6 @@
           <li
             class="group trigger relative py-4 pr-2 2xl:pr-5 text-sm lg:text-base 2xl:text-lg tracking-wide"
             @mouseenter="megaMenu = true"
-            @click.away="megaMenu = false"
           >
             <button
               class="text-white hover:text-warning ease-in-out duration-200 cursor-pointer uppercase flex items-center gap-2"
