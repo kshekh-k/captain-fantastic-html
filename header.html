@@ -5,7 +5,10 @@
       <div class="md:flex hidden items-center justify-between py-4 flex-wrap">
         <div class="flex items-center gap-4">
           <img :src="ratingIcon" class="h-4 object-contain" alt />
-          <p class="font-lato text-xs underline text-brand" x-text="rating"></p>
+          <p
+            class="font-lato text-xs underline text-brand"
+            x-text="getHeaderGoogleRatings()"
+          ></p>
           <img :src="googleIcon" class="w-14" alt />
         </div>
         <div class="flex items-center gap-2 xl:gap-5 uppercase">

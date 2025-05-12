@@ -24,6 +24,44 @@ const desktopMenuTop = {
   phoneIcon: phoneIcon
 }
 
+const fetchGoogleRatingAndReviews = async () => {
+  const queryParams = new URLSearchParams({
+    fields: 'id,rating,reviews,userRatingCount',
+    key: 'AIzaSyBi6XpY8h5UN7LlHzJVbufsZKD_9ixN56c'
+  });
+  const response = await fetch(`https://places.googleapis.com/v1/places/ChIJgVkK9fkbdkgRDFwdVMx0cOg?${queryParams}`);
+  if (!response.ok) {
+    return {
+      error: true,
+      message: 'Failed to fetch Google ratings and reviews'
+    };
+  }
+  return await response.json();
+}
+
+const getHeaderGoogleRatings = async () => {
+  const data = await fetchGoogleRatingAndReviews();
+  return `${data.rating} (${data.userRatingCount} Reviews)`;
+}
+
+const getGoogleReviews = async () => {
+  const data = await fetchGoogleRatingAndReviews()
+  const reviews = data.reviews.filter(review => review.rating === 5).slice(0, 10);
+  console.log(reviews);
+  return reviews;
+}
+
+function getTestimonialsData() {
+  return {
+    slides: [],
+    getGoogleReviews: async () => {
+      const data = await fetchGoogleRatingAndReviews();
+      let reviews = data.reviews.filter(review => review.rating === 5).slice(0, 10);
+      return reviews;
+    }
+  }
+}
+
 const desktopMenu = {
   logo: logo,
   logoUrl: logoUrl,
