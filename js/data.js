@@ -199,6 +199,8 @@ function partyStickyListComponent() {
   };
 }
 
+
+
 function partyUSPList() {
   return {
     partyUSP: [
@@ -326,6 +328,17 @@ const whychoosecf = [
     description: 'Planning a children’s event should be fun, not stressful. From booking to the big day, we handle every detail, so you can relax and enjoy the magic.'
   },
 ]
+
+
+
+// Why Choose Us
+const whyChoose = [
+  {title:'3,000+ Parties Delivered Every Year', description:'We’ve brought joy and laughter to thousands of children — and counting! Our experience means you’re in expert hands.'},
+  {title:'2,000+ Glowing Reviews', description:'Parents, nurseries, and schools love us — and they’re not shy about saying so. Our happy customers are our biggest cheerleaders.'},
+  {title:'Professionally Trained Performers', description:'Every performer is handpicked, trained, and bursting with energy — ready to turn your party into a magical memory.'},
+  {title:'Fully DBS Checked', description:'Safety matters. Every team member is DBS-checked for your complete peace of mind'},
+]
+
 
 
 // Galleries

@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Home page reviews
 setTimeout(() => {
   new Swiper(".testimonial", {
-    loop: true,
+    loop: false,
     autoplay: {
       delay: 3000,
     },
@@ -56,7 +56,7 @@ setTimeout(() => {
       },
 
       1240: {
-        spaceBetween: 0,
+        spaceBetween: 20,
         slidesPerView: 4, // 3 slides on desktops
       },
     },
