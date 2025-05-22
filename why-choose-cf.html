@@ -22,10 +22,10 @@
         'bg-success': index % 4 === 2,
         'bg-white': index % 4 === 3, }" -->
 <div class="max-w-full overflow-auto xl:overflow-visible">
-      <div class="grid grid-cols-4 gap-5 py-14 min-w-[1200px] pr-5 xl:pr-0" x-data="whyChoose">
+      <div class="grid grid-cols-4 gap-5 pt-14 min-w-[1200px] pr-5 xl:pr-0" x-data="whyChoose">
         <template x-for="(item, index) in whyChoose" :key="index">
-          <div class="relative flex flex-col w-full ">
-            <div class="relative space-y-3 px-4 py-8 flex-1 bg-white shadow-4 rounded-xl "   :class="index == 0 ? 'xl:rotate-5 xl:skew-3' : index == 1 ? 'xl:-rotate-5 xl:-skew-3' : index == 2 ? 'xl:rotate-5 xl:skew-3' :'xl:-rotate-5 xl:-skew-3' ">
+          <div class="relative flex flex-col w-full  ">
+            <div class="relative space-y-3 px-4 py-8 flex-1 bg-white shadow-4 rounded-xl "   >
               <h3 class="text-3xl/7 font-noyh text-brand" x-text="item.title"></h3>
               <p class="text-xl font-medium" x-text="item.description"></p>
             </div>

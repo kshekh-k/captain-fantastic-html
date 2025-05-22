@@ -38,9 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
 setTimeout(() => {
   new Swiper(".testimonial", {
     loop: false,
-    autoplay: {
-      delay: 3000,
-    },
+    autoplay: false, 
+    // {
+    //   delay: 3000,
+    // },
     slidesPerView: 2,
     spaceBetween: 20,
 

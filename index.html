@@ -239,12 +239,12 @@
         >
           <h2 class="sr-only">Home Reviews from Google</h2>
           <div class="container">
-            <div class="swiper testimonial !px-3">
+            <div class="swiper testimonial -mx-3 !px-3">
               <div class="swiper-wrapper min-h-[430px]">
                 <template x-for="(slide, index) in slides" :key="index">
                   <div class="swiper-slide">
                     <div class="w-full relative max-w-md pt-32">
-                      <img
+                      <!-- <img
                         src="./assets/images/spark_red.svg"
                         alt
                         class="size-16 absolute left-0 top-20 z-10" :class="index % 4 === 0 ? 'block' : 'hidden'"
@@ -252,36 +252,33 @@
                         src="./assets/images/spark_yellow.svg"
                         alt
                         class="size-14 absolute right-10 -bottom-7 z-10" :class="index % 4 === 2 ? 'block' : 'hidden'"
-                      />
+                      /> -->
 
-                      <img
+                  <img
                         :src="`./assets/images/CF-${(index % 4) + 1}-Pirates_Pair-removebg-preview.png`"
                         alt="disco"
-                        class="h-36 left-1/2 -translate-x-1/2 absolute top-0" 
-                      />
+                        class="h-36 w-auto left-1/2 -translate-x-1/2 absolute top-0" 
+                      /> 
                        
                       <div
-                        class="relative w-full before:bg-black before:absolute before:size-full before:-left-0.5 before:-top-0.5 before:scale-[1.02]"
+                        class="relative w-full  "
                       >
-                        <div class="relative px-4 py-8 "  :class="{
-        'bg-warning': index % 4 === 0,
-        'bg-brand': index % 4 === 1,
-        'bg-success': index % 4 === 2,
-        'bg-brand-secondary': index % 4 === 3, 
-      }">
+                        <div class="relative px-4 py-8 bg-gray-100 border border-gray-300 p-4 rounded-lg shadow-5"  >
+                          <div class="flex gap-3 items-center">
+                            <div class="size-12 text-white rounded-full flex justify-center items-center text-xl shrink-0"  :class="index == 0 ? 'bg-warning' : index == 1 ? 'bg-brand' : index == 2 ? 'bg-success' : index == 3 ? 'bg-brand-secondary' : 'bg-pink-600' " x-text="slide.authorAttribution.displayName.charAt(0)"></div>
+                            <div class="space-y-1">
+                            <p class="text-left font-lato font-semibold text-lg"  x-text="slide.authorAttribution.displayName" ></p>
+                            <p class="text-left font-lato font-medium text-gray-500" >30 Minutes ago</p>
+                          </div>
+                          </div>
+                          <div class="space-y-1 pt-3">
                           <img
-                            src="./assets/icons/white_stars.svg"
+                            src="./assets/icons/star_rating.svg"
                             alt="white start"
-                            class="w-40 object-contain mx-auto mb-3"
-                          />
-                          <p
-                            class="sm:text-xl text-lg font-noyh uppercase line-clamp-5"
-                            x-text="slide.text.text"
-                          ></p>
-                          <p
-                            class="text-center pt-4 font-lato font-medium text-xs text-white"
-                            x-text="slide.authorAttribution.displayName"
-                          ></p>
+                            class="w-28 object-contain mr-auto "
+                          />                          
+                          <p class="text-gray-700 text-lg line-clamp-5" x-text="slide.text.text"></p>
+                        </div>                          
                         </div>
                       </div>
                     </div>
@@ -361,17 +358,14 @@
         </section>
 
         <!-- choose from our fantastic range of themed parties -->
-        <section class="xl:pb-14 lg:pb-10 md:pb-8 sm:pb-5 pb-3">
+        <section class=" sm:pb-5 pb-3">
           <div class="container">
             <h2
               class="uppercase xl:text-7xl lg:text-6xl sm:text-4xl text-3xl font-noyh text-center text-brand max-w-5xl mx-auto"
             >
               choose from our fantastic range of themed parties
             </h2>
-            <!-- <div
-              id="categories"
-              class="lg:my-10 my-5 py-0 flex items-center justify-center lg:gap-10 md:gap-5 gap-2 flex-wrap"
-            ></div> -->
+         
             <!-- Packages Section -->
             <div class="swiper packages">
               <div class="swiper-wrapper" id="packages"></div>
@@ -379,112 +373,10 @@
           </div>
         </section>
 
-        <!-- Award winning -->
-        <!-- <section
-          class="bg-cover bg-no-repeat bg-center bg-(image:--bg-usp) py-5 xl:py-14 relative"
-        >
-          <img
-            src="./assets/images/dots-tr-1.svg"
-            alt
-            class="absolute top-0 right-0 opacity-10 xl:opacity-100"
-          />
-          <img
-            src="./assets/images/dots-bl-1.svg"
-            alt
-            class="absolute bottom-0 left-0 opacity-10 xl:opacity-100"
-          />
-          <img
-            src="./assets/images/spark_blue.svg"
-            alt="bubble text"
-            class="w-24 object-contain bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 absolute sm:block hidden"
-          />
-          <div class="container relative">
-            <div
-              class="flex items-center 2xl:px-28 xl:px-20 lg:px-16 md:px-12 sm:px-5 md:py-16 py-10"
-            >
-              <div class="bg-black/50 w-full relative pb-10">
-                <img
-                  src="./assets/images/award-winning-thumb-1.png"
-                  alt="bubble2"
-                  class="absolute top-0 left-10 xl:left-0 -translate-x-1/2 -translate-y-1/2 size-20 xl:size-32 border-2 xl:border-8 border-brand rounded-full"
-                />
-
-                <img
-                  src="./assets/images/award-winning-thumb-2.png"
-                  alt="bubble2"
-                  class="absolute bottom-0 right-10 xl:right-0 translate-x-1/2 translate-y-1/2 size-20 xl:size-32 border-2 xl:border-8 border-brand rounded-full"
-                />
-
-                <img
-                  src="./assets/images/bubble_text.png"
-                  alt="bubble text"
-                  class="lg:max-w-screen-sm w-[440px] object-contain top-0 lg:-translate-y-1/3 left-0 right-0 mx-auto lg:absolute"
-                />
-                <img
-                  src="./assets/images/spark_red.svg"
-                  alt="bubble text"
-                  class="md:w-32 sm:w-24 xs:w-20 w-16 object-contain top-0 -translate-y-1/3 right-0 translate-x-1/3 absolute"
-                />
-
-                <img
-                  src="./assets/images/spark_yellow.svg"
-                  alt="bubble text"
-                  class="w-28 object-contain top-1/3 -translate-y-1/3 left-0 -translate-x-1/2 absolute sm:block hidden"
-                />
-
-                <img
-                  src="./assets/images/sun.png"
-                  alt="bubble text"
-                  class="w-24 object-contain top-1/3 -translate-y-1/3 right-0 translate-x-1/2 absolute sm:block hidden"
-                />
-                <div class="xl:pt-44 lg:px-12 sm:px-6 px-3">
-                  <h2
-                    class="lg:text-[62px] md:text-5xl sm:text-3xl text-2xl font-noyh text-center text-white leading-none"
-                  >
-                    PARTIES, THEATERS SHOWS <br />
-                    & FAMILY EVENTS
-                  </h2>
-                  <div
-                    class="flex gap-5 text-white font-lato text-xl mt-5 md:flex-row flex-col"
-                  >
-                    <div class="basis-1/2 flex flex-col gap-4">
-                      <p>
-                        Make your child’s celebration unforgettable with Captain
-                        Fantastic’s award-winning kids’ parties, theatre shows,
-                        and family events. With over 60,000 kids entertained
-                        annually, 2,000+ five-star Google reviews, and multiple
-                        industry awards, we’re trusted across the UK and
-                        America!
-                      </p>
-                      <p>
-                        Discover why families, corporates, schools, and
-                        nurseries love Captain Fantastic Children’s Parties.
-                        Book today for a truly fantastic experience!
-                      </p>
-                    </div>
-                    <div class="basis-1/2 flex flex-col gap-4">
-                      <p>
-                        We also host seasonal celebrations (Halloween,
-                        Christmas, Easter, Graduation), school awareness days,
-                        SEND-friendly parties, and family fun days for corporate
-                        children’s events.
-                      </p>
-                      <p>
-                        Our parties include Early Learners (Toddler & Peter
-                        Rabbit), Magical Themed Shows (Superheroes, Princesses,
-                        Pirates), Science Parties, Disco & UV Glow Parties, and
-                        Games Parties (Spy & Challenge).
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> -->
+         
 
         <!-- Events -->
-        <section class="xl:pt-20 lg:pt-16 md:pt-12 sm:pt-5 pt-3">
+        <section class="pt-3">
           <div class="container">
             <div
               class="relative border-5 border-gray-900 2xl:border-0 bg-orange 2xl:bg-transparent bg-blend-multiply bg-(image:--bg-comic-rays) 2xl:bg-(image:--bg-school) bg-center bg-cover 2xl:bg-contain bg-no-repeat flex flex-col lg:grid lg:grid-cols-12 gap-5 lg:min-h-165"
