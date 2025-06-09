@@ -339,6 +339,112 @@ const whyChoose = [
   {title:'Fully DBS Checked', description:'Safety matters. Every team member is DBS-checked for your complete peace of mind'},
 ]
 
+// Party Upgrades
+
+const partyUpgrade = [
+  {spark:'./assets/images/spark_green.svg',
+    thumb:'./assets/images/party-upgrade-1.png', thumbSize:'max-w-60',
+    title:'POPCORN & CANDYFLOSS',
+    description:'Treat your guests to classic party snacks with freshly made popcorn, candy floss, or both! '
+  },
+  {spark:'./assets/images/spark_yellow.svg',
+    thumb:'./assets/images/party-upgrade-2.png', thumbSize:'max-w-40',
+    title:'balloon modelling',
+    description:'Each child takes home a balloon dog, sword, or flower to remember the day!'
+  },
+  {spark:'./assets/images/spark_red.svg',
+    thumb:'./assets/images/party-upgrade-3.png', thumbSize:'max-w-40',
+    title:'FACE PAINTING',
+    description:'Perfect for ages 3+, our talented face painters can create stunning full-face designs (up to 12 per hour) or quick, fun designs to cater for larger groups.'
+  },
+  {spark:'./assets/images/spark_blue.svg',
+    thumb:'./assets/images/party-upgrade-4.png', thumbSize:'max-w-60',
+    title:'SMOKE MACHINE & AIR ZOOKA',
+    description:'Enhance the atmosphere with a cool haze and wow the crowd with smoke rings using the Air Zooka '
+  },
+]
+
+// Its Easy
+const itsEasy = [
+  { step:'-rotate-10',
+    title:'pick your party',
+    description:'Choose from either our classic, premium or deluxe tailored party packages',
+    icon:'./assets/images/iteasy-1.png'
+  },
+  {step:'rotate-10',
+    title:'book in minutes',
+    description:'Select your date, location and preferences online',
+    icon:'./assets/images/iteasy-2.png'
+  },
+  {step:'-rotate-10',
+    title:'Let us entertain you',
+    description:'We show up early, bring the fun and handle everything',
+    icon:'./assets/images/iteasy-3.png'
+  },
+]
+
+// party packages
+
+function piratePackage() {
+  return {
+    packages: [
+      {cardBg:'bg-brand',
+        character:'./assets/images/pirate-package-character-1.png',
+        title:'Pirate PARTIES',
+        description:'Get ready for an action-packed kids’ pirate party led by Pirate Polly or Pirate Pete, our very own swashbuckling entertainer! The children will dive into exciting pirate training, searching for a hidden treasure map and discovering the mermaid’s treasure. They’ll even meet a magical talking mermaid brought to life through a special drawing board! To finish the adventure, the children will summon their courage and walk the plank, earning their place as true pirates of the seven seas!',
+        partyThumbnail:'./assets/images/pirate-package-thumb-1.png',
+        partyIcon:'./assets/images/part-award-1.png',
+        includeTitle:'CLASSIC includes',
+        includes:[
+          'Entertainer dressed as  Pirate Polly or Pirate Pete',
+ 'Pirate -themed magic tricks & games',
+ 'Music and speaker',
+ 'Bubble machine',
+ 'Captain Fantastic branded table and backdrop',
+ 'Suitable for up to 25 kids'
+        ]
+
+      },
+      {cardBg:'bg-brand',
+        character:'./assets/images/pirate-package-character-2.png',
+        title:'Pirate PARTIES',
+        description:'For a pirate party with an extra wow factor, we recommend our Premium option. Our Premium includes everything from the Classic, plus: a snow machine, a smoke machine (venue permitting) and a lighting bar to dazzle your guests. Since you’ll have a premium entertainer, there’s no limit to the number of little superheroes you can invite! Additionally, Captain Fantastic will amaze the crowd with a thrilling Premium Trick!',
+        partyThumbnail:'./assets/images/pirate-package-thumb-2.png',
+        partyIcon:'./assets/images/part-award-2.png',
+        includeTitle:'PREMIUM includes',
+        includes:[
+          'All features from the Classic Party',
+ 'One of our most experienced entertainers ',
+ 'Snow and smoke machines',
+ 'Lighting bar',
+ 'Premium Trick',
+ 'No limit on number of children (under 50 recommended) '
+        ]
+
+      },
+      {cardBg:'bg-brand',
+        character:'./assets/images/pirate-package-character-3.png',
+        title:'Pirate PARTIES',
+        description:'For a pirate party with an extra wow factor, we recommend our Premium option. Our Premium includes everything from the Classic, plus: a snow machine, a smoke machine (venue permitting) and a lighting bar to dazzle your guests. Since you’ll have a premium entertainer, there’s no limit to the number of little superheroes you can invite! Additionally, Captain Fantastic will amaze the crowd with a thrilling Premium Trick!',
+        partyThumbnail:'./assets/images/pirate-package-thumb-3.png',
+        partyIcon:'./assets/images/part-award-3.png',
+        includeTitle:'DELUXE includes',
+        includes:[
+          'All features from the Premium Party',
+ 'Hosted by a Deluxe Entertainer ',
+ '(Company Owner) with over 5 years experience ',
+ 'and 50+ five star reviews',
+ 'Party creator and expert in all party types',
+ 'Top-of-the-range equipment'
+        ]
+
+      },
+    ],
+  };
+}
+
+
+
 
 
 // Galleries

@@ -1,0 +1,49 @@
+<div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5" x-data="piratePackage()">
+  <template x-for="(item, index) in packages" :key="index">
+    <div       class="flex flex-col"   
+    >
+      <!-- Character Image -->
+      <div class="flex justify-center">
+        <img :src="item.character" alt="Party character" class="w-60">
+      </div>
+
+      <!-- Package Content -->
+      <div class="rounded-2xl flex flex-col" :class="item.cardBg">
+        <div class="flex flex-col p-5 lg:p-10 min-h-170 md:min-h-150">
+          <h2 class="font-noyh text-4xl 2xl:text-8xl text-warning uppercase leading-none" x-text="index === 0 ? 'Classic' : index === 1 ? 'Premium' : 'Deluxe'"></h2>
+          <h3 class="2xl:text-5xl sm:text-4xl text-3xl font-noyh text-white uppercase leading-none" x-text="item.title"></h3>
+          <p class="text-xl text-white text-left" x-text="item.description"></p>
+        </div>
+
+        <!-- Includes Section -->
+        <div class="bg-warning flex flex-col pb-10  min-h-120">
+          <img :src="item.partyThumbnail" alt="Party thumb" class="-mt-20 relative max-w-60 mx-auto">
+          <h4 class="text-center text-brand uppercase text-4xl font-noyh mt-3" x-text="item.includeTitle"></h4>
+          <ul class="px-6 text-white space-y-1 mt-3 flex flex-col gap-2 justify-center items-center">
+            <template x-for="(listItem, inx) in item.includes" :key="inx">
+              <li class="flex gap-2 items-start text-black text-lg text-center relative items-start">
+                <span>✔</span>
+                <span x-text="listItem"></span>
+              </li>
+            </template>
+          </ul>
+        </div>
+
+        <!-- Party Timings -->
+        <div class="flex flex-col sm:flex-row items-center gap-2 p-10 max-w-100 mx-auto pb-20">
+          <img src="./assets/images/icon-stop-watch-2.svg" alt class="size-14 object-contain shrink-0" />
+          <p class="font-noyh text-xl text-white text-left">
+            <span class="uppercase text-warning text-xl">Party Timings</span><br />
+            2 Hours – Most Popular! Also available: 90 & 60 mins
+          </p>
+        </div>
+      </div>
+
+      <!-- Award Icon -->
+      <div class="flex justify-center">
+        <img :src="item.partyIcon" alt="Party Award" class="max-w-60 mx-auto -mt-20">
+      </div>
+    </div>
+  </template>
+</div>
+ 

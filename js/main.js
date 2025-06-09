@@ -27,6 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
   loadComponent("usp-section", "usp-section.html");
   loadComponent("party-structure", "party-structure.html");
   loadComponent("gallery", "gallery.html");
+  loadComponent("party-packages", "party-backage-card.html");
+  loadComponent("its-easy", "its-easy.html");
+  loadComponent("party-upgrades", "party-upgrades.html");
   loadComponent("ultimate-bespoke", "ultimate-bespoke.html");
   loadComponent("other-parties", "other-parties.html");
   loadComponent("faqs", "faqs.html");

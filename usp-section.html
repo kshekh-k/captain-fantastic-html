@@ -1,19 +1,5 @@
 <div class="relative bg-cover bg-no-repeat bg-center bg-(image:--bg-usp)">
-    <div class="absolute inset-0 flex flex-col">
-      <img src="./assets/images/spark_blue.svg" alt="" class="absolute size-10 md:size-16 lg:size-32 top-0 left-20 -translate-y-1/2">
-      <img src="./assets/images/spark_yellow.svg" alt="" class="absolute size-10 md:size-20 lg:size-40 bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
-      
-      <img
-        src="./assets/images/dots-tr-1.svg"
-        alt
-        class="ml-auto mb-auto opacity-10 xl:opacity-100"
-      />
-      <img
-        src="./assets/images/dots-bl-1.svg"
-        alt
-        class="mr-auto mt-auto opacity-10 xl:opacity-100"
-      />
-    </div>
+     
     <div class="relative py-16">
       <div class="container">
         <h2
@@ -26,7 +12,7 @@
           x-data="partyUSPList()"
         >
           
-          <img src="./assets/images/spark_red.svg" alt="" class="absolute size-8 md:size-14 lg:size-28 top-10 right-0 translate-x-1/2 -translate-y-1/2">
+           
           <template x-for="(item, index) in partyUSP" :key="item.id">
             <div
               class="bg-black/30 p-5 xl:p-10 flex flex-col sm:flex-row items-start gap-5 xl:gap-10"
