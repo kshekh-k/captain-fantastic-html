@@ -146,7 +146,6 @@ const menusMobile = {
   megaMenuMobile: megaMenusList
 }
 
-
 // footer
 const footer = {
   logo: logo,
@@ -162,11 +161,6 @@ const footer = {
     { text: 'Registered address details', url: '/' },
   ],
 }
-
-
-
-
-
 
 function partyStickyListComponent() {
   return {
@@ -198,8 +192,6 @@ function partyStickyListComponent() {
     ],
   };
 }
-
-
 
 function partyUSPList() {
   return {
@@ -237,7 +229,6 @@ function partyUSPList() {
 }
 
 
-
 function extraPartyList() {
   return {
     extraPartyfeatures: [
@@ -268,7 +259,6 @@ function extraPartyList() {
     ],
   };
 }
-
 
 const upgradeParties = [
   {
@@ -310,24 +300,63 @@ const whychoosecf = [
     description: 'We believe that learning should be fun! Through engaging performances and interactive games, we capture children’s attention while teaching valuable life skills, inspiring confidence, and sparking creativity.'
   },
   {
-    thumb: './assets/images/whychoosecf-thumb-2.png',
+    thumb: './assets/images/whychoosecf-thumb-about-2.png',
     thumbBorder: 'border-brand-secondary',
     title: 'Spreading Joy & Happiness',
     description: 'We love making people happy! We bring positive energy and excitement to every event, ensuring unforgettable experiences for kids, parents, schools and corporate events..'
   },
   {
-    thumb: './assets/images/whychoosecf-thumb-3.png',
+    thumb: './assets/images/whychoosecf-thumb-about-3.png',
     thumbBorder: 'border-success',
     title: 'Creative & Unique Experiences',
     description: 'Our events are filled with imaginative characters, interactive stories, and exciting games that make every party truly one-of-a-kind.'
   },
   {
-    thumb: './assets/images/whychoosecf-thumb-4.png',
+    thumb: './assets/images/whychoosecf-thumb-about-4.png',
     thumbBorder: 'border-orange',
     title: 'Stress-Free Event Planning',
     description: 'Planning a children’s event should be fun, not stressful. From booking to the big day, we handle every detail, so you can relax and enjoy the magic.'
   },
 ]
+
+
+
+const becomeFranchise = [
+  {
+    thumb: './assets/images/whychoosecf-thumb-1.png',
+    thumbBorder: 'border-brand',
+    bgColor: 'before:bg-warning',
+    titleColor:'text-brand',
+    title: 'Complete Business Setup Support',
+    description: 'Get your business running quickly and efficiently with expert guidance.'
+  },
+  {
+    thumb: './assets/images/whychoosecf-thumb-about-2.png',
+    thumbBorder: 'border-warning',
+    bgColor: 'before:bg-brand-secondary',
+     titleColor:'text-warning',
+    title: 'Step-by-Step Operations Manual',
+    description: 'Your complete guide to running a successful franchise, covering every aspect of the business.'
+  },
+  {
+    thumb: './assets/images/whychoosecf-thumb-about-3.png',
+    thumbBorder: 'border-warning',
+      bgColor: 'before:bg-brand-secondary',
+       titleColor:'text-warning',
+    title: 'Personal Business Coaching',
+    description: 'One-on-one coaching to develop your skills and grow your franchise.'
+  },
+  {
+    thumb: './assets/images/whychoosecf-thumb-about-4.png',
+    thumbBorder: 'border-warning',
+     bgColor: 'before:bg-brand',
+      titleColor:'text-warning',
+    title: 'Full, In-Depth Training',
+    description: 'Receive hands-on training in performance, event management, and business operations.'
+  },
+]
+
+
 
 
 
@@ -548,3 +577,73 @@ function filmschoolGallery() {
     ],
   };
 }
+// Become an Entertainer
+function becomeEntertainerGallery() {
+  return {
+    gallery: [
+      './assets/images/gallery-be-thumb-1.png',
+      './assets/images/gallery-be-thumb-2.png',
+      './assets/images/gallery-be-thumb-3.png',
+      './assets/images/gallery-be-thumb-4.png',
+    ],
+  };
+}
+// Become an Franchise
+function becomeFranchiseGallery() {
+  return {
+    gallery: [
+      './assets/images/gallery-bf-thumb-1.png',
+      './assets/images/gallery-bf-thumb-2.png',
+      './assets/images/gallery-bf-thumb-3.png',
+      './assets/images/gallery-bf-thumb-4.png',
+    ],
+  };
+}
+// Unlimitted Party
+function unlimittedPartyGallery() {
+  return {
+    gallery: [
+      './assets/images/gallery-unlimitted-thumb-1.png',
+      './assets/images/gallery-unlimitted-thumb-2.png',
+      './assets/images/gallery-unlimitted-thumb-3.png',
+      './assets/images/gallery-unlimitted-thumb-4.png',
+    ],
+  };
+}
+
+// graduation Party
+function graduationPartyGallery() {
+  return {
+    gallery: [
+      './assets/images/gallery-graduation-thumb-1.png',
+      './assets/images/gallery-graduation-thumb-2.png',
+      './assets/images/gallery-graduation-thumb-3.png',
+      './assets/images/gallery-graduation-thumb-4.png',
+    ],
+  };
+}
+
+// christmas Party
+function christmasPartyGallery() {
+  return {
+    gallery: [
+      './assets/images/gallery-christmas-thumb-1.png',
+      './assets/images/gallery-christmas-thumb-2.png',
+      './assets/images/gallery-christmas-thumb-3.png',
+      './assets/images/gallery-christmas-thumb-4.png',
+    ],
+  };
+}
+// easter Party
+function easterPartyGallery() {
+  return {
+    gallery: [
+      './assets/images/gallery-easter-thumb-1.png',
+      './assets/images/gallery-easter-thumb-2.png',
+      './assets/images/gallery-easter-thumb-3.png',
+      './assets/images/gallery-easter-thumb-4.png',
+    ],
+  };
+}
+
+ 

@@ -67,6 +67,8 @@
     --bg-image-1-1: 100% 100%;
     --bg-film-school: url('../assets/images/hero-film-school.png');
     --bg-highlight: url('../assets/images/bg-highlight.png');
+    --bg-highlight-party-hero: url('../assets/images/bg-highlight-party-hero.png');
+    --bg-highlight-be: url('../assets/images/be-heading-bg.png');
     --bg-highlight-size: 100% 90%;
     --my-rotattion-me:-5deg;
     --booking-button:180.00deg, rgb(237, 15, 143),rgb(229, 1, 81);

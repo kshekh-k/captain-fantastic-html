@@ -89,11 +89,9 @@ new Swiper(".worked", {
 });
 
 new Swiper(".packages", {
-  loop: true, // Infinite loop
+  loop: false, // Infinite loop
   spaceBetween: 20, // Space between slides
-  autoplay: {
-    delay: 3000,
-  },
+  autoplay: false,
   breakpoints: {
     320: {
       slidesPerView: 1, // 1 slide on small screens
