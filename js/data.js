@@ -107,10 +107,10 @@ const megaMenusList = [
   {
     title: 'Seasonal',
     items: [
-      { text: 'Easter', url: '/' },
-      { text: 'Graduation', url: '/' },
+      { text: 'Easter', url: '/easter-parties.html' },
+      { text: 'Graduation', url: '/graduations-parties.html' },
       { text: 'Halloween', url: '/' },
-      { text: 'Christmas', url: '/' }
+      { text: 'Christmas', url: '/christmas-parties.html' }
     ]
   },
   {
@@ -123,7 +123,7 @@ const megaMenusList = [
   {
     title: 'Larger Packages',
     items: [
-      { text: 'Ultimate', url: '/' },
+      { text: 'Ultimate', url: '/unlimitted-parties.html' },
       { text: 'Bespoke', url: '/' }
     ]
   }
@@ -642,6 +642,75 @@ function easterPartyGallery() {
       './assets/images/gallery-easter-thumb-2.png',
       './assets/images/gallery-easter-thumb-3.png',
       './assets/images/gallery-easter-thumb-4.png',
+    ],
+  };
+}
+
+// nursery-entertainment Party
+function nurseryEntertainmentPartyGallery() {
+  return {
+    gallery: [
+      './assets/images/gallery-nursery-entertainment-thumb-1.png',
+      './assets/images/gallery-nursery-entertainment-thumb-2.png',
+      './assets/images/gallery-nursery-entertainment-thumb-3.png',
+      './assets/images/gallery-nursery-entertainment-thumb-4.png',
+    ],
+  };
+}
+
+// freehalfhourintroductory Party
+function freehalfhourintroductoryPartyGallery() {
+  return {
+    gallery: [
+      './assets/images/gallery-freehalfhourintroductory-thumb-1.png',
+      './assets/images/gallery-freehalfhourintroductory-thumb-2.png',
+      './assets/images/gallery-freehalfhourintroductory-thumb-3.png',
+      './assets/images/gallery-freehalfhourintroductory-thumb-4.png',
+    ],
+  };
+}
+// gallery-school-parties-thumb-1 Party
+function schoolPartyGallery() {
+  return {
+    gallery: [
+      './assets/images/gallery-school-parties-thumb-1.png',
+      './assets/images/gallery-school-parties-thumb-2.png',
+      './assets/images/gallery-school-parties-thumb-3.png',
+      './assets/images/gallery-school-parties-thumb-4.png',
+    ],
+  };
+}
+// gallery-awareness-days-thumb-1 Party
+function awarenessPartyGallery() {
+  return {
+    gallery: [
+      './assets/images/gallery-awareness-days-thumb-1.png',
+      './assets/images/gallery-awareness-days-thumb-2.png',
+      './assets/images/gallery-awareness-days-thumb-3.png',
+      './assets/images/gallery-awareness-days-thumb-4.png',
+    ],
+  };
+}
+// halloween Party
+function halloweenShowsEventsGallery() {
+  return {
+    gallery: [
+      './assets/images/gallery-halloween-shows-events-thumb-1.png',
+      './assets/images/gallery-halloween-shows-events-thumb-2.png',
+      './assets/images/gallery-halloween-shows-events-thumb-3.png',
+      './assets/images/gallery-halloween-shows-events-thumb-4.png',
+    ],
+  };
+}
+
+// halloween Party
+function seasonalEventsGallery() {
+  return {
+    gallery: [
+      './assets/images/gallery-seasonal-events-thumb-1.png',
+      './assets/images/gallery-seasonal-events-thumb-2.png',
+      './assets/images/gallery-seasonal-events-thumb-3.png',
+      './assets/images/gallery-seasonal-events-thumb-4.png',
     ],
   };
 }
