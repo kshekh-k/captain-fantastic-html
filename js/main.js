@@ -104,3 +104,21 @@ new Swiper(".packages", {
     },
   },
 });
+
+
+new Swiper(".overview-all-areas", {
+  loop: false, // Infinite loop
+  spaceBetween: 20, // Space between slides
+  autoplay: false,
+  breakpoints: {
+    320: {
+      slidesPerView: 1, // 1 slide on small screens
+    },
+    640: {
+      slidesPerView: 2, // 2 slides on tablets
+    },
+    1024: {
+      slidesPerView: 4, // 3 slides on desktops
+    },
+  },
+});

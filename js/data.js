@@ -558,10 +558,10 @@ function pickpartyGallery() {
 function aboutusGallery() {
   return {
     gallery: [
-      './assets/images/gallery-thumb-aboutus-1.png',
-      './assets/images/gallery-thumb-aboutus-2.png',
-      './assets/images/gallery-thumb-aboutus-3.png',
-      './assets/images/gallery-thumb-aboutus-4.png',
+      './assets/images/gallery-thumb-aboutus-5.png',
+      './assets/images/gallery-thumb-aboutus-6.png',
+      './assets/images/gallery-thumb-aboutus-7.png',
+      './assets/images/gallery-thumb-aboutus-8.png',
     ],
   };
 }
@@ -711,6 +711,18 @@ function seasonalEventsGallery() {
       './assets/images/gallery-seasonal-events-thumb-2.png',
       './assets/images/gallery-seasonal-events-thumb-3.png',
       './assets/images/gallery-seasonal-events-thumb-4.png',
+    ],
+  };
+}
+
+// Regional Sub
+function regionalGallery() {
+  return {
+    gallery: [
+      './assets/images/gallery-regional-sub-thumb-1.png',
+      './assets/images/gallery-regional-sub-thumb-2.png',
+      './assets/images/gallery-regional-sub-thumb-3.png',
+      './assets/images/gallery-regional-sub-thumb-4.png',
     ],
   };
 }
