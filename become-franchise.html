@@ -27,55 +27,74 @@
       <section class="relative pt-20 sm:pt-24 md:pt-32 xl:pt-40" x-data="{'formModal': null}"
         x-on:keydown.escape="formModal=false" x-effect="document.body.classList.toggle('overflow-hidden', formModal)">
         <div class="container flex flex-col gap-2">
-          <div class="relative">
-            <picture>
-              <!-- Image for screens smaller than 768px -->
-              <source srcset="./assets/images/become-franchise-hero-mobile.png" media="(max-width: 767px)">
-              <!-- Default image for larger screens -->
-              <img src="./assets/images/become-franchise-hero-desktop.png" alt="become an franchise onwer"
-                class="w-full rounded shadow">
-            </picture>
+          <div
+            class="relative w-full before:bg-black before:absolute before:size-full before:-left-0.5 before:-top-0.5 before:scale-[1.01] before:skew-x-0.5 before:-skew-y-0.5 flex justify-center items-center">
             <div
-              class="bg-warning md:bg-transparent border-4 border-[#080909] md:border-0 -mt-5 md:mt-0 md:absolute md:top-0 left-0 flex flex-col md:grid md:grid-cols-2 md:items-end">
-              <div class="space-y-0.5 sm:space-y-3 md:max-w-xl p-5 2xl:p-20  min-h-44 sm:min-h-80 lg:min-h-auto  ">
-                <svg viewBox="0 0 63.7695 63.7677" fill="currentColor" class="size-10 sm:size-14 text-brand">
-                  <path id="Path 26734"
-                    d="M32.44 0C14.83 -0.31 0.31 13.72 0 31.32C-0.31 48.93 13.72 63.45 31.32 63.76C48.93 64.07 63.45 50.04 63.76 32.44C64.07 14.83 50.04 0.31 32.44 0ZM32.02 42.55C31.09 43.46 30 44.17 28.78 44.69C27.11 45.39 25.14 45.72 22.88 45.68C20.81 45.64 18.95 45.26 17.33 44.52C15.69 43.79 14.32 42.79 13.2 41.53C12.07 40.26 11.22 38.77 10.64 37.06C10.06 35.34 9.78 33.48 9.82 31.48C9.85 29.45 10.22 27.58 10.91 25.89C11.6 24.19 12.56 22.74 13.78 21.52C15 20.31 16.45 19.37 18.14 18.71C19.83 18.05 21.67 17.74 23.69 17.78C24.71 17.8 25.68 17.9 26.58 18.1C27.48 18.3 28.32 18.56 29.1 18.89C29.89 19.23 30.6 19.62 31.26 20.09C31.5 20.26 31.74 20.44 31.96 20.62C32.57 21.12 32.66 22.01 32.18 22.63L30.81 24.41C30.67 24.58 30.5 24.74 30.31 24.88C30.12 25.02 29.84 25.09 29.48 25.08C29.27 25.07 29.06 25.01 28.87 24.91C28.68 24.81 28.47 24.69 28.26 24.54C28.03 24.39 27.79 24.23 27.52 24.06C27.26 23.89 26.94 23.73 26.58 23.57C26.21 23.43 25.78 23.3 25.29 23.19C24.8 23.08 24.22 23.02 23.56 23.01C22.51 22.99 21.55 23.17 20.67 23.54C19.8 23.91 19.04 24.46 18.39 25.19C17.75 25.93 17.25 26.83 16.88 27.91C16.52 28.98 16.33 30.21 16.3 31.6C16.28 33 16.45 34.24 16.81 35.34C17.17 36.43 17.67 37.36 18.32 38.11C18.96 38.87 19.72 39.44 20.58 39.85C21.45 40.25 22.39 40.46 23.39 40.48C23.96 40.49 24.49 40.47 24.96 40.42C25.44 40.37 25.88 40.29 26.3 40.16C26.71 40.04 27.1 39.87 27.47 39.66C27.83 39.45 28.21 39.17 28.59 38.84C28.74 38.72 28.91 38.62 29.08 38.54C29.26 38.46 29.44 38.43 29.63 38.43C29.78 38.43 29.92 38.46 30.08 38.52C30.22 38.58 30.37 38.68 30.5 38.82L32.07 40.53C32.6 41.11 32.58 42.01 32.02 42.55ZM54.15 20.4C54.12 22 52.8 23.27 51.2 23.24L42.64 23.09L42.52 30.16L52.06 30.33L52.02 32.43C52 34.03 50.68 35.3 49.08 35.27L42.43 35.16L42.24 46.02L35.73 45.9L36.22 18L54.18 18.31L54.15 20.4Z"
-                    fill-rule="nonzero" />
-                </svg>
-                <h1 class="xl:text-5xl lg:text-4xl sm:text-3xl text-xl font-noyh uppercase text-black">Franchise
-                  Opportunity: AIGBURTH, Liverpool (L17)
-                </h1>
-                <p class="lg:text-3xl/8 md:text-xl/6 text-lg leading-snug font-noyh text-brand">
-                  Become a Captain Fantastic Franchise Partner for L17
-                </p>
+              class="relative p-3 flex-1 sm:p-8 before:inset-0 before:absolute before:-skew-1 before:bg-brand-secondary">
+              <div class="relative lg:grid lg:grid-cols-12 flex flex-col-reverse gap-5 lg:gap-10 p-5 lg:p-10">
+                <div class="col-span-6 space-y-0.5 sm:space-y-3 ">
+                  <svg viewBox="0 0 63.7695 63.7677" fill="currentColor" class="size-10 sm:size-14 text-white">
+                    <path id="Path 26734"
+                      d="M32.44 0C14.83 -0.31 0.31 13.72 0 31.32C-0.31 48.93 13.72 63.45 31.32 63.76C48.93 64.07 63.45 50.04 63.76 32.44C64.07 14.83 50.04 0.31 32.44 0ZM32.02 42.55C31.09 43.46 30 44.17 28.78 44.69C27.11 45.39 25.14 45.72 22.88 45.68C20.81 45.64 18.95 45.26 17.33 44.52C15.69 43.79 14.32 42.79 13.2 41.53C12.07 40.26 11.22 38.77 10.64 37.06C10.06 35.34 9.78 33.48 9.82 31.48C9.85 29.45 10.22 27.58 10.91 25.89C11.6 24.19 12.56 22.74 13.78 21.52C15 20.31 16.45 19.37 18.14 18.71C19.83 18.05 21.67 17.74 23.69 17.78C24.71 17.8 25.68 17.9 26.58 18.1C27.48 18.3 28.32 18.56 29.1 18.89C29.89 19.23 30.6 19.62 31.26 20.09C31.5 20.26 31.74 20.44 31.96 20.62C32.57 21.12 32.66 22.01 32.18 22.63L30.81 24.41C30.67 24.58 30.5 24.74 30.31 24.88C30.12 25.02 29.84 25.09 29.48 25.08C29.27 25.07 29.06 25.01 28.87 24.91C28.68 24.81 28.47 24.69 28.26 24.54C28.03 24.39 27.79 24.23 27.52 24.06C27.26 23.89 26.94 23.73 26.58 23.57C26.21 23.43 25.78 23.3 25.29 23.19C24.8 23.08 24.22 23.02 23.56 23.01C22.51 22.99 21.55 23.17 20.67 23.54C19.8 23.91 19.04 24.46 18.39 25.19C17.75 25.93 17.25 26.83 16.88 27.91C16.52 28.98 16.33 30.21 16.3 31.6C16.28 33 16.45 34.24 16.81 35.34C17.17 36.43 17.67 37.36 18.32 38.11C18.96 38.87 19.72 39.44 20.58 39.85C21.45 40.25 22.39 40.46 23.39 40.48C23.96 40.49 24.49 40.47 24.96 40.42C25.44 40.37 25.88 40.29 26.3 40.16C26.71 40.04 27.1 39.87 27.47 39.66C27.83 39.45 28.21 39.17 28.59 38.84C28.74 38.72 28.91 38.62 29.08 38.54C29.26 38.46 29.44 38.43 29.63 38.43C29.78 38.43 29.92 38.46 30.08 38.52C30.22 38.58 30.37 38.68 30.5 38.82L32.07 40.53C32.6 41.11 32.58 42.01 32.02 42.55ZM54.15 20.4C54.12 22 52.8 23.27 51.2 23.24L42.64 23.09L42.52 30.16L52.06 30.33L52.02 32.43C52 34.03 50.68 35.3 49.08 35.27L42.43 35.16L42.24 46.02L35.73 45.9L36.22 18L54.18 18.31L54.15 20.4Z"
+                      fill-rule="nonzero" />
+                  </svg>
+                  <h1 class="xl:text-5xl lg:text-4xl sm:text-3xl text-xl font-noyh uppercase text-white">Turn Fun Into
+                    Freedom – Start Your Own Kids’ Entertainment Business with Captain Fantastic!
+                  </h1>
+                  <p class="lg:text-3xl/8 md:text-xl/6 text-lg leading-snug font-noyh text-white">
+                    Become a Captain Fantastic Franchise Partner
+                  </p>
+
+                  <div class="flex justify-start flex-col sm:flex-row gap-5 pt-5">
+                    <button x-on:click="formModal = 'areaDiscover'"
+                      class="lg:flex-none flex-1 flex items-center justify-center gap-2 py-3 px-6 text-lg rounded-full border border-white bg-brand text-white ease-in-out duration-200 hover:bg-white hover:text-brand">
+                      <span class="font-noyh text-lg uppercase">
+                        BOOK A DISCOVERY CALL
+                      </span>
+                    </button>
+                    <button x-on:click="formModal = 'completeApp'"
+                      class="lg:flex-none flex-1 flex items-center justify-center gap-2 py-3 px-6 text-lg rounded-full border border-brand bg-warning text-brand ease-in-out duration-200 hover:bg-brand hover:text-white">
+                      <span class="font-noyh text-lg uppercase">
+                        COMPLETE APPLICATION FORM
+                      </span>
+                    </button>
+                  </div>
+
+                </div>
+                <div class="col-span-6 relative">
+                  <div class="relative">
+                    <div class="border-8 border-white max-w-full relative">
+                      <img src="./assets/images/become-franchise-thumb.png" alt="" class="object-cover w-full">
+                      <a href="/"
+                        class="md:flex hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:size-36 size-24 rounded-full border-4 border-white items-center justify-center bg-black/40 hover:bg-brand text-brand hover:text-white ease-in-out duration-200">
+                        <svg viewBox="0 0 57 65" fill="currentColor" class="size-8 xl:size-10">
+                          <path id="Polygon 10" d="M57 32.5L0 65L0 0L57 32.5Z"></path>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="absolute inset-0 hidden xl:block">
+                      <img src="./assets/images/spark_yellow.svg"
+                        class="absolute size-20 bottom-0 left-0 -translate-x-1/2" alt="">
+                      <img src="./assets/images/spark_yellow.svg"
+                        class="absolute size-24 top-0 right-0 -translate-y-1/2 " alt="">
+                    </div>
+                  </div>
+                  <div class="flex justify-center pt-5">
+                    <p class="text-xl font-extrabold text-white uppercase text-center font-lato">
+                      play the video
+                    </p>
+                  </div>
+                </div>
               </div>
-
-              <div class="flex justify-start flex-col sm:flex-row gap-5 p-5 pt-0 md:pt-5">
-                <button x-on:click="formModal = 'areaDiscover'"
-                  class="lg:flex-none flex-1 flex items-center justify-center gap-2 py-3 px-6 text-lg rounded-full border border-white bg-brand text-white ease-in-out duration-200 hover:bg-white hover:text-brand">
-                  <span class="font-noyh text-lg uppercase">
-                    BOOK A DISCOVERY CALL
-                  </span>
-                </button>
-                <button x-on:click="formModal = 'completeApp'"
-                  class="lg:flex-none flex-1 flex items-center justify-center gap-2 py-3 px-6 text-lg rounded-full border border-brand bg-warning text-brand ease-in-out duration-200 hover:bg-brand hover:text-white">
-                  <span class="font-noyh text-lg uppercase">
-                    COMPLETE APPLICATION FORM
-                  </span>
-                </button>
-              </div>
-
-
             </div>
           </div>
+
         </div>
 
 
         <div class="fixed inset-0 flex items-center justify-center bg-black/95 z-50 p-3" role="dialog" tabindex="-1"
           x-show="formModal === 'areaDiscover'" x-on:click.away="formModal = null" x-cloak x-transition>
-          <div @click.away="formModal = null"
-            class="bg-white rounded-2xl shadow-lg p-3 max-w-6xl w-full max-h-screen flex flex-col">
+          <div @click.away="formModal = null" class="bg-white rounded-2xl shadow-lg p-3 max-w-6xl w-full max-h-screen flex flex-col">
             <div class="bg-brand-secondary rounded-xl space-y-3 pb-2 flex-1 flex flex-col">
               <div class="flex justify-between gap-2 items-start p-5 pb-0">
                 <svg viewBox="0 0 63.7695 63.7677" fill="currentColor" class="size-10 sm:size-14 text-white">
@@ -95,8 +114,7 @@
                 </button>
               </div>
 
-              <div
-                class="flex flex-col md:grid md:grid-cols-2 gap-5 xl:gap-10 p-5 md:p-10 pt-0 md:pt-0 md:pl-24 relative flex-1 overflow-auto max-h-[calc(100vh-150px)]">
+              <div class="flex flex-col md:grid md:grid-cols-2 gap-5 xl:gap-10 p-5 md:p-10 pt-0 md:pt-0 md:pl-24 relative flex-1 overflow-auto max-h-[calc(100vh-150px)]">
                 <img src="./assets/images/wccf-item-1.png" alt="why choose cf"
                   class="w-28 left-0 absolute bottom-0 mt-0.5 md:block hidden">
                 <div class="space-y-3">
@@ -149,10 +167,11 @@
           </div>
         </div>
 
+
+
         <div class="fixed inset-0 flex items-center justify-center bg-black/95 z-50 p-3" role="dialog" tabindex="-1"
           x-show="formModal === 'completeApp'" x-on:click.away="formModal = null" x-cloak x-transition>
-          <div @click.away="formModal = null"
-            class="bg-white rounded-2xl shadow-lg p-3 max-w-6xl w-full max-h-screen flex flex-col">
+          <div @click.away="formModal = null" class="bg-white rounded-2xl shadow-lg p-3 max-w-6xl w-full max-h-screen flex flex-col">
 
             <div class="bg-brand-secondary rounded-xl space-y-3 pb-2 flex-1 flex flex-col">
               <div class="flex justify-between gap-2 items-start p-5 pb-0">
@@ -173,8 +192,7 @@
                 </button>
               </div>
 
-              <div
-                class="flex flex-col md:grid md:grid-cols-2 gap-5 xl:gap-10 p-5 md:p-10 pt-0 md:pt-0 md:pl-24 relative flex-1 overflow-auto max-h-[calc(100vh-150px)]">
+              <div class="flex flex-col md:grid md:grid-cols-2 gap-5 xl:gap-10 p-5 md:p-10 pt-0 md:pt-0 md:pl-24 relative flex-1 overflow-auto max-h-[calc(100vh-150px)]">
                 <img src="./assets/images/wccf-item-1.png" alt="why choose cf"
                   class="w-28 left-0 absolute bottom-0 mt-0.5 md:block hidden">
                 <div class="space-y-3">
@@ -234,38 +252,24 @@
         </div>
 
 
+
       </section>
 
+      <!-- About Intro -->
       <section class="relative pt-10 xl:pt-14">
-        <div class="container">
-          <div class="flex flex-col md:grid md:grid-cols-12 gap-5 lg:gap-10 xl:gap-20 items-center ">
-            <div class="col-span-6 flex flex-col xl:flex-row justify-center items-center relative">
-              <div class="relative">
-                <img src="./assets/images/uk-flag-2.svg" alt="" class="" />
-                <div
-                  class="size-40 bg-brand rounded-full absolute top-40 2xl:top-1/2 left-0 2xl:left-auto 2xl:right-0 -rotate-3 hidden md:flex justify-center items-center -translate-y-1/2 -translate-x-1/2 2xl:translate-x-1/2">
-                  <img src="./assets/images/wccf-item-1.png" alt="why choose cf"
-                    class="w-32 mx-auto absolute top-0 -translate-y-3/4">
-                  <span
-                    class="text-center text-warning p-5 font-noyh text-base/4 lg:text-xl/6 uppercase flex justify-center items-center">
-                    franchise
-                    opportunity
-                    in L17
-                  </span>
-                </div>
-              </div>
-
+        <div class="container flex flex-col gap-2">
+          <div
+            class="flex flex-col md:grid md:grid-cols-12 gap-5 lg:gap-10 xl:gap-20 bg-warning rounded-xl p-5 xl:p-10">
+            <div class="col-span-6 flex justify-center items-end">
+              <img src="./assets/images/become-franchise-intro.png" alt="" class="w-auto">
             </div>
             <div class="col-span-6">
-              <div class="relative flex flex-col gap-5 max-w-xl pb-5 md:pb-10 xl:pb-20">
+              <div class="relative flex flex-col gap-5 max-w-xl pb-10 md:pb-14 xl:pb-20">
                 <h2 class="lg:text-6xl sm:text-5xl text-4xl text-brand font-noyh uppercase text-left tracking-wide">
-                  AIGBURTH,
-                  LIVERPOOL
-                  needs a new
-                  party hero!</h2>
-                <p class="text-lg text-black/90 text-left font-semibold">This buzzing, family-friendly area is packed
-                  with parents looking for unforgettable kids’ parties—and right now, there’s no Captain Fantastic to
-                  save the day.</p>
+                  become the next captain fantastic party hero!</h2>
+                <p class="text-lg text-black/90 text-left font-semibold">We’re always looking for fantastic super heros
+                  to meet our demand. Partner with us and you’ll be flying before you know it!!!</p>
+
                 <ul class="text-lg xl:text-xl text-black/90 text-left font-noyh">
                   <li>✔ A Proven System That Works</li>
                   <li>✔ Solo or Scalable</li>
@@ -274,15 +278,67 @@
                 </ul>
               </div>
             </div>
+          </div>
+          <div class="-mx-4 -mt-20 ">
+            <img src="./assets/images/icon-wave-white.svg" alt="" class="md:w-full h-32 sm:h-24 md:h-auto">
+          </div>
+        </div>
+      </section>
 
+      <section class="relative ">
+        <div class="container">
+          <div class="flex flex-col md:grid md:grid-cols-12 gap-5 lg:gap-10 xl:gap-20 items-center ">
+            <div class="col-span-6">
+              <div class="relative flex flex-col gap-5 max-w-xl pb-5 md:pb-10 xl:pb-20">
+                <h2 class="lg:text-6xl sm:text-5xl text-4xl text-brand font-noyh uppercase text-left tracking-wide">
+                  franchisee
+                  OPPORTUNITIES
+                  NATIONWIDE</h2>
+                <p class="text-lg text-black/90 text-left font-semibold">We’ve got postcodes available across the
+                  country.
+                  We’re Growing Fast—and We Want You On the Map!</p>
+                <p class="text-lg text-black/90 text-left font-medium">Captain Fantastic franchises are lighting up
+                  towns and cities across the UK—but we’re not done yet! We’re actively looking for passionate,
+                  motivated individuals to join our mission to make kids laugh nationwide.</p>
+              </div>
+            </div>
+            <div class="col-span-6 flex flex-col xl:flex-row justify-center items-center relative">
+              <div class="relative">
+                <img src="./assets/images/uk-map.svg" alt="" class="" />
+                <div
+                  class="size-40 bg-brand rounded-full absolute top-40 2xl:top-1/2 left-0 2xl:left-auto 2xl:right-0 rotate-3 hidden md:flex justify-center items-center -translate-y-1/2 -translate-x-1/2 2xl:translate-x-1/2">
+                  <img src="./assets/images/wccf-item-1.png" alt="why choose cf"
+                    class="w-32 mx-auto absolute top-0 -translate-y-full mt-0.5">
+                  <span
+                    class="text-center text-warning p-5 font-noyh text-base/4 lg:text-xl/6 uppercase flex justify-center items-center">
+                    WE NEED
+                    heros all
+                    across
+                    the uk
+                  </span>
+
+                </div>
+
+              </div>
+              <div
+                class="rounded-xl bg-warning p-5 font-noyh text-xl text-black/80 max-w-sm xl:absolute xl:left-0 xl:bottom-0 xl:-translate-x-1/2 xl:-rotate-6">
+                Hover over the map to explore available
+                franchise areas. Each postcode region
+                is clickable—zoom in to see exactly
+                where we’re looking for new heroes!
+              </div>
+            </div>
           </div>
 
         </div>
       </section>
 
-
-      <section class="pt-10 ">
+      <section class="pt-10 xl:pt-20">
         <div class="container">
+          <h2
+            class="max-w-6xl mx-auto md:text-7xl sm:text-5xl text-4xl text-brand font-noyh uppercase text-center tracking-wide">
+            Be your own boss in the UK’s
+            booming kids’ party industry</h2>
           <div class="max-w-full overflow-auto xl:overflow-visible">
             <div class="grid grid-cols-3 gap-5 pt-14 w-250 pr-5 xl:pr-0 mx-auto">
               <div class="relative space-y-3 p-10 flex-1 text-white rounded-3xl shadow-1 bg-brand">
@@ -297,6 +353,7 @@
                   locations.
                 </p>
               </div>
+
               <div class="relative space-y-3 p-10 flex-1 text-white rounded-3xl shadow-1 bg-brand-secondary">
                 <img src="./assets/images/icon-check-mark.svg" alt=""
                   class="size-16 shrink-0 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -308,6 +365,8 @@
                   Leverage our national reputation and digital marketing engine to drive leads and build trust from
                 </p>
               </div>
+
+
               <div class="relative space-y-3 p-10 flex-1 text-white rounded-3xl shadow-1 bg-brand">
                 <img src="./assets/images/icon-check-mark.svg" alt=""
                   class="size-16 shrink-0 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -322,52 +381,94 @@
               </div>
             </div>
           </div>
-          <div class="flex justify-center pt-10">
-            <a href="/"
-              class="lg:flex-none flex-1 flex flex-wrap items-center justify-between gap-2 py-3 px-6 text-lg rounded-full border border-brand text-brand ease-in-out duration-200 hover:bg-brand hover:text-white text-center">
-              <span class="font-noyh text-lg uppercase">
-                DOWNLOAD OUR FRANCHISE INFO PACK
-              </span>
-              <svg viewBox="0 0 25.874 16.8096" fill="currentColor" class="size-5 hidden sm:block">
-                <path id="Path 132"
-                  d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z">
-                </path>
-              </svg>
-            </a>
-          </div>
         </div>
       </section>
 
       <section class="relative pt-10 xl:pt-20">
-        <div class="container">
-          <div class="flex flex-col md:grid md:grid-cols-12 gap-5 lg:gap-10 xl:gap-20 items-center ">
-            <div class="col-span-6">
-              <div class="relative flex flex-col gap-5 max-w-xl ob-5 md:pb-10 xl:pb-20">
-                <h2 class="lg:text-6xl sm:text-5xl text-4xl text-brand font-noyh uppercase text-left tracking-wide">
-                  you’ll be blown away by our level of support</h2>
-                <ul class="text-lg xl:text-xl text-black/90 text-left font-noyh">
-                  <li>✔ Booking, marketing & admin systems</li>
-                  <li>✔ Exclusive local territory</li>
-                  <li>✔ Recurring revenue & high margins</li>
-                  <li>✔ Home-based, flexible working</li>
-                  <li>✔ Fast start-up with low overhead</li>
-                  <li>✔ Real Results from Real Franchisees</li>
-                </ul>
+        <div class="w-full">
+          <div class="relative z-10">
+            <div class="container">
+              <h2
+                class="xl:text-7xl/16 lg:text-6xl sm:text-5xl text-4xl text-brand font-noyh uppercase text-center tracking-wide max-w-5xl mx-auto">
+                a nationally loved brand
+                with a proven
+                system that delivers</span>
+              </h2>
+              <div class="max-w-full overflow-auto xl:overflow-visible">
+                <div class="grid grid-cols-4 gap-5 pt-14 min-w-[1200px] pr-5 xl:pr-0">
+                  <div class="relative flex flex-col w-full max-w-80">
+                    <img src="./assets/images/wccf-item-1.png" alt="why choose cf" class="w-32 mx-auto">
+                    <div class="relative space-y-3 p-10 flex-1 text-white rounded-3xl shadow-1 bg-brand-secondary">
+                      <h3 class="text-3xl/7 font-noyh text-white">
+                        Profitable, Proven
+                        & Ready to Scale
+                      </h3>
+                      <p class="text-xl font-medium">
+                        We’ve already done this across the UK. The model works—again and again.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="relative flex flex-col w-full max-w-80">
+                    <img src="./assets/images/wccf-item-2.png" alt="why choose cf" class="w-32 mx-auto">
+                    <div class="relative space-y-3 p-10 flex-1 text-white rounded-3xl shadow-1 bg-warning">
+                      <h3 class="text-3xl/7 font-noyh text-black">
+                        Tart Solo or
+                        Build a Team
+                      </h3>
+                      <p class="text-xl font-medium text-black">
+                        Whether you want flexibility or to grow a team of 10, we’ll show you the path
+                      </p>
+                    </div>
+                  </div>
+                  <div class="relative flex flex-col w-full max-w-80">
+                    <img src="./assets/images/wccf-item-3.png" alt="why choose cf" class="w-32 mx-auto">
+                    <div class="relative space-y-3 p-10 flex-1 text-white rounded-3xl shadow-1 bg-brand">
+                      <h3 class="text-3xl/7 font-noyh text-white">
+                        Full Tech &
+                        Booking Systems
+                      </h3>
+                      <p class="text-xl font-medium">
+                        Marketing, admin, logistics—we’ve got it covered so you can focus on growth
+                      </p>
+                    </div>
+                  </div>
+                  <div class="relative flex flex-col w-full max-w-80">
+                    <img src="./assets/images/wccf-item-4.png" alt="why choose cf" class="w-32 mx-auto">
+                    <div class="relative space-y-3 p-10 flex-1 text-black rounded-3xl shadow-1 bg-success">
+                      <h3 class="text-3xl/7 font-noyh text-black">
+                        We’ve Got Your
+                        Back all the way!
+                      </h3>
+                      <p class="text-xl font-medium">
+                        With launch training, marketing support, and a community of franchisees—you’ll never go it
+                        alone.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-span-6 flex justify-center items-center relative">
-              <div class="relative">
-                <img src="./assets/images/blow-man.png" alt="" class="" />
-
-              </div>
-
+              
+                <div class="flex justify-center pt-10">
+                  <a href="/"
+                    class="lg:flex-none flex-1 flex items-center justify-between gap-2 py-3 px-6 text-lg rounded-full border border-brand text-brand ease-in-out duration-200 hover:bg-brand hover:text-white">
+                    <span class="font-noyh text-lg uppercase">
+                      DOWNLOAD OUR FRANCHISE INFO PACK
+                    </span>
+                    <svg viewBox="0 0 25.874 16.8096" fill="currentColor" class="size-5">
+                      <path id="Path 132"
+                        d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+             
             </div>
           </div>
-
         </div>
       </section>
 
-      <section class="bg-warning bg-(image:--bg-focus-rays) bg-no-repeat bg-cover bg-center pt-10 xl:pt-20  ">
+      <section
+        class="bg-warning bg-(image:--bg-focus-rays) bg-no-repeat bg-cover bg-center pt-10 xl:pt-20 mt-10 xl:mt-20">
         <div class="container">
           <div class="flex flex-col md:grid md:grid-cols-12 gap-10 items-center">
             <div class="col-span-5">
@@ -409,13 +510,89 @@
         </div>
       </section>
 
+      <section class="relative pt-10 xl:pt-20">
+        <div class="container">
+          <div class="flex flex-col md:grid md:grid-cols-12 gap-5 lg:gap-10 xl:gap-20 items-center ">
+            <div class="col-span-6">
+              <div class="relative flex flex-col gap-5 max-w-xl ob-5 md:pb-10 xl:pb-20">
+                <h2 class="lg:text-6xl sm:text-5xl text-4xl text-brand font-noyh uppercase text-left tracking-wide">
+                  you’ll be blown away by our level of support</h2>
+                <ul class="text-lg xl:text-xl text-black/90 text-left font-noyh">
+                  <li>✔ Booking, marketing & admin systems</li>
+                  <li>✔ Exclusive local territory</li>
+                  <li>✔ Recurring revenue & high margins</li>
+                  <li>✔ Home-based, flexible working</li>
+                  <li>✔ Fast start-up with low overhead</li>
+                  <li>✔ Real Results from Real Franchisees</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-span-6 flex justify-center items-center relative">
+              <div class="relative">
+                <img src="./assets/images/blow-man.png" alt="" class="" />
 
+              </div>
 
+            </div>
+          </div>
 
+        </div>
+      </section>
 
+      <section class="relative bg-cover bg-no-repeat bg-center bg-(image:--bg-usp) mb-10 xl:mb-20">
+        <div class="absolute inset-0 p-10 flex flex-wrap justify-between lg:grid grid-cols-2 gap-5">
+          <div class="flex justify-start absolute left-5 top-5">
+            <img src="./assets/images/book-party-thumb-6.png" alt=""
+              class="xl:border-8 border-5 border-white rounded-full size-24 xl:size-40" />
+          </div>
+          <div class="flex justify-end absolute right-5 top-5">
+            <img src="./assets/images/book-party-thumb-10.png" alt=""
+              class="xl:border-8 border-5 border-white rounded-full size-24 xl:size-36" />
+          </div>
+          <div class="flex justify-start items-end absolute left-5 bottom-5">
+            <img src="./assets/images/book-party-thumb-11.png" alt=""
+              class="xl:border-8 border-5 border-white rounded-full size-24 xl:size-32 xl:translate-x-1/3" />
+          </div>
+          <div class="flex justify-end items-end absolute right-5 bottom-5">
+            <img src="./assets/images/book-party-thumb-12.png" alt=""
+              class="xl:border-8 border-5 border-white rounded-full size-24 xl:size-32 xl:-translate-x-1/3" />
+          </div>
+        </div>
+        <div class="container relative py-32 xl:py-20">
+          <h2
+            class="md:text-7xl sm:text-5xl text-4xl text-white font-noyh uppercase text-center tracking-wider max-w-3xl mx-auto">
+            Ready to Become
+            a Franchisee?
+          </h2>
+          <p class="max-w-lg mx-auto text-center font-noyh text-2xl text-white pt-5">
+            Take the first step towards an exciting and rewarding journey with Captain Fantastic. Whether you’re looking
+            for more flexibility, a career change, or a way to bring smiles to your local community, our proven
+            franchise model has everything you need to succeed.
+          </p>
+          <div class="flex gap-5 justify-center flex-wrap pt-5">
+            <a href="/"
+              class="lg:flex-none flex-1 flex items-center justify-between gap-2 py-3 px-6 text-lg rounded-full border border-white bg-transparent text-white ease-in-out duration-200 hover:bg-white hover:text-brand">
+              <span class="font-noyh text-lg uppercase whitespace-nowrap">BOOK A FREE DISCOVERY CALL</span>
+              <svg viewBox="0 0 25.874 16.8096" fill="currentColor" class="size-5">
+                <path id="Path 132"
+                  d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z">
+                </path>
+              </svg>
+            </a>
 
+            <a href="/"
+              class="lg:flex-none flex-1 flex items-center justify-between gap-2 py-3 px-6 text-lg rounded-full border border-white bg-transparent text-white ease-in-out duration-200 hover:bg-white hover:text-brand">
+              <span class="font-noyh text-lg uppercase whitespace-nowrap">USE OUR ONLINE APPLICATION</span>
+              <svg viewBox="0 0 25.874 16.8096" fill="currentColor" class="size-5">
+                <path id="Path 132"
+                  d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z">
+                </path>
+              </svg>
+            </a>
 
-
+          </div>
+        </div>
+      </section>
 
       <!-- Stay in Loop -->
       <section class="">
@@ -436,6 +613,7 @@
           </div>
         </div>
       </section>
+
     </main>
 
     <footer id="footer"></footer>
