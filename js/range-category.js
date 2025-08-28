@@ -330,7 +330,7 @@ const renderPackages = () => {
         <div class="swiper-slide pt-20 pb-10 "  >
               <div
                 class="min-h-[470px] p-6 rounded-3xl border ${package.borderColor
-      } flex flex-col relative bg-white lg:rotate-(--alternateRotation)" style="--alternateRotation:${alternateRotation()}deg"
+      } flex flex-col relative bg-white lg:rotate-(--alternateRotation)" 
               >
                 <img
                   src="${package.image}"
@@ -353,7 +353,7 @@ const renderPackages = () => {
                 </div>
 
                 <div class="lg:py-10 py-5 flex-1">
-                  <p class="text-lg font-noyh">
+                  <p class="text-xl font-noyh line-clamp-5">
                     ${package.description}
                   </p>
                 </div>

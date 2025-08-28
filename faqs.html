@@ -25,7 +25,7 @@
           class="divide-y divide-gray-500 border-b border-gray-500"
           x-data="{ faqAccordion: null }"
         >
-          <div class="overflow-hidden">
+        <div class="overflow-hidden">
             <button
               class="w-full py-5 text-left flex items-center gap-2"
               @click="faqAccordion === 1 ? faqAccordion = null : faqAccordion = 1"
@@ -76,11 +76,9 @@
               </p>
             </div>
           </div>
-          <div class="overflow-hidden">
-            <button
-              class="w-full py-5 text-left flex items-center gap-2"
-              @click="faqAccordion === 2 ? faqAccordion = null : faqAccordion = 2"
-            >
+        <div class="overflow-hidden">
+            <button class="w-full py-5 text-left flex items-center gap-2"
+              @click="faqAccordion === 2 ? faqAccordion = null : faqAccordion = 2">
               <span class="font-noyh text-brand text-3xl flex-1"
                 >Do the children have to dress up like pirates?</span
               >
@@ -126,6 +124,8 @@
               </p>
             </div>
           </div>
+          
+          
           <div class="overflow-hidden">
             <button
               class="w-full py-5 text-left flex items-center gap-2"

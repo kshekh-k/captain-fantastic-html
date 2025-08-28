@@ -27,6 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
   loadComponent("usp-section", "usp-section.html");
   loadComponent("party-structure", "party-structure.html");
   loadComponent("gallery", "gallery.html");
+  loadComponent("party-packages", "party-backage-card.html");
+  loadComponent("its-easy", "its-easy.html");
+  loadComponent("party-upgrades", "party-upgrades.html");
   loadComponent("ultimate-bespoke", "ultimate-bespoke.html");
   loadComponent("other-parties", "other-parties.html");
   loadComponent("faqs", "faqs.html");
@@ -37,10 +40,11 @@ document.addEventListener("DOMContentLoaded", () => {
 // Home page reviews
 setTimeout(() => {
   new Swiper(".testimonial", {
-    loop: true,
-    autoplay: {
-      delay: 3000,
-    },
+    loop: false,
+    autoplay: false, 
+    // {
+    //   delay: 3000,
+    // },
     slidesPerView: 2,
     spaceBetween: 20,
 
@@ -56,7 +60,7 @@ setTimeout(() => {
       },
 
       1240: {
-        spaceBetween: 0,
+        spaceBetween: 20,
         slidesPerView: 4, // 3 slides on desktops
       },
     },
@@ -85,11 +89,27 @@ new Swiper(".worked", {
 });
 
 new Swiper(".packages", {
-  loop: true, // Infinite loop
+  loop: false, // Infinite loop
   spaceBetween: 20, // Space between slides
-  autoplay: {
-    delay: 3000,
+  autoplay: false,
+  breakpoints: {
+    320: {
+      slidesPerView: 1, // 1 slide on small screens
+    },
+    640: {
+      slidesPerView: 2, // 2 slides on tablets
+    },
+    1024: {
+      slidesPerView: 4, // 3 slides on desktops
+    },
   },
+});
+
+
+new Swiper(".overview-all-areas", {
+  loop: false, // Infinite loop
+  spaceBetween: 20, // Space between slides
+  autoplay: false,
   breakpoints: {
     320: {
       slidesPerView: 1, // 1 slide on small screens

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Become a Franchise Owner | Captain Fantastic</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/captain-fantastic-icon.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/output.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+  <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="font-sans">
+  <div class="overflow-hidden ">
+    <!-- Hero Section -->
+
+    <header id="header-film-school" class="fixed md:absolute inset-x-0 top-0 z-50"></header>
+    <main class="relative flex flex-col ">
+      <!-- Hero -->
+      <section class="relative pt-20 sm:pt-24 md:pt-32 xl:pt-40" x-data="{'formModal': null}"
+        x-on:keydown.escape="formModal=false" x-effect="document.body.classList.toggle('overflow-hidden', formModal)">
+        <div class="container flex flex-col gap-2">
+          <div class="relative">
+            <picture>
+              <!-- Image for screens smaller than 768px -->
+              <source srcset="./assets/images/become-franchise-hero-mobile.png" media="(max-width: 767px)">
+              <!-- Default image for larger screens -->
+              <img src="./assets/images/become-franchise-hero-desktop.png" alt="become an franchise onwer"
+                class="w-full rounded shadow">
+            </picture>
+            <div
+              class="bg-warning md:bg-transparent border-4 border-[#080909] md:border-0 -mt-5 md:mt-0 md:absolute md:top-0 left-0 flex flex-col md:grid md:grid-cols-2 md:items-end">
+              <div class="space-y-0.5 sm:space-y-3 md:max-w-xl p-5 2xl:p-20  min-h-44 sm:min-h-80 lg:min-h-auto  ">
+                <svg viewBox="0 0 63.7695 63.7677" fill="currentColor" class="size-10 sm:size-14 text-brand">
+                  <path id="Path 26734"
+                    d="M32.44 0C14.83 -0.31 0.31 13.72 0 31.32C-0.31 48.93 13.72 63.45 31.32 63.76C48.93 64.07 63.45 50.04 63.76 32.44C64.07 14.83 50.04 0.31 32.44 0ZM32.02 42.55C31.09 43.46 30 44.17 28.78 44.69C27.11 45.39 25.14 45.72 22.88 45.68C20.81 45.64 18.95 45.26 17.33 44.52C15.69 43.79 14.32 42.79 13.2 41.53C12.07 40.26 11.22 38.77 10.64 37.06C10.06 35.34 9.78 33.48 9.82 31.48C9.85 29.45 10.22 27.58 10.91 25.89C11.6 24.19 12.56 22.74 13.78 21.52C15 20.31 16.45 19.37 18.14 18.71C19.83 18.05 21.67 17.74 23.69 17.78C24.71 17.8 25.68 17.9 26.58 18.1C27.48 18.3 28.32 18.56 29.1 18.89C29.89 19.23 30.6 19.62 31.26 20.09C31.5 20.26 31.74 20.44 31.96 20.62C32.57 21.12 32.66 22.01 32.18 22.63L30.81 24.41C30.67 24.58 30.5 24.74 30.31 24.88C30.12 25.02 29.84 25.09 29.48 25.08C29.27 25.07 29.06 25.01 28.87 24.91C28.68 24.81 28.47 24.69 28.26 24.54C28.03 24.39 27.79 24.23 27.52 24.06C27.26 23.89 26.94 23.73 26.58 23.57C26.21 23.43 25.78 23.3 25.29 23.19C24.8 23.08 24.22 23.02 23.56 23.01C22.51 22.99 21.55 23.17 20.67 23.54C19.8 23.91 19.04 24.46 18.39 25.19C17.75 25.93 17.25 26.83 16.88 27.91C16.52 28.98 16.33 30.21 16.3 31.6C16.28 33 16.45 34.24 16.81 35.34C17.17 36.43 17.67 37.36 18.32 38.11C18.96 38.87 19.72 39.44 20.58 39.85C21.45 40.25 22.39 40.46 23.39 40.48C23.96 40.49 24.49 40.47 24.96 40.42C25.44 40.37 25.88 40.29 26.3 40.16C26.71 40.04 27.1 39.87 27.47 39.66C27.83 39.45 28.21 39.17 28.59 38.84C28.74 38.72 28.91 38.62 29.08 38.54C29.26 38.46 29.44 38.43 29.63 38.43C29.78 38.43 29.92 38.46 30.08 38.52C30.22 38.58 30.37 38.68 30.5 38.82L32.07 40.53C32.6 41.11 32.58 42.01 32.02 42.55ZM54.15 20.4C54.12 22 52.8 23.27 51.2 23.24L42.64 23.09L42.52 30.16L52.06 30.33L52.02 32.43C52 34.03 50.68 35.3 49.08 35.27L42.43 35.16L42.24 46.02L35.73 45.9L36.22 18L54.18 18.31L54.15 20.4Z"
+                    fill-rule="nonzero" />
+                </svg>
+                <h1 class="xl:text-5xl lg:text-4xl sm:text-3xl text-xl font-noyh uppercase text-black">Franchise
+                  Opportunity: AIGBURTH, Liverpool (L17)
+                </h1>
+                <p class="lg:text-3xl/8 md:text-xl/6 text-lg leading-snug font-noyh text-brand">
+                  Become a Captain Fantastic Franchise Partner for L17
+                </p>
+              </div>
+
+              <div class="flex justify-start flex-col sm:flex-row gap-5 p-5 pt-0 md:pt-5">
+                <button x-on:click="formModal = 'areaDiscover'"
+                  class="lg:flex-none flex-1 flex items-center justify-center gap-2 py-3 px-6 text-lg rounded-full border border-white bg-brand text-white ease-in-out duration-200 hover:bg-white hover:text-brand">
+                  <span class="font-noyh text-lg uppercase">
+                    BOOK A DISCOVERY CALL
+                  </span>
+                </button>
+                <button x-on:click="formModal = 'completeApp'"
+                  class="lg:flex-none flex-1 flex items-center justify-center gap-2 py-3 px-6 text-lg rounded-full border border-brand bg-warning text-brand ease-in-out duration-200 hover:bg-brand hover:text-white">
+                  <span class="font-noyh text-lg uppercase">
+                    COMPLETE APPLICATION FORM
+                  </span>
+                </button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="fixed inset-0 flex items-center justify-center bg-black/95 z-50 p-3" role="dialog" tabindex="-1"
+          x-show="formModal === 'areaDiscover'" x-on:click.away="formModal = null" x-cloak x-transition>
+          <div @click.away="formModal = null"
+            class="bg-white rounded-2xl shadow-lg p-3 max-w-6xl w-full max-h-screen flex flex-col">
+            <div class="bg-brand-secondary rounded-xl space-y-3 pb-2 flex-1 flex flex-col">
+              <div class="flex justify-between gap-2 items-start p-5 pb-0">
+                <svg viewBox="0 0 63.7695 63.7677" fill="currentColor" class="size-10 sm:size-14 text-white">
+                  <path id="Path 26734"
+                    d="M32.44 0C14.83 -0.31 0.31 13.72 0 31.32C-0.31 48.93 13.72 63.45 31.32 63.76C48.93 64.07 63.45 50.04 63.76 32.44C64.07 14.83 50.04 0.31 32.44 0ZM32.02 42.55C31.09 43.46 30 44.17 28.78 44.69C27.11 45.39 25.14 45.72 22.88 45.68C20.81 45.64 18.95 45.26 17.33 44.52C15.69 43.79 14.32 42.79 13.2 41.53C12.07 40.26 11.22 38.77 10.64 37.06C10.06 35.34 9.78 33.48 9.82 31.48C9.85 29.45 10.22 27.58 10.91 25.89C11.6 24.19 12.56 22.74 13.78 21.52C15 20.31 16.45 19.37 18.14 18.71C19.83 18.05 21.67 17.74 23.69 17.78C24.71 17.8 25.68 17.9 26.58 18.1C27.48 18.3 28.32 18.56 29.1 18.89C29.89 19.23 30.6 19.62 31.26 20.09C31.5 20.26 31.74 20.44 31.96 20.62C32.57 21.12 32.66 22.01 32.18 22.63L30.81 24.41C30.67 24.58 30.5 24.74 30.31 24.88C30.12 25.02 29.84 25.09 29.48 25.08C29.27 25.07 29.06 25.01 28.87 24.91C28.68 24.81 28.47 24.69 28.26 24.54C28.03 24.39 27.79 24.23 27.52 24.06C27.26 23.89 26.94 23.73 26.58 23.57C26.21 23.43 25.78 23.3 25.29 23.19C24.8 23.08 24.22 23.02 23.56 23.01C22.51 22.99 21.55 23.17 20.67 23.54C19.8 23.91 19.04 24.46 18.39 25.19C17.75 25.93 17.25 26.83 16.88 27.91C16.52 28.98 16.33 30.21 16.3 31.6C16.28 33 16.45 34.24 16.81 35.34C17.17 36.43 17.67 37.36 18.32 38.11C18.96 38.87 19.72 39.44 20.58 39.85C21.45 40.25 22.39 40.46 23.39 40.48C23.96 40.49 24.49 40.47 24.96 40.42C25.44 40.37 25.88 40.29 26.3 40.16C26.71 40.04 27.1 39.87 27.47 39.66C27.83 39.45 28.21 39.17 28.59 38.84C28.74 38.72 28.91 38.62 29.08 38.54C29.26 38.46 29.44 38.43 29.63 38.43C29.78 38.43 29.92 38.46 30.08 38.52C30.22 38.58 30.37 38.68 30.5 38.82L32.07 40.53C32.6 41.11 32.58 42.01 32.02 42.55ZM54.15 20.4C54.12 22 52.8 23.27 51.2 23.24L42.64 23.09L42.52 30.16L52.06 30.33L52.02 32.43C52 34.03 50.68 35.3 49.08 35.27L42.43 35.16L42.24 46.02L35.73 45.9L36.22 18L54.18 18.31L54.15 20.4Z"
+                    fill-rule="nonzero" />
+                </svg>
+
+                <button @click="formModal = null" class="size-7 cursor-pointer">
+                  <svg viewBox="0 0 49 49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="none" customFrame="#000000">
+                    <path id="Union"
+                      d="M49 24.5C49 10.969 38.031 0 24.5 0C10.969 0 0 10.969 0 24.5C0 38.031 10.969 49 24.5 49C38.031 49 49 38.031 49 24.5ZM21.1343 2.24964L21.1345 2.2496L21.1346 2.24959Q22.7986 2 24.5 2C25.6344 2 26.7563 2.08321 27.8657 2.24964L27.866 2.24969L27.8665 2.24976Q28.4539 2.3379 29.0367 2.45715C29.7682 2.60685 30.4887 2.79213 31.1981 3.01301C31.8952 3.23008 32.5817 3.48153 33.2574 3.76734C33.818 4.00446 34.3672 4.2635 34.9049 4.54445L34.9052 4.5446C35.6517 4.93465 36.3762 5.36694 37.0786 5.84146Q37.8987 6.39554 38.6644 7.0167L38.6647 7.01689Q39.5758 7.75601 40.4099 8.5901C40.9659 9.14612 41.4903 9.72783 41.983 10.3352L41.9834 10.3357C42.3975 10.8462 42.7892 11.3747 43.1585 11.9214Q43.8701 12.9746 44.455 14.0939L44.455 14.0941C44.7362 14.6321 44.9954 15.1816 45.2327 15.7426C45.5187 16.4188 45.7702 17.1057 45.9874 17.8033L45.9875 17.8035C46.2081 18.5124 46.3933 19.2323 46.5429 19.9633C46.6224 20.3519 46.6915 20.7421 46.7503 21.1338Q47 22.7981 47 24.5Q47 26.2019 46.7503 27.8662C46.6915 28.2579 46.6224 28.6481 46.5429 29.0367C46.3933 29.7676 46.2082 30.4874 45.9876 31.1962L45.9875 31.1965L45.9871 31.1976L45.9871 31.1978Q45.6614 32.2437 45.2327 33.2574C44.9956 33.8179 44.7366 34.367 44.4557 34.9046C44.0656 35.6514 43.6332 36.376 43.1585 37.0786C42.7892 37.6252 42.3976 38.1537 41.9836 38.6641L41.9832 38.6645C41.4904 39.272 40.966 39.8538 40.4099 40.4099C39.8538 40.966 39.272 41.4904 38.6646 41.9832L38.6642 41.9835C38.1538 42.3975 37.6252 42.7892 37.0786 43.1585Q36.025 43.8703 34.9053 44.4553L34.9051 44.4554C34.3673 44.7364 33.8181 44.9955 33.2574 45.2327C32.5815 45.5186 31.8948 45.7701 31.1975 45.9872L31.1969 45.9874C30.4879 46.2081 29.7678 46.3932 29.0367 46.5429C28.6481 46.6224 28.2579 46.6915 27.8662 46.7503Q26.2019 47 24.5 47Q22.7981 47 21.1338 46.7503C20.7421 46.6915 20.3519 46.6224 19.9633 46.5429C19.2323 46.3933 18.5124 46.2081 17.8035 45.9875L17.8033 45.9874C17.1057 45.7702 16.4188 45.5187 15.7426 45.2327C15.1817 44.9954 14.6323 44.7363 14.0943 44.4552L14.0939 44.4549C13.3477 44.065 12.6235 43.6329 11.9214 43.1585C11.3747 42.7892 10.8461 42.3974 10.3356 41.9834L10.3354 41.9832C9.72796 41.4904 9.14619 40.966 8.5901 40.4099C8.03424 39.854 7.51001 39.2725 7.01742 38.6653L7.01731 38.6652L7.01702 38.6648C6.6028 38.1542 6.21095 37.6255 5.84146 37.0786C5.36682 36.376 4.93444 35.6514 4.54431 34.9047L4.54418 34.9044L4.54389 34.9039C4.26316 34.3665 4.0043 33.8177 3.76734 33.2574C3.4815 32.5816 3.23005 31.8951 3.01297 31.1979L3.01288 31.1976Q2.68165 30.1338 2.45715 29.0367Q2.33784 28.4536 2.24967 27.8659L2.24964 27.8657L2.2496 27.8655L2.24959 27.8654Q2 26.2014 2 24.5Q2 22.7985 2.24961 21.1345L2.24962 21.1345C2.30841 20.7425 2.37759 20.3522 2.45715 19.9633Q2.68171 18.8659 3.01307 17.8018L3.0131 17.8017Q3.33867 16.7561 3.76734 15.7426Q4.12341 14.9008 4.54535 14.0934L4.54542 14.0932L4.54545 14.0932Q5.1302 12.9742 5.84146 11.9214Q6.39562 11.1012 7.01686 10.3353L7.01698 10.3352C7.5097 9.72782 8.03407 9.14612 8.5901 8.5901Q9.42376 7.75644 10.3344 7.01764L10.3344 7.01761L10.3344 7.01759L10.3345 7.01753Q11.1007 6.39592 11.9214 5.84146Q12.975 5.12967 14.0948 4.54458Q14.9015 4.12308 15.7426 3.76734Q16.7563 3.33858 17.8021 3.01296L17.8025 3.01285L17.8026 3.0128L17.8035 3.01254Q18.8668 2.68153 19.9633 2.45715Q20.5464 2.33784 21.1341 2.24967L21.1343 2.24964ZM11.166 11.2539L24.5002 23.1594L37.834 11.2542L39.166 12.7461L26.0016 24.5L39.166 36.2539L37.834 37.7458L24.5002 25.8406L11.166 37.7461L9.83399 36.2542L22.9987 24.5L9.83398 12.7458L11.166 11.2539Z"
+                      fill="rgb(255,255,255)" fill-rule="evenodd" />
+                  </svg>
+
+                </button>
+              </div>
+
+              <div
+                class="flex flex-col md:grid md:grid-cols-2 gap-5 xl:gap-10 p-5 md:p-10 pt-0 md:pt-0 md:pl-24 relative flex-1 overflow-auto max-h-[calc(100vh-150px)]">
+                <img src="./assets/images/wccf-item-1.png" alt="why choose cf"
+                  class="w-28 left-0 absolute bottom-0 mt-0.5 md:block hidden">
+                <div class="space-y-3">
+                  <h2 class="xl:text-5xl lg:text-4xl sm:text-3xl text-xl font-noyh uppercase text-white border-b pb-5">
+                    We’re not in
+                    your area…
+                    <span class="block">just yet!</span>
+                  </h2>
+                  <p class="lg:text-2xl/8 md:text-xl/6 text-lg leading-snug font-noyh text-white">Thanks for checking
+                    in! At the moment, we don’t have a performer covering your postcode — but we’re always growing and
+                    may be launching in your area soon.
+                    Want to be the first to know when we do? Join our priority list below — and if we get enough
+                    interest, we’ll be heading your way faster than a sugar-rushed superhero!</p>
+
+                </div>
+
+                <!-- Form -->
+                <div class="relative">
+                  <form @submit.prevent="formModal = null; $el.reset()">
+
+                    <div class="space-y-4">
+                      <input type="text" required placeholder="Name"
+                        class="w-full py-3 px-5 font-noyh text-xl border-2 border-black focus:border-brand bg-white rounded-full focus:outline-none placeholder-black">
+                      <input type="text" required placeholder="Postcode"
+                        class="w-full py-3 px-5 font-noyh text-xl border-2 border-black focus:border-brand bg-white rounded-full focus:outline-none placeholder-black">
+                      <input type="email" required placeholder="Email Address"
+                        class="w-full py-3 px-5 font-noyh text-xl border-2 border-black focus:border-brand bg-white rounded-full focus:outline-none placeholder-black">
+                      <input type="text" required placeholder="Town or Area"
+                        class="w-full py-3 px-5 font-noyh text-xl border-2 border-black focus:border-brand bg-white rounded-full focus:outline-none placeholder-black">
+
+
+                      <div class="flex justify-center w-full">
+                        <button type="submit"
+                          class="flex-1 flex items-center justify-between gap-2 py-3 px-6 text-lg rounded-full hover:bg-white hover:text-brand ease-in-out duration-200 bg-brand text-white cursor-pointer border-2 border-black">
+                          <span class="font-noyh text-lg uppercase">
+                            Join the Waitlist
+                          </span>
+                          <svg viewBox="0 0 25.874 16.8096" fill="currentColor" class="size-5">
+                            <path id="Path 132"
+                              d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z">
+                            </path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fixed inset-0 flex items-center justify-center bg-black/95 z-50 p-3" role="dialog" tabindex="-1"
+          x-show="formModal === 'completeApp'" x-on:click.away="formModal = null" x-cloak x-transition>
+          <div @click.away="formModal = null"
+            class="bg-white rounded-2xl shadow-lg p-3 max-w-6xl w-full max-h-screen flex flex-col">
+
+            <div class="bg-brand-secondary rounded-xl space-y-3 pb-2 flex-1 flex flex-col">
+              <div class="flex justify-between gap-2 items-start p-5 pb-0">
+                <svg viewBox="0 0 63.7695 63.7677" fill="currentColor" class="size-10 sm:size-14 text-white">
+                  <path id="Path 26734"
+                    d="M32.44 0C14.83 -0.31 0.31 13.72 0 31.32C-0.31 48.93 13.72 63.45 31.32 63.76C48.93 64.07 63.45 50.04 63.76 32.44C64.07 14.83 50.04 0.31 32.44 0ZM32.02 42.55C31.09 43.46 30 44.17 28.78 44.69C27.11 45.39 25.14 45.72 22.88 45.68C20.81 45.64 18.95 45.26 17.33 44.52C15.69 43.79 14.32 42.79 13.2 41.53C12.07 40.26 11.22 38.77 10.64 37.06C10.06 35.34 9.78 33.48 9.82 31.48C9.85 29.45 10.22 27.58 10.91 25.89C11.6 24.19 12.56 22.74 13.78 21.52C15 20.31 16.45 19.37 18.14 18.71C19.83 18.05 21.67 17.74 23.69 17.78C24.71 17.8 25.68 17.9 26.58 18.1C27.48 18.3 28.32 18.56 29.1 18.89C29.89 19.23 30.6 19.62 31.26 20.09C31.5 20.26 31.74 20.44 31.96 20.62C32.57 21.12 32.66 22.01 32.18 22.63L30.81 24.41C30.67 24.58 30.5 24.74 30.31 24.88C30.12 25.02 29.84 25.09 29.48 25.08C29.27 25.07 29.06 25.01 28.87 24.91C28.68 24.81 28.47 24.69 28.26 24.54C28.03 24.39 27.79 24.23 27.52 24.06C27.26 23.89 26.94 23.73 26.58 23.57C26.21 23.43 25.78 23.3 25.29 23.19C24.8 23.08 24.22 23.02 23.56 23.01C22.51 22.99 21.55 23.17 20.67 23.54C19.8 23.91 19.04 24.46 18.39 25.19C17.75 25.93 17.25 26.83 16.88 27.91C16.52 28.98 16.33 30.21 16.3 31.6C16.28 33 16.45 34.24 16.81 35.34C17.17 36.43 17.67 37.36 18.32 38.11C18.96 38.87 19.72 39.44 20.58 39.85C21.45 40.25 22.39 40.46 23.39 40.48C23.96 40.49 24.49 40.47 24.96 40.42C25.44 40.37 25.88 40.29 26.3 40.16C26.71 40.04 27.1 39.87 27.47 39.66C27.83 39.45 28.21 39.17 28.59 38.84C28.74 38.72 28.91 38.62 29.08 38.54C29.26 38.46 29.44 38.43 29.63 38.43C29.78 38.43 29.92 38.46 30.08 38.52C30.22 38.58 30.37 38.68 30.5 38.82L32.07 40.53C32.6 41.11 32.58 42.01 32.02 42.55ZM54.15 20.4C54.12 22 52.8 23.27 51.2 23.24L42.64 23.09L42.52 30.16L52.06 30.33L52.02 32.43C52 34.03 50.68 35.3 49.08 35.27L42.43 35.16L42.24 46.02L35.73 45.9L36.22 18L54.18 18.31L54.15 20.4Z"
+                    fill-rule="nonzero" />
+                </svg>
+
+                <button @click="formModal = null" class="size-7 cursor-pointer">
+                  <svg viewBox="0 0 49 49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="none" customFrame="#000000">
+                    <path id="Union"
+                      d="M49 24.5C49 10.969 38.031 0 24.5 0C10.969 0 0 10.969 0 24.5C0 38.031 10.969 49 24.5 49C38.031 49 49 38.031 49 24.5ZM21.1343 2.24964L21.1345 2.2496L21.1346 2.24959Q22.7986 2 24.5 2C25.6344 2 26.7563 2.08321 27.8657 2.24964L27.866 2.24969L27.8665 2.24976Q28.4539 2.3379 29.0367 2.45715C29.7682 2.60685 30.4887 2.79213 31.1981 3.01301C31.8952 3.23008 32.5817 3.48153 33.2574 3.76734C33.818 4.00446 34.3672 4.2635 34.9049 4.54445L34.9052 4.5446C35.6517 4.93465 36.3762 5.36694 37.0786 5.84146Q37.8987 6.39554 38.6644 7.0167L38.6647 7.01689Q39.5758 7.75601 40.4099 8.5901C40.9659 9.14612 41.4903 9.72783 41.983 10.3352L41.9834 10.3357C42.3975 10.8462 42.7892 11.3747 43.1585 11.9214Q43.8701 12.9746 44.455 14.0939L44.455 14.0941C44.7362 14.6321 44.9954 15.1816 45.2327 15.7426C45.5187 16.4188 45.7702 17.1057 45.9874 17.8033L45.9875 17.8035C46.2081 18.5124 46.3933 19.2323 46.5429 19.9633C46.6224 20.3519 46.6915 20.7421 46.7503 21.1338Q47 22.7981 47 24.5Q47 26.2019 46.7503 27.8662C46.6915 28.2579 46.6224 28.6481 46.5429 29.0367C46.3933 29.7676 46.2082 30.4874 45.9876 31.1962L45.9875 31.1965L45.9871 31.1976L45.9871 31.1978Q45.6614 32.2437 45.2327 33.2574C44.9956 33.8179 44.7366 34.367 44.4557 34.9046C44.0656 35.6514 43.6332 36.376 43.1585 37.0786C42.7892 37.6252 42.3976 38.1537 41.9836 38.6641L41.9832 38.6645C41.4904 39.272 40.966 39.8538 40.4099 40.4099C39.8538 40.966 39.272 41.4904 38.6646 41.9832L38.6642 41.9835C38.1538 42.3975 37.6252 42.7892 37.0786 43.1585Q36.025 43.8703 34.9053 44.4553L34.9051 44.4554C34.3673 44.7364 33.8181 44.9955 33.2574 45.2327C32.5815 45.5186 31.8948 45.7701 31.1975 45.9872L31.1969 45.9874C30.4879 46.2081 29.7678 46.3932 29.0367 46.5429C28.6481 46.6224 28.2579 46.6915 27.8662 46.7503Q26.2019 47 24.5 47Q22.7981 47 21.1338 46.7503C20.7421 46.6915 20.3519 46.6224 19.9633 46.5429C19.2323 46.3933 18.5124 46.2081 17.8035 45.9875L17.8033 45.9874C17.1057 45.7702 16.4188 45.5187 15.7426 45.2327C15.1817 44.9954 14.6323 44.7363 14.0943 44.4552L14.0939 44.4549C13.3477 44.065 12.6235 43.6329 11.9214 43.1585C11.3747 42.7892 10.8461 42.3974 10.3356 41.9834L10.3354 41.9832C9.72796 41.4904 9.14619 40.966 8.5901 40.4099C8.03424 39.854 7.51001 39.2725 7.01742 38.6653L7.01731 38.6652L7.01702 38.6648C6.6028 38.1542 6.21095 37.6255 5.84146 37.0786C5.36682 36.376 4.93444 35.6514 4.54431 34.9047L4.54418 34.9044L4.54389 34.9039C4.26316 34.3665 4.0043 33.8177 3.76734 33.2574C3.4815 32.5816 3.23005 31.8951 3.01297 31.1979L3.01288 31.1976Q2.68165 30.1338 2.45715 29.0367Q2.33784 28.4536 2.24967 27.8659L2.24964 27.8657L2.2496 27.8655L2.24959 27.8654Q2 26.2014 2 24.5Q2 22.7985 2.24961 21.1345L2.24962 21.1345C2.30841 20.7425 2.37759 20.3522 2.45715 19.9633Q2.68171 18.8659 3.01307 17.8018L3.0131 17.8017Q3.33867 16.7561 3.76734 15.7426Q4.12341 14.9008 4.54535 14.0934L4.54542 14.0932L4.54545 14.0932Q5.1302 12.9742 5.84146 11.9214Q6.39562 11.1012 7.01686 10.3353L7.01698 10.3352C7.5097 9.72782 8.03407 9.14612 8.5901 8.5901Q9.42376 7.75644 10.3344 7.01764L10.3344 7.01761L10.3344 7.01759L10.3345 7.01753Q11.1007 6.39592 11.9214 5.84146Q12.975 5.12967 14.0948 4.54458Q14.9015 4.12308 15.7426 3.76734Q16.7563 3.33858 17.8021 3.01296L17.8025 3.01285L17.8026 3.0128L17.8035 3.01254Q18.8668 2.68153 19.9633 2.45715Q20.5464 2.33784 21.1341 2.24967L21.1343 2.24964ZM11.166 11.2539L24.5002 23.1594L37.834 11.2542L39.166 12.7461L26.0016 24.5L39.166 36.2539L37.834 37.7458L24.5002 25.8406L11.166 37.7461L9.83399 36.2542L22.9987 24.5L9.83398 12.7458L11.166 11.2539Z"
+                      fill="rgb(255,255,255)" fill-rule="evenodd" />
+                  </svg>
+
+                </button>
+              </div>
+
+              <div
+                class="flex flex-col md:grid md:grid-cols-2 gap-5 xl:gap-10 p-5 md:p-10 pt-0 md:pt-0 md:pl-24 relative flex-1 overflow-auto max-h-[calc(100vh-150px)]">
+                <img src="./assets/images/wccf-item-1.png" alt="why choose cf"
+                  class="w-28 left-0 absolute bottom-0 mt-0.5 md:block hidden">
+                <div class="space-y-3">
+                  <h2 class="xl:text-5xl lg:text-4xl sm:text-3xl text-xl font-noyh uppercase text-white border-b pb-5">
+                    Apply to
+                    Become a
+                    Captain
+                    Fantastic
+                    Franchisee
+
+                  </h2>
+                  <p class="lg:text-2xl/8 md:text-xl/6 text-lg leading-snug font-noyh text-white">Ready to turn your
+                    passion into a thriving business? Fill in our form to start your application. Whether you’re a
+                    performer,
+                    a parent, or just someone who loves making kids smile, we’ll give you the tools, training, and
+                    support to launch your own successful franchise.</p>
+
+                </div>
+
+                <!-- Form -->
+                <div class="relative">
+                  <form @submit.prevent="formModal = null; $el.reset()">
+
+                    <div class="space-y-4">
+                      <input type="text" required placeholder="Full Name"
+                        class="w-full py-3 px-5 font-noyh text-xl border-2 border-black focus:border-brand bg-white rounded-xl focus:outline-none placeholder-black">
+                      <input type="email" required placeholder="Email Address"
+                        class="w-full py-3 px-5 font-noyh text-xl border-2 border-black focus:border-brand bg-white rounded-xl focus:outline-none placeholder-black">
+                      <input type="tel" required placeholder="Telephone Number"
+                        class="w-full py-3 px-5 font-noyh text-xl border-2 border-black focus:border-brand bg-white rounded-xl focus:outline-none placeholder-black">
+                      <input type="text" required placeholder="Postcode / Area of Interest"
+                        class="w-full py-3 px-5 font-noyh text-xl border-2 border-black focus:border-brand bg-white rounded-xl focus:outline-none placeholder-black">
+                      <textarea type="text" required placeholder="Tell us a little about you..."
+                        class="w-full py-3 px-5 h-28 font-noyh text-xl border-2 border-black focus:border-brand bg-white rounded-xl focus:outline-none placeholder-black"></textarea>
+
+
+                      <div class="flex justify-center w-full">
+                        <button type="submit"
+                          class="flex-1 flex items-center justify-between gap-2 py-3 px-6 text-lg rounded-full hover:bg-white hover:text-brand ease-in-out duration-200 bg-warning text-brand cursor-pointer border-2 border-black">
+                          <span class="font-noyh text-lg uppercase">
+                            Submit My Application
+                          </span>
+                          <svg viewBox="0 0 25.874 16.8096" fill="currentColor" class="size-5">
+                            <path id="Path 132"
+                              d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z">
+                            </path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </section>
+
+      <section class="relative pt-10 xl:pt-14">
+        <div class="container">
+          <div class="flex flex-col md:grid md:grid-cols-12 gap-5 lg:gap-10 xl:gap-20 items-center ">
+            <div class="col-span-6 flex flex-col xl:flex-row justify-center items-center relative">
+              <div class="relative">
+                <img src="./assets/images/uk-flag-2.svg" alt="" class="" />
+                <div
+                  class="size-40 bg-brand rounded-full absolute top-40 2xl:top-1/2 left-0 2xl:left-auto 2xl:right-0 -rotate-3 hidden md:flex justify-center items-center -translate-y-1/2 -translate-x-1/2 2xl:translate-x-1/2">
+                  <img src="./assets/images/wccf-item-1.png" alt="why choose cf"
+                    class="w-32 mx-auto absolute top-0 -translate-y-3/4">
+                  <span
+                    class="text-center text-warning p-5 font-noyh text-base/4 lg:text-xl/6 uppercase flex justify-center items-center">
+                    franchise
+                    opportunity
+                    in L17
+                  </span>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-span-6">
+              <div class="relative flex flex-col gap-5 max-w-xl pb-5 md:pb-10 xl:pb-20">
+                <h2 class="lg:text-6xl sm:text-5xl text-4xl text-brand font-noyh uppercase text-left tracking-wide">
+                  AIGBURTH,
+                  LIVERPOOL
+                  needs a new
+                  party hero!</h2>
+                <p class="text-lg text-black/90 text-left font-semibold">This buzzing, family-friendly area is packed
+                  with parents looking for unforgettable kids’ parties—and right now, there’s no Captain Fantastic to
+                  save the day.</p>
+                <ul class="text-lg xl:text-xl text-black/90 text-left font-noyh">
+                  <li>✔ A Proven System That Works</li>
+                  <li>✔ Solo or Scalable</li>
+                  <li>✔ Tech, Bookings & Admin Sorted</li>
+                  <li>✔ Ongoing Support Every Step</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <section class="pt-10 ">
+        <div class="container">
+          <div class="max-w-full overflow-auto xl:overflow-visible">
+            <div class="grid grid-cols-3 gap-5 pt-14 w-250 pr-5 xl:pr-0 mx-auto">
+              <div class="relative space-y-3 p-10 flex-1 text-white rounded-3xl shadow-1 bg-brand">
+                <img src="./assets/images/icon-check-mark.svg" alt=""
+                  class="size-16 shrink-0 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <h3 class="text-3xl/7 font-noyh text-white text-center">
+                  Proven,
+                  Profitable Model
+                </h3>
+                <p class="text-xl font-medium text-center text-black/80">
+                  Tap into a fast-growing market with a business that’s already been tested and scaled in multiple
+                  locations.
+                </p>
+              </div>
+              <div class="relative space-y-3 p-10 flex-1 text-white rounded-3xl shadow-1 bg-brand-secondary">
+                <img src="./assets/images/icon-check-mark.svg" alt=""
+                  class="size-16 shrink-0 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <h3 class="text-3xl/7 font-noyh text-white text-center">
+                  Established Brand
+                  & Marketing Power
+                </h3>
+                <p class="text-xl font-medium text-center text-black/80">
+                  Leverage our national reputation and digital marketing engine to drive leads and build trust from
+                </p>
+              </div>
+              <div class="relative space-y-3 p-10 flex-1 text-white rounded-3xl shadow-1 bg-brand">
+                <img src="./assets/images/icon-check-mark.svg" alt=""
+                  class="size-16 shrink-0 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <h3 class="text-3xl/7 font-noyh text-white text-center">
+                  Full Training
+                  & Ongoing Support
+                </h3>
+                <p class="text-xl font-medium text-center text-black/80">
+                  From setup to scaling, you’ll have access to experts, tools, and a community of ambitious franchisees
+                  like
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center pt-10">
+            <a href="/"
+              class="lg:flex-none flex-1 flex flex-wrap items-center justify-between gap-2 py-3 px-6 text-lg rounded-full border border-brand text-brand ease-in-out duration-200 hover:bg-brand hover:text-white text-center">
+              <span class="font-noyh text-lg uppercase">
+                DOWNLOAD OUR FRANCHISE INFO PACK
+              </span>
+              <svg viewBox="0 0 25.874 16.8096" fill="currentColor" class="size-5 hidden sm:block">
+                <path id="Path 132"
+                  d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative pt-10 xl:pt-20">
+        <div class="container">
+          <div class="flex flex-col md:grid md:grid-cols-12 gap-5 lg:gap-10 xl:gap-20 items-center ">
+            <div class="col-span-6">
+              <div class="relative flex flex-col gap-5 max-w-xl ob-5 md:pb-10 xl:pb-20">
+                <h2 class="lg:text-6xl sm:text-5xl text-4xl text-brand font-noyh uppercase text-left tracking-wide">
+                  you’ll be blown away by our level of support</h2>
+                <ul class="text-lg xl:text-xl text-black/90 text-left font-noyh">
+                  <li>✔ Booking, marketing & admin systems</li>
+                  <li>✔ Exclusive local territory</li>
+                  <li>✔ Recurring revenue & high margins</li>
+                  <li>✔ Home-based, flexible working</li>
+                  <li>✔ Fast start-up with low overhead</li>
+                  <li>✔ Real Results from Real Franchisees</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-span-6 flex justify-center items-center relative">
+              <div class="relative">
+                <img src="./assets/images/blow-man.png" alt="" class="" />
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="bg-warning bg-(image:--bg-focus-rays) bg-no-repeat bg-cover bg-center pt-10 xl:pt-20  ">
+        <div class="container">
+          <div class="flex flex-col md:grid md:grid-cols-12 gap-10 items-center">
+            <div class="col-span-5">
+              <div class="relative">
+                <img src="./assets/images/bf-super-success-thumb.png" alt="" class="object-cover max-w-full">
+              </div>
+            </div>
+            <div class="col-span-7">
+              <div class="max-w-xl pb-10">
+                <h2
+                  class="max-w-4xl mx-auto lg:text-7xl sm:text-5xl text-4xl text-brand font-noyh uppercase text-left tracking-wide">
+                  WE’RE LOOKING
+                  FOR REAL LIFE SUPER HEROS!</h2>
+                <h3 class="text-brand font-noyh xl:text-3xl text-2xl">This opportunity is perfect for:</h3>
+                <ul class="text-lg xl:text-xl text-black/90 text-left font-noyh">
+                  <li>✔ Ambitious go-getters who want more than a job</li>
+                  <li>✔ Creatives, parents, or educators with passion and purpose</li>
+                  <li>✔ Performers who want to lead, not just deliver</li>
+                  <li>✔ Investors or career-changers craving something meaningful</li>
+                  <li>✔ You don’t need to entertain—you need to lead.</li>
+                  <li>✔ We’ll train you to build a business that works for you.</li>
+                </ul>
+
+                <div class="flex justify-start pt-5 xl:pt-10 ">
+                  <a href="/"
+                    class="flex items-center justify-between gap-2 py-3 px-6 text-lg rounded-full border-3 border-black  text-black ease-in-out duration-200 bg-white hover:bg-black hover:text-white">
+                    <span class="font-noyh text-lg uppercase">See Franchise Success Stories</span>
+                    <svg viewBox="0 0 25.874 16.8096" fill="currentColor" class="size-5">
+                      <path id="Path 132"
+                        d="M25.4 7.27L18.6 0.46C17.97 -0.16 16.96 -0.16 16.33 0.46C15.71 1.09 15.71 2.11 16.33 2.73L20.06 6.46L1.59 6.47C0.71 6.47 0 7.19 0 8.07C0 8.95 0.71 9.67 1.59 9.67L20.73 9.67L16.33 14.07C15.71 14.69 15.71 15.71 16.33 16.34C16.96 16.96 17.97 16.96 18.6 16.34L25.4 9.53C26.03 8.91 26.03 7.89 25.4 7.27Z">
+                      </path>
+                    </svg>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+      <!-- Stay in Loop -->
+      <section class="">
+        <div class="container">
+          <div
+            class="xl:px-20 sm:px-10 xs:px-4 gap-10 xl:gap-20 lg:grid lg:grid-cols-12 flex-col border-b border-gray-300">
+            <div class="col-span-4 max-w-md lg:max-w-none mx-auto">
+              <img src="./assets/images/bf-princess-cutout-loop.png" alt="stay in loop" class="w-60" />
+            </div>
+            <div class="col-span-8">
+              <h2
+                class="xl:text-5xl lg:text-4xl sm:text-3xl text-2xl uppercase font-noyh text-transparent bg-clip-text bg-cover bg-center bg-no-repeat bg-(image:--bg-usp)">
+                stay in loop - join out mailing list and get exclusive party
+                ideas, offers and magic momements delivered to your inbox!
+              </h2>
+              <div class="my-10" id="subscription-form-wrap"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer"></footer>
+  </div>
+</body>
+<script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/main.js" type="module"></script>
+
+
+</html>

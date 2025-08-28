@@ -39,6 +39,8 @@
     --shadow-1: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
     --shadow-2: 0px 12px 16px 0px rgba(0, 0, 0, 0.35);
     --shadow-3: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+    --shadow-4: 10px 10px 0px 4px rgba(0,0,0,0.75);
+    --shadow-5: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 
     --breakpoint-xs: 30rem;
@@ -55,6 +57,7 @@
     --bg-extra-party-science : url('../assets/images/party-extra-science.png');   
     --bg-extra-party-princess : url('../assets/images/party-extra-princess.png');   
     --bg-extra-party-unthemed : url('../assets/images/party-extra-unthemed.png');   
+    --bg-extra-party-halloween : url('../assets/images/extra-party-halloween-bg.png');   
     --bg-white-box : url('../assets/images/bg-white.png');  
     --bg-school: url('../assets/images/school_bg.png');
     --bg-coorporate: url('../assets/images/coorporate_bg.png');
@@ -65,6 +68,8 @@
     --bg-image-1-1: 100% 100%;
     --bg-film-school: url('../assets/images/hero-film-school.png');
     --bg-highlight: url('../assets/images/bg-highlight.png');
+    --bg-highlight-party-hero: url('../assets/images/bg-highlight-party-hero.png');
+    --bg-highlight-be: url('../assets/images/be-heading-bg.png');
     --bg-highlight-size: 100% 90%;
     --my-rotattion-me:-5deg;
     --booking-button:180.00deg, rgb(237, 15, 143),rgb(229, 1, 81);
